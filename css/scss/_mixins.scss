@@ -1,0 +1,13 @@
+// pixels to ems
+@function px2em($px) {
+	@return ($px / $em-base) * 1em;
+}
+
+// font size and line height
+@mixin font-size($font-size, $line-height: false) {
+	font-size: px2em($font-size); /* #{$font-size} */
+
+	@if $line-height != false {
+		line-height: ($line-height / $font-size); /* #{$line-height} */
+	}
+}

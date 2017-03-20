@@ -1,0 +1,81 @@
+html {height:100%;}
+
+// TODO:
+// hey! break these up into individual files
+// don't forget your proportional font / line height mixin
+// text the bootstrap js, use and or delete
+// yo fav is brokes
+// sanitize this mess
+// dynamically add the body classes for .home, .work, .case-studies
+// animations
+// retina images
+
+body {
+  font-family: $worky;
+  color:$night;
+  background: $black url('/img/bg-home.jpg') no-repeat;
+  border-right:2px solid $yellow;
+  height:100%;
+
+  a.active {color:$yellow;}
+
+	footer {
+		position: absolute;
+		bottom:0;
+	}
+
+	&.home {
+		div.identity {
+			margin:0 auto;
+			width:50%;
+			text-align:center;
+
+			h1 {
+				color:$white;
+				@include font-size(115px, 125px);
+				font-family: $gary;
+				margin:30% 0 0 0;
+			}
+
+			h2.roles {
+				@include font-size(21px, 24px);
+			    display:inline-block;
+			    background: -webkit-linear-gradient(45deg, $fuschia, orange);
+			    background: linear-gradient(45deg, $fuschia, orange);
+			    -webkit-background-clip: text;
+			    -webkit-text-fill-color: transparent;
+			    margin:0;
+			    font-weight: 300;
+			}
+		}
+	}
+}
+
+.navbar {
+	.navbar-header {
+
+		a.navbar-brand {
+			padding:25px 15px;
+
+			div.circle {
+			    background-color: transparent;
+			    border: 6px solid $white;
+			    width: 25px;
+			    height: 25px;
+			    border-radius: 50%;
+			    margin-left: -30px;
+			    float:left;
+			}
+
+			p {
+				@include font-size(10px, 13px);
+				margin:0;
+				color:$white;
+			}
+
+			p + p {
+				color: $hotpink;
+			}
+		}
+	}
+}

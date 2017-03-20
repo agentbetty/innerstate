@@ -1,0 +1,29 @@
+// color
+$hotpink:		#CE004F;
+$fuschia:		#EB0091;
+$white: 		#fff;
+$black:			#000;
+$slate:			#5C7484;
+
+// yellows
+$yellow:		#D1B100;
+$yellow-light:	lighten($yellow, 25%);
+$yellow-dark: 	darken($yellow, 25%);
+// coral pinks
+$coral:			#FF6969;
+$coral-light:	lighten($coral, 20%);
+
+// dark blues
+$night:			#001726;
+$night-light:	lighten($night, 10%);
+
+// fonts
+$worky: 		'Work Sans', Helvetica, arial, sans-serif;
+$gary:  		'EB Garamond', Georgia, serif;
+
+// mq
+// $mobile: ~"only screen and (max-width:520px)";
+// $tablet-p: ~"only screen and (min-width:521px) and (max-width:768px)";
+// $tablet-h: ~"only screen and (min-width:769px) and (max-width:992px)";
+// $desktop-s: ~"only screen and (min-width:992px) and (max-width:1200px)";
+

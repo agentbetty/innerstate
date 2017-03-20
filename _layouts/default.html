@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+  {% include head.html %}
+  <body class="{{ page.keyword }}">
+
+
+    <section id="container">
+    {% include navigation.html %}
+      {{ content }}
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/application.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+title: Elizabeth Miller
+
+markdown: kramdown
+
+permalink: /:title
+
+exclude:
+- Rakefile
+- README.md
+
+
+# email: elizabethm@innerstate.org
+
+# description: Portfolio of Elizabeth Miller, 2017
+
+# baseurl: "" # the subpath of your site, e.g. /blog/
+
+# url: https://innerstate.org # the base hostname & protocol for your site
+
+# github_username:  agentbetty
+
+# # Build settings
+# markdown: kramdown
+
+# permalink: /:title
+
+# navigation:
+#   - title: Work
+#     url: /work
+#   - title: About
+#     url: /about
+#   - title: Contact
+#     url: /contact
+
+#     exclude:
+# - Rakefile
+# - README.md
