@@ -3,17 +3,16 @@ html {height:100%;}
 // TODO:
 // hey! break these up into individual files
 // don't forget your proportional font / line height mixin
-// text the bootstrap js, use and or delete
-// yo fav is brokes
+// test the bootstrap js, use and or delete
 // sanitize this mess
-// dynamically add the body classes for .home, .work, .case-studies
 // animations
 // retina images
+// elizabethm email signature update
 
 body {
   font-family: $worky;
   color:$night;
-  background: $black url('/img/bg-home.jpg') no-repeat;
+  background: $white url('/img/bg-home.jpg') no-repeat;
   border-right:2px solid $yellow;
   height:100%;
 
@@ -25,7 +24,10 @@ body {
 	}
 
 	&.home {
-		div.identity {
+		border-right:0px solid transparent;
+
+		section.identity {
+			height:400px;
 			margin:0 auto;
 			width:50%;
 			text-align:center;
@@ -46,6 +48,31 @@ body {
 			    -webkit-text-fill-color: transparent;
 			    margin:0;
 			    font-weight: 300;
+			}
+		}
+
+		section.teaser {
+			height:175px;
+  			width: 100%;
+
+  			a {
+  				height:40px;
+  				width:40px;
+  				display: block;
+  				margin:0 auto;
+  				background:transparent url('/img/arrow-down.svg') no-repeat;
+
+  				&:hover {
+  					background:transparent url('/img/arrow-down-on.svg') no-repeat;
+  				}	
+  			}
+		}
+
+		section#featured {
+			img.feature-logo {
+				position: absolute;
+				top:50%;
+				border:10px solid red;
 			}
 		}
 	}

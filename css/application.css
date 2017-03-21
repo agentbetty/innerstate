@@ -6313,7 +6313,7 @@ html {
 body {
   font-family: "Work Sans", Helvetica, arial, sans-serif;
   color: #001726;
-  background: #000 url("/img/bg-home.jpg") no-repeat;
+  background: #fff url("/img/bg-home.jpg") no-repeat;
   border-right: 2px solid #D1B100;
   height: 100%; }
   body a.active {
@@ -6321,30 +6321,48 @@ body {
   body footer {
     position: absolute;
     bottom: 0; }
-  body.home div.identity {
-    margin: 0 auto;
-    width: 50%;
-    text-align: center; }
-    body.home div.identity h1 {
-      color: #fff;
-      font-size: 7.1875em;
-      /* 115px */
-      line-height: 1.08696;
-      /* 125px */
-      font-family: "EB Garamond", Georgia, serif;
-      margin: 30% 0 0 0; }
-    body.home div.identity h2.roles {
-      font-size: 1.3125em;
-      /* 21px */
-      line-height: 1.14286;
-      /* 24px */
-      display: inline-block;
-      background: -webkit-linear-gradient(45deg, #EB0091, orange);
-      background: linear-gradient(45deg, #EB0091, orange);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin: 0;
-      font-weight: 300; }
+  body.home {
+    border-right: 0px solid transparent; }
+    body.home section.identity {
+      height: 400px;
+      margin: 0 auto;
+      width: 50%;
+      text-align: center; }
+      body.home section.identity h1 {
+        color: #fff;
+        font-size: 7.1875em;
+        /* 115px */
+        line-height: 1.08696;
+        /* 125px */
+        font-family: "EB Garamond", Georgia, serif;
+        margin: 30% 0 0 0; }
+      body.home section.identity h2.roles {
+        font-size: 1.3125em;
+        /* 21px */
+        line-height: 1.14286;
+        /* 24px */
+        display: inline-block;
+        background: -webkit-linear-gradient(45deg, #EB0091, orange);
+        background: linear-gradient(45deg, #EB0091, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+        font-weight: 300; }
+    body.home section.teaser {
+      height: 175px;
+      width: 100%; }
+      body.home section.teaser a {
+        height: 40px;
+        width: 40px;
+        display: block;
+        margin: 0 auto;
+        background: transparent url("/img/arrow-down.svg") no-repeat; }
+        body.home section.teaser a:hover {
+          background: transparent url("/img/arrow-down-on.svg") no-repeat; }
+    body.home section#featured img.feature-logo {
+      position: absolute;
+      top: 50%;
+      border: 10px solid red; }
 
 .navbar .navbar-header a.navbar-brand {
   padding: 25px 15px; }

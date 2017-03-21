@@ -11,12 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <script
-      src="https://code.jquery.com/jquery-3.2.0.min.js"
-      integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
       crossorigin="anonymous">
     </script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
 
   </head>
   <body class="home">
@@ -115,21 +113,27 @@
 
 
  
-      <script language="javascript">
-	var terms = ["design strategist", "front-end developer", "creative director"];
-
-	function rotateTerm() {
-	  var ct = $(".roles").data("term") || 0;
-	  $(".roles").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn()
-	              .delay(2500).fadeOut(750, rotateTerm);
-	}
-	$(rotateTerm);
-</script>
-
-<div class="identity">
+      <section class="identity">
 	<h1>elizabeth miller</h1>
 	<h2 class="roles">creative director</h2>
-</div>
+</section>
+
+<section class="teaser">
+	<a href="#featured"></a>
+</section>
+
+<section id="featured">
+	<row>
+		<div class="col-md-8">
+			<img class="feature-logo" src="/img/ghel/ghel-logo.png" alt="Global Health eLearning logo">
+			<img src="/img/ghel/mother-child.jpg" alt="image of a mother and child" title="GHeL, image of a mother and child">
+		</div>
+		<div class="col-md-4" style="background-color:white;">
+			Client: GHeL
+		</div>
+	</row>
+</section>
+
 
     </section>
 
