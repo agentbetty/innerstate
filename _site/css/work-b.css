@@ -1,0 +1,10 @@
+.work-b #work-b-1 a, .work-b #work-b-2 a, .work-b #work-b-3 a {
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+  background: transparent url("/img/arrow-down.svg") no-repeat; }
+  .work-b #work-b-1 a:hover, .work-b #work-b-2 a:hover, .work-b #work-b-3 a:hover {
+    background: transparent url("/img/arrow-down-on.svg") no-repeat; }
+
+/*# sourceMappingURL=work-b.css.map */

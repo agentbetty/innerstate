@@ -1,0 +1,17 @@
+// work-a
+
+.work-a {
+	#work-a-1, #work-a-2, #work-a-3 {
+		a {
+			height:40px;
+			width:40px;
+			display: block;
+			margin:0 auto;
+			background:transparent url('/img/arrow-down.svg') no-repeat;
+
+			&:hover {
+				background:transparent url('/img/arrow-down-on.svg') no-repeat;
+			}	
+		}
+	}
+}

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <title>InnerState</title>
+    <title>Portfolio of Elizabeth Miller | InnerState</title>
     <link rel="stylesheet" href="/css/application.css" media="screen">
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -21,29 +21,15 @@
 
 
     <section id="container">
-    <!-- Navigation -->
-<!-- <div id="skiptocontent" class="skiptocontent">
-    <a href="#maincontent">skip to main content</a>
-</div> -->
-
-<!--  
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-			    <li><a href="/" class="active">Home</a></li>
-			    <li><a href="/blog.html" >Blog</a></li>
-            </ul>
-        </div>
- -->
-
-<script language="javascript">
+    <script language="javascript">
   $(document).ready(function(){
     $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
       $(this).toggleClass('open');
     });
   });
-</script>
+</script> 
 
-<nav class="navbar" role="navigation">
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="navbar-header">
      <a class="navbar-brand" href="/">
 	     <div class="circle"></div>
@@ -62,51 +48,39 @@
   </button>
 
   <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar">
-    <li>
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
-    </li>
+    <ul>
+      <li>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+      </li>
 
-    <li>
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Work <b class="caret"></b></a>
-      <ul class="dropdown-menu multi-level">
-          <li><a href="#">Global Health eLearning</a></li>
-          <li><a href="#">Emory HealthMAP</a></li>
-          <li><a href="#">ASA24</a></li>
-          <li><a href="#">Start2Farm</a></li>
-          <li><a href="#">Teacher &amp; Leadership Programs</a></li>
-          <li><a href="#">NACHA</a></li>
-          <li><a href="#">Electronic Payments</a></li>
-          <li><a href="#">QCORP</a></li>
-          <li><a href="#"></a>Bend-La Pine</li>
-          <li><a href="#"></a>Kavi</li>
-      </ul>
-   </li>
+      <li>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Work <b class="caret"></b></a>
+        <ul class="dropdown-menu multi-level">
+            <li><a href="#">Global Health eLearning</a></li>
+            <li><a href="#">Emory HealthMAP</a></li>
+            <li><a href="#">ASA24</a></li>
+            <li><a href="#">Start2Farm</a></li>
+            <li><a href="#">Teacher &amp; Leadership Programs</a></li>
+            <li><a href="#">NACHA</a></li>
+            <li><a href="#">Electronic Payments</a></li>
+            <li><a href="#">QCORP</a></li>
+            <li><a href="#"></a>Bend-La Pine</li>
+            <li><a href="#"></a>Kavi</li>
+        </ul>
+     </li>
 
-<li>
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Case Studies <b class="caret"></b></a>
-    <ul class="dropdown-menu multi-level">
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Health</a></li>
+<!--       <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Case Studies <b class="caret"></b></a>
+          <ul class="dropdown-menu multi-level">
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Health</a></li>
+          </ul>
+      </li> -->
+
+      <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+      </li>
     </ul>
-</li>
-
-<li>
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
-</li>
-<!-- 	    <ul class="nav navbar-nav">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Work</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Case Studies</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact</a>
-	      </li>
-	    </ul> -->
   </div>
 </nav>
 
@@ -119,17 +93,29 @@
 </section>
 
 <section class="teaser">
-	<a href="#featured"></a>
+	<a href="#featured-1"></a>
 </section>
 
-<section id="featured">
+<section id="featured-1">
 	<row>
-		<div class="col-md-8">
-			<img class="feature-logo" src="/img/ghel/ghel-logo.png" alt="Global Health eLearning logo">
-			<img src="/img/ghel/mother-child.jpg" alt="image of a mother and child" title="GHeL, image of a mother and child">
+		<div class="col-md-8" style="background: green;height:100vh;">
+			<!-- <img class="feature-logo" src="/img/ghel/ghel-logo.png" alt="Global Health eLearning logo">
+			<img src="/img/ghel/mother-child.jpg" alt="image of a mother and child" title="GHeL, image of a mother and child"> -->
 		</div>
-		<div class="col-md-4" style="background-color:white;">
-			Client: GHeL
+		<div class="col-md-4" style="background-color:beige;height:100vh;">
+			<a href="#featured-2"></a>
+		</div>
+	</row>
+	<row>
+		<div class="col-md-8" style="background: pink;height:100vh;" id="featured-2">
+		</div>
+		<div class="col-md-4" style="background-color:beige;height:100vh;">
+			<a href="#featured-3"></a>
+		</div>
+	</row>
+	<row>
+		<div class="col-md-12" style="background: violet;height:100vh;" id="featured-3">
+		3
 		</div>
 	</row>
 </section>
