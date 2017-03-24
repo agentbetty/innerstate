@@ -36,7 +36,7 @@ body {
 				color:$white;
 				@include font-size(115px, 125px);
 				font-family: $gary;
-				margin:30% 0 0 0;
+				margin:200px 0 0;
 			}
 
 			h2.roles {
@@ -84,4 +84,28 @@ body {
   			}
 		}
 	}
+}
+
+.home h1,
+.home h2 {
+    animation: fadein ease-in 1s;
+    -moz-animation: fadein ease-in 1s; 
+    -webkit-animation: fadein ease-in 1s; 
+    -o-animation: fadein ease-in 1s;
+}
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+    to {opacity: 1;}
 }

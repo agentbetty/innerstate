@@ -30,15 +30,7 @@
 
 
     <section id="container">
-    <script language="javascript">
-  $(document).ready(function(){
-    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-      $(this).toggleClass('open');
-    });
-  });
-</script> 
-
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="navbar-header">
      <a class="navbar-brand" href="/">
 	     <div class="circle"></div>
@@ -47,24 +39,17 @@
      </a>
   </div> 
 
-  <button id="nav-icon2" class="navbar-toggler hidden-lg-up navbar-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-  <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar">
+<input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+   <label for="drawer-toggle" id="drawer-toggle-label"></label>
+   <nav id="drawer">  
     <ul>
       <li>
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+        <a href="#">About</a>
       </li>
 
       <li>
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Work <b class="caret"></b></a>
-        <ul class="dropdown-menu multi-level">
+        <a href="#">Work</a>
+        <ul>
             <li><a href="#">Global Health eLearning</a></li>
             <li><a href="#">Emory HealthMAP</a></li>
             <li><a href="#">ASA24</a></li>
@@ -73,24 +58,17 @@
             <li><a href="#">NACHA</a></li>
             <li><a href="#">Electronic Payments</a></li>
             <li><a href="#">QCORP</a></li>
-            <li><a href="#"></a>Bend-La Pine</li>
-            <li><a href="#"></a>Kavi</li>
+            <li><a href="#">Bend-La Pine</a></li>
+            <li><a href="#">Kavi</a></li>
         </ul>
      </li>
-
-<!--       <li>
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Case Studies <b class="caret"></b></a>
-          <ul class="dropdown-menu multi-level">
-              <li><a href="#">Education</a></li>
-              <li><a href="#">Health</a></li>
-          </ul>
-      </li> -->
-
       <li>
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+          <a href="#">Contact</a>
       </li>
     </ul>
-  </div>
+
+
+   </nav>
 </nav>
 
 
