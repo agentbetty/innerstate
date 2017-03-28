@@ -6379,9 +6379,9 @@ html {
 body {
   font-family: "Work Sans", Helvetica, arial, sans-serif;
   color: #001726;
-  background: #fff url("/img/bg-home.jpg") no-repeat;
-  border-right: 2px solid #D1B100;
   height: 100%; }
+  body a {
+    color: #001726; }
   body a.active {
     color: #D1B100; }
   body footer {
@@ -6390,9 +6390,9 @@ body {
   body.home {
     border-right: 0px solid transparent; }
     body.home section.identity {
-      height: 400px;
+      height: 100vh;
+      background: #001726 url("/img/bg-home.jpg") repeat-x;
       margin: 0 auto;
-      width: 50%;
       text-align: center; }
       body.home section.identity h1 {
         color: #fff;
@@ -6401,45 +6401,67 @@ body {
         line-height: 1.08696;
         /* 125px */
         font-family: "EB Garamond", Georgia, serif;
-        margin: 200px 0 0; }
+        margin: 0;
+        padding: 300px 0 0; }
       body.home section.identity h2.roles {
+        display: none;
+        margin: 0;
         font-size: 1.3125em;
         /* 21px */
         line-height: 1.14286;
-        /* 24px */
-        display: inline-block;
-        background: -webkit-linear-gradient(45deg, #EB0091, orange);
-        background: linear-gradient(45deg, #EB0091, orange);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin: 0;
-        font-weight: 300; }
-    body.home section.teaser {
-      height: 175px;
-      width: 100%; }
-      body.home section.teaser a {
+        /* 24px */ }
+        body.home section.identity h2.roles span {
+          display: inline-block;
+          background: -webkit-linear-gradient(45deg, #EB0091, orange);
+          background: linear-gradient(45deg, #EB0091, orange);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin: 0;
+          font-weight: 300; }
+      body.home section.identity a.teaser {
         height: 40px;
         width: 40px;
         display: block;
-        margin: 0 auto;
-        background: transparent url("/img/arrow-down.svg") no-repeat; }
-        body.home section.teaser a:hover {
+        margin-left: 50%;
+        background: transparent url("/img/arrow-down.svg") no-repeat;
+        position: absolute;
+        bottom: 50px; }
+        body.home section.identity a.teaser:hover {
           background: transparent url("/img/arrow-down-on.svg") no-repeat; }
-    body.home #featured-1 a,
-    body.home #featured-2 a,
-    body.home #featured-3 a {
-      height: 40px;
-      width: 40px;
-      display: block;
-      margin: 0 auto;
-      background: transparent url("/img/arrow-down.svg") no-repeat; }
-      body.home #featured-1 a:hover,
-      body.home #featured-2 a:hover,
-      body.home #featured-3 a:hover {
-        background: transparent url("/img/arrow-down-on.svg") no-repeat; }
+      body.home section.identity a.teaser + div {
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        bottom: 0; }
+    body.home #featured-1 h2 {
+      text-transform: uppercase;
+      font-size: 1.125em;
+      /* 18px */
+      line-height: 1.16667;
+      /* 21px */
+      color: #CE004F;
+      margin: 100px 0 5px 2px; }
+    body.home #featured-1 h3 {
+      font-size: 2.25em;
+      /* 36px */
+      line-height: 1.08333;
+      /* 39px */
+      font-family: "Work Sans", Helvetica, arial, sans-serif;
+      font-weight: 300;
+      margin: 0 0 5px 0;
+      color: #5C7484; }
+    body.home #featured-1 p.funding {
+      font-size: 0.9375em;
+      /* 15px */
+      line-height: 1.2;
+      /* 18px */
+      margin: 0 0 5px 2px;
+      font-family: "EB Garamond", Georgia, serif; }
+    body.home #featured-3 {
+      background: linear-gradient(to right, #F2F1EF 0%, #F2F1EF 50%, #000000 50%, white 50%, white 100%); }
 
-.home h1,
-.home h2 {
+.home .identity h1,
+.home .identity h2 {
   animation: fadein ease-in 1s;
   -moz-animation: fadein ease-in 1s;
   -webkit-animation: fadein ease-in 1s;
