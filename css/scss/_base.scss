@@ -14,12 +14,13 @@ body {
   font-family: $worky;
   color:$night;
   height:100%;
+  background: $night url('/img/bg-home.jpg') repeat-x;
 
   a {
     color: $night;
   }
 
-    a.active {color:$yellow;}
+    a.active {color:$hotpink;}
 
 	footer {
 		position: absolute;
@@ -31,17 +32,8 @@ body {
 
 		section.identity {
 			height:100vh;
-      background: $night url('/img/bg-home.jpg') repeat-x;
 			margin:0 auto;
 			text-align:center;
-
-    //       position: fixed;
-    // -webkit-transform: translate3d(0,0,0);
-    // width: 100%;
-    // height: 300%;
-    // background-image: url(../img/bg.jpg);
-    // background-repeat: repeat-y;
-    // background-size: 100%;
 
 			h1 {
 				color:$white;
@@ -89,32 +81,18 @@ body {
         }
 		}
 
-    #featured-1 {
+    section.feature {
       h2 {
-        text-transform: uppercase;
-        @include font-size(18px, 21px);
-        color:$hotpink;
-        margin:100px 0 5px 2px;
-      }
 
-      h3 {
-        @include font-size(36px, 39px);
-        font-family:$worky;
-        font-weight: 300;
-        margin:0 0 5px 0;
-        color:$slate;
-      }
-
-      p.funding {
-        @include font-size(15px, 18px);
-        margin:0 0 5px 2px;
-        font-family:$gary;
+        p {
+          color:$salon;
+          text-transform: uppercase;
+          @include font-size(18px, 24px);
+        }
       }
     }
 
-    #featured-3 {
-        background: linear-gradient(to right, $khaki 0%, $khaki 50%,#000000 50%,white 50%,white 100%);
-    }
+        // background: linear-gradient(to right, $khaki 0%, $khaki 50%,#000000 50%,white 50%,white 100%);
 
   			// a {
   			// 	height:40px;
@@ -129,8 +107,6 @@ body {
   			// }
 	}
 }
-
-
 
 .home .identity h1,
 .home .identity h2 {
