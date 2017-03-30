@@ -1,16 +1,17 @@
-// $(document).ready(function() {
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
 
-//   // identity rotate
-//   var terms = ["design strategist", "front-end developer", "creative director"];
+	    var target = this.hash;
+	    var $target = $(target);
 
-//   function rotateTerm() {
-//     var ct = $(".roles").data("term") || 0;
-//     $(".roles").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn(750)
-//                 .delay(2500).fadeOut(750, rotateTerm);
-//   }
-//   $(rotateTerm);
-
-// });
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 1000, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
 
 (function() {
 

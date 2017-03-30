@@ -1,4 +1,6 @@
-html {height:100%;}
+html,
+body,
+main {height:100%;}
 
 // TODO:
 // hey! break these up into individual files
@@ -9,102 +11,153 @@ html {height:100%;}
 // retina images
 // elizabethm email signature update
 // don't forget to maximize jekyll data
+// resume
+// object fit fix for ie
+// happy browser for object-fit (ie) and vh/vw (opera)
 
 body {
   font-family: $worky;
   color:$night;
-  height:100%;
-  background: $night url('/img/bg-home.jpg') repeat-x;
 
-  a {
-    color: $night;
+  // – – – – – – – – – – general styles
+  h1, h2, h3, p {
+    margin:0 0 2px 0;
   }
 
-    a.active {color:$hotpink;}
+  h2 {
+    @include font-size(36px, 39px);
+    font-weight: 300;
+  }
 
-	footer {
-		position: absolute;
-		bottom:0;
-	}
+  li {
+    list-style-type: none;
+    padding:2px;
+  }
 
+  img{
+    max-width:100%;
+  }
+
+  // – – – – – – – – – – global
+  a.arrow {
+    height:40px;
+    width:40px;
+    display: block;
+    background:transparent url('/img/arrow-down.svg') no-repeat;
+    position:absolute;
+    bottom:50px;
+
+    &:hover {
+      background:transparent url('/img/arrow-down-on.svg') no-repeat;
+    } 
+  }
+
+  aside {
+    @include font-size(18px, 21px);
+    color:$salon;
+    text-transform: uppercase; 
+    margin-bottom:2px;
+  }
+
+  .color-wrap {
+    background-color: $khaki;
+    height:100vh;
+  }
+
+  .offscreen {
+    display: inline-block;
+    margin-left:-50px;
+  }
+
+   .vertical-align { // – – – – – – – – – – vertical align
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  // – – – – – – – – – – home layout (+ featured project)
 	&.home {
-		border-right:0px solid transparent;
 
 		section.identity {
-			height:100vh;
-			margin:0 auto;
 			text-align:center;
+      background-image: url('/img/bg-home.jpg');
 
 			h1 {
 				color:$white;
 				@include font-size(115px, 125px);
 				font-family: $gary;
-				margin:0;
-        padding:300px 0 0;
+        padding:20% 0 0;
 			}
 
 			h2.roles {
         display:none;
-        margin:0;
-        @include font-size(21px, 24px);
+        @include font-size(27px, 30px);
+        font-weight: 300;
 
         span {
           display:inline-block;
-          background: -webkit-linear-gradient(45deg, $fuschia, orange);
-          background: linear-gradient(45deg, $fuschia, orange);
+          background: -webkit-linear-gradient(45deg, $fuschia, $orange);
+          background: linear-gradient(45deg, $fuschia, $orange);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           margin:0;
-          font-weight: 300;
         }
 			}
 
-        a.teaser {
-          height:40px;
-          width:40px;
-          display: block;
-          margin-left:50%;
-          background:transparent url('/img/arrow-down.svg') no-repeat;
-          position:absolute;
-          bottom:50px;
-
-          &:hover {
-            background:transparent url('/img/arrow-down-on.svg') no-repeat;
-          } 
-        }
-
-        a.teaser + div {
-          height:45px;
-          width:100%;
-          position: absolute;
-          bottom:0;
-        }
+        a.arrow { margin-left:50%; }
 		}
 
     section.feature {
-      h2 {
 
-        p {
-          color:$salon;
-          text-transform: uppercase;
-          @include font-size(18px, 24px);
+      img.cover {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+
+      .project-basics,
+      .project-bio,
+      .project-link {
+        height:100vh;
+        position:absolute;
+        top:250px;
+
+        h2 {
+          margin:0 0 150px 0;
         }
+
+        h3 {
+          @include font-size(18px, 21px);
+          margin:0 0 25px 0;
+        }
+        
+        ul {
+          @include font-size(21px, 24px);
+          font-family: $gary;
+        }
+
+        a.arrow {
+          margin:0 auto;
+          float:left;
+        }  
+      }
+
+      .project-bio {
+
+        .intro {
+          @include font-size(27px, 30px);
+          font-weight: 300;
+          max-width: 500px;
+        }
+
+        .more {
+          @include font-size(21px, 24px);
+          font-family: $gary;
+          max-width: 500px;
+        } 
       }
     }
-
-        // background: linear-gradient(to right, $khaki 0%, $khaki 50%,#000000 50%,white 50%,white 100%);
-
-  			// a {
-  			// 	height:40px;
-  			// 	width:40px;
-  			// 	display: block;
-  			// 	margin:0 auto;
-  			// 	background:transparent url('/img/arrow-down.svg') no-repeat;
-
-  			// 	&:hover {
-  			// 		background:transparent url('/img/arrow-down-on.svg') no-repeat;
-  			// 	}	
-  			// }
 	}
 }
 
@@ -131,3 +184,21 @@ body {
     from {opacity:0;}
     to {opacity: 1;}
 }
+
+// helper classes
+
+    section.cd-fixed-bg {
+      min-height: 100%;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height:100vh;
+    }
+
+    section.cd-scrolling-bg {
+      min-height: 100%;
+      height:100vh;
+    }
+
+    .no-pad {padding:0;}
