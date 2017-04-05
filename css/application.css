@@ -6408,9 +6408,10 @@ body {
   body .color-wrap {
     background-color: #F2F1EF;
     height: 100vh; }
-  body .offscreen {
-    display: inline-block;
-    margin-left: -50px; }
+    body .color-wrap img {
+      display: inline-block;
+      width: 95%;
+      margin: 0 auto; }
   body .vertical-align {
     position: relative;
     top: 50%;
@@ -6442,6 +6443,13 @@ body {
         margin: 0; }
     body.home section.identity a.arrow {
       margin-left: 50%; }
+  body.home section.feature img.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -193px;
+    margin-top: -75px;
+    z-index: 2; }
   body.home section.feature img.cover {
     display: block;
     width: 100vw;
@@ -6450,13 +6458,16 @@ body {
   body.home section.feature .project-basics,
   body.home section.feature .project-bio,
   body.home section.feature .project-link {
-    height: 100vh;
-    position: absolute;
-    top: 250px; }
+    height: 100%;
+    min-height: 400px;
+    padding: 15% 0 0;
+    top: 50%;
+    top: -50%;
+    margin-top: 15%; }
     body.home section.feature .project-basics h2,
     body.home section.feature .project-bio h2,
     body.home section.feature .project-link h2 {
-      margin: 0 0 150px 0; }
+      margin: 0 0 100px 0; }
     body.home section.feature .project-basics h3,
     body.home section.feature .project-bio h3,
     body.home section.feature .project-link h3 {
@@ -6473,25 +6484,24 @@ body {
       line-height: 1.14286;
       /* 24px */
       font-family: "EB Garamond", Georgia, serif; }
-    body.home section.feature .project-basics a.arrow,
-    body.home section.feature .project-bio a.arrow,
-    body.home section.feature .project-link a.arrow {
-      margin: 0 auto;
-      float: left; }
+  body.home section.feature .arrow {
+    bottom: 10px; }
   body.home section.feature .project-bio .intro {
     font-size: 1.6875em;
     /* 27px */
     line-height: 1.11111;
     /* 30px */
     font-weight: 300;
-    max-width: 500px; }
+    max-width: 500px;
+    margin-right: 50px; }
   body.home section.feature .project-bio .more {
     font-size: 1.3125em;
     /* 21px */
     line-height: 1.14286;
     /* 24px */
     font-family: "EB Garamond", Georgia, serif;
-    max-width: 500px; }
+    max-width: 500px;
+    margin: 15px 50px 0 0; }
 
 .home .identity h1,
 .home .identity h2 {
