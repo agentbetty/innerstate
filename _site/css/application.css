@@ -6378,9 +6378,9 @@ body {
   body h1, body h2, body h3, body p {
     margin: 0 0 2px 0; }
   body h2 {
-    font-size: 2.25em;
-    /* 36px */
-    line-height: 1.08333;
+    font-size: 2.0625em;
+    /* 33px */
+    line-height: 1.18182;
     /* 39px */
     font-weight: 300; }
   body li {
@@ -6398,9 +6398,9 @@ body {
     body a.arrow:hover {
       background: transparent url("/img/arrow-down-on.svg") no-repeat; }
   body aside {
-    font-size: 1.125em;
-    /* 18px */
-    line-height: 1.16667;
+    font-size: 0.9375em;
+    /* 15px */
+    line-height: 1.4;
     /* 21px */
     color: #03619D;
     text-transform: uppercase;
@@ -6471,10 +6471,10 @@ body {
     body.home section.feature .project-basics h3,
     body.home section.feature .project-bio h3,
     body.home section.feature .project-link h3 {
-      font-size: 1.125em;
+      font-size: 0.9375em;
+      /* 15px */
+      line-height: 1.2;
       /* 18px */
-      line-height: 1.16667;
-      /* 21px */
       margin: 0 0 25px 0; }
     body.home section.feature .project-basics ul,
     body.home section.feature .project-bio ul,
