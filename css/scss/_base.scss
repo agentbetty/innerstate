@@ -38,6 +38,12 @@ body {
     max-width:100%;
   }
 
+  a:link {color:$hotpink;}
+  a:visited {color:$hotpink;}
+  a:hover {border-bottom:1px solid $yellow;text-decoration:none;}
+  a:active {color:$hotpink;} 
+  a:focus {border-bottom:1px solid $yellow;}
+
   // – – – – – – – – – – global
   a.arrow {
     height:40px;
@@ -49,6 +55,7 @@ body {
 
     &:hover {
       background:transparent url('/img/arrow-down-on.svg') no-repeat;
+      border-bottom-width:0;
     } 
   }
 
@@ -64,10 +71,17 @@ body {
     height:100vh;
 
     img {
-      display: inline-block;
       width:95%;
-      margin:0 auto;
+      float:right;
     }
+  }
+
+  .pattern-wrap {
+    background: transparent url('/img/patterns/circles-and-roundabouts.gif') repeat;
+  }
+
+  .texture-wrap {
+    background: lighten($khaki, 2%);
   }
 
    .vertical-align { // – – – – – – – – – – vertical align
@@ -77,7 +91,7 @@ body {
     }
 
   // – – – – – – – – – – home layout (+ featured project)
-	&.home {
+	&.home, &.worka {
 
 		section.identity {
 			text-align:center;
@@ -151,7 +165,7 @@ body {
         }
       }
       
-      .arrow {bottom:10px;}
+      .arrow {bottom:25px;}
 
       .project-bio {
 
@@ -169,48 +183,66 @@ body {
           margin:15px 50px 0 0;
         } 
       }
+
+      #three {
+        position: relative;
+
+        .previous, .next {
+          background-color:transparent;
+          border:25px solid $white;
+          position:absolute;
+          z-index: 10;
+          right:-40px;
+          height:75px;
+          width:75px;
+          border-radius: 75px;
+          @include font-size(21px, 24px);
+          font-family: $gary;
+          bottom:100px;
+          font-style:italic;
+
+          a {
+            text-align: center;
+            font-weight: bold;
+            display: block;
+            margin-left:-100px;
+            color:$yellow;
+            width:100px;
+          }
+        }
+
+        .previous {
+          left:0;
+
+          a {
+            margin-left:35px;
+          }
+        }
+
+          .pattern-wrap {
+
+          img {
+            display: block;
+            height:95vh; 
+            margin-left:-150px; 
+            margin-top:75px;
+            float:left;
+          }
+
+          .project-basics {
+            float:left;
+            margin-left:-95px;
+            margin-top:0;
+            padding-top:10%;
+
+            h3 {
+              @include font-size(21px, 24px);
+              font-family:$gary;
+              font-style: italic;
+            }
+          }
+        }
+      }
     }
 	}
 }
-
-.home .identity h1,
-.home .identity h2 {
-    animation: fadein ease-in 1s;
-    -moz-animation: fadein ease-in 1s; 
-    -webkit-animation: fadein ease-in 1s; 
-    -o-animation: fadein ease-in 1s;
-}
-@keyframes fadein {
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@-o-keyframes fadein { /* Opera */
-    from {opacity:0;}
-    to {opacity: 1;}
-}
-
-// helper classes
-
-    section.cd-fixed-bg {
-      min-height: 100%;
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: center center;
-      height:100vh;
-    }
-
-    section.cd-scrolling-bg {
-      min-height: 100%;
-      height:100vh;
-    }
-
-    .no-pad {padding:0;}

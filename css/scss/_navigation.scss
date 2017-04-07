@@ -67,7 +67,7 @@ padding: 0;
   -webkit-overflow-scrolling: touch; 
   background: transparent; 
   border-left: 1px solid lighten($night, 3%);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.9);
 
   ul {
     text-align: right;
@@ -80,7 +80,7 @@ padding: 0;
 
       ul {
         li {
-          a {color:$hotpink;}
+          a {color:lighten($hotpink, 10%);}
         }
       }
     }

@@ -1,0 +1,20 @@
+.about {
+  background: $babypink url('/img/bg-about.png') no-repeat;
+
+    section.about-details {
+      h1 {
+        color:$white;
+        @include font-size(115px, 125px);
+        font-family: $gary;
+        text-align:center;
+      }
+
+      h2 {
+        color:$slate;
+      }
+
+      p {
+        margin:25px 0;
+      }
+    }
+	}
