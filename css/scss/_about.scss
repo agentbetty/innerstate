@@ -1,20 +1,56 @@
 .about {
-  background: $babypink url('/img/bg-about.png') no-repeat;
+  background: $babyslate url('/img/bg-about.jpg') no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment:fixed;
 
     section.about-details {
+      margin-top: 120px;
+
       h1 {
-        color:$white;
-        @include font-size(115px, 125px);
-        font-family: $gary;
         text-align:center;
+        font-family: $gary;
+        color:$white;
+        position:absolute;
+        left:-200px;
+        z-index: 2; 
       }
 
       h2 {
         color:$slate;
+        @include font-size(24px, 27px);
+        margin-top:35px;
       }
 
       p {
-        margin:25px 0;
+        margin:15px 0;
+        @include font-size(15px, 18px);
+
+        em {
+          color:darken($yellow, 15%);
+          font-style:normal;;
+        }
+      }
+
+      ul.quick-list {
+        margin:15px 0;
+        text-transform: uppercase;
+        color:$yellow;
+        @include font-size(15px, 18px);
+      }
+
+      ul.questions {
+        li {
+          list-style-type: circle;
+          margin:10px 25px;
+        }       
+      }
+
+      img {
+        display:inline-block;
+        margin-top:50px;
       }
     }
 	}

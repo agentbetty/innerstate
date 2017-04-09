@@ -139,14 +139,13 @@ padding: 0;
   #drawer-toggle:checked ~ #page-content { 
     margin-left: calc(100% - 50px); 
   } 
-
 }
   
 nav.navbar {
   .navbar-header {
 
     a.navbar-brand {
-      padding:25px 15px;
+      padding:15px 15px 0;
 
       div.circle {
           background-color: transparent;
@@ -165,7 +164,7 @@ nav.navbar {
       }
 
       p + p {
-        color: $hotpink;
+        color: lighten($slate, 25%);
       }
     }
   }
@@ -183,4 +182,3 @@ nav.navbar {
     }
   }
 }
-
