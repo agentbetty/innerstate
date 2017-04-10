@@ -1,24 +1,27 @@
 footer {
   margin-top:25px;
 
-  div.circle {
-    background-color: transparent;
-    border: 6px solid $white;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    position: absolute;
-    bottom:-30px;
-  }
+  .folio {
+    position: relative;
 
-  p {
-    @include font-size(10px, 13px);
-    margin:0;
-    color:$white;
-  }
+    .circle {
+      background-color: transparent;
+      border: 6px solid $white;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      position: absolute;
+      bottom:0;
+      left:0;
+    }
 
-  p + p {
-     color: $yellow;
+    p {
+      @include font-size(10px, 13px);
+      margin:0;
+      color:$white;
+    }
+
+    p:nth-child(3) {color:$yellow;}
   }
 }
 
