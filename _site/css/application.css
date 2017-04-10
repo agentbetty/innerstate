@@ -6660,9 +6660,10 @@ section.cd-scrolling-bg {
       text-align: center;
       font-family: "EB Garamond", Georgia, serif;
       color: #fff;
-      position: absolute;
-      left: -200px;
-      z-index: 2; }
+      font-size: 7.1875em;
+      /* 115px */
+      line-height: 0.23478;
+      /* 27px */ }
     .about section.about-details h2 {
       color: #5C7484;
       font-size: 1.5em;
