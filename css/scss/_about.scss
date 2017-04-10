@@ -13,9 +13,7 @@
         text-align:center;
         font-family: $gary;
         color:$white;
-        position:absolute;
-        left:-200px;
-        z-index: 2; 
+        @include font-size(115px, 27px);
       }
 
       h2 {
