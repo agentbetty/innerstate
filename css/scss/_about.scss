@@ -9,11 +9,21 @@
     section.about-details {
       margin-top: 120px;
 
+      .row {
+          div:nth-child(3) {
+            h2 {margin-top: 60px;}
+
+            ul + h2 {
+              margin-top: 35px;
+            }
+          }
+      }
+
       h1 {
-        text-align:center;
         font-family: $gary;
         color:$white;
-        @include font-size(115px, 27px);
+        @include font-size(45px, 27px);
+        margin-bottom: 20px;
       }
 
       h2 {
@@ -44,6 +54,19 @@
           list-style-type: circle;
           margin:10px 25px;
         }       
+      }
+
+      .dnld {
+        color:$babypink;
+        padding:15px;
+        border:1px solid $babypink;
+        display: inline-block;
+        margin-top:15px;
+
+        &:hover {
+          color:darken($babypink, 15%);
+          border-style:dotted;
+        }
       }
 
       img {

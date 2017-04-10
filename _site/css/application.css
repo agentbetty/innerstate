@@ -6310,15 +6310,20 @@ template {
   #drawer ul {
     text-align: right;
     font-weight: 300; }
+    #drawer ul h4 {
+      margin: 0;
+      font-weight: normal; }
     #drawer ul li {
-      font-size: 1.125em;
-      /* 18px */
-      line-height: 1.5;
-      /* 27px */ }
+      margin-top: 15px; }
       #drawer ul li a {
         color: #fff; }
-      #drawer ul li ul li a {
-        color: #ff0263; }
+        #drawer ul li a:hover {
+          border-bottom-width: 0;
+          color: #ff1fa9; }
+      #drawer ul li ul li {
+        margin-top: 5px; }
+        #drawer ul li ul li a {
+          color: #ff0263; }
 
 /* actual page content pane */
 #page-content {
@@ -6381,23 +6386,25 @@ nav.navbar .navbar-header a.navbar-brand {
     color: #fff; }
   nav.navbar .navbar-header a.navbar-brand p + p {
     color: #a2b3be; }
-nav.navbar .navbar-toggleable-md {
-  float: right; }
-  nav.navbar .navbar-toggleable-md ul {
-    font-size: 1.3125em;
-    /* 21px */
-    line-height: 1.14286;
-    /* 24px */
-    color: #fff;
-    text-align: right;
-    clear: both;
-    margin-top: 120px;
-    margin-right: -51px; }
+
+.about #drawer {
+  border-left-width: 0;
+  background-color: rgba(255, 255, 255, 0.5); }
+  .about #drawer ul li a {
+    color: #5C7484; }
+    .about #drawer ul li a:hover {
+      color: #001726; }
+  .about #drawer ul li h4 a {
+    color: #001726; }
+    .about #drawer ul li h4 a:hover {
+      color: #03619D; }
 
 footer {
   margin-top: 25px; }
   footer .folio {
-    position: relative; }
+    position: relative;
+    float: right;
+    height: 35px; }
     footer .folio .circle {
       background-color: transparent;
       border: 6px solid #fff;
@@ -6406,7 +6413,8 @@ footer {
       border-radius: 50%;
       position: absolute;
       bottom: 0;
-      left: 0; }
+      right: 0;
+      margin-bottom: -30px; }
     footer .folio p {
       font-size: 0.625em;
       /* 10px */
@@ -6656,14 +6664,18 @@ section.cd-scrolling-bg {
   background-attachment: fixed; }
   .about section.about-details {
     margin-top: 120px; }
+    .about section.about-details .row div:nth-child(3) h2 {
+      margin-top: 60px; }
+    .about section.about-details .row div:nth-child(3) ul + h2 {
+      margin-top: 35px; }
     .about section.about-details h1 {
-      text-align: center;
       font-family: "EB Garamond", Georgia, serif;
       color: #fff;
-      font-size: 7.1875em;
-      /* 115px */
-      line-height: 0.23478;
-      /* 27px */ }
+      font-size: 2.8125em;
+      /* 45px */
+      line-height: 0.6;
+      /* 27px */
+      margin-bottom: 20px; }
     .about section.about-details h2 {
       color: #5C7484;
       font-size: 1.5em;
@@ -6691,6 +6703,15 @@ section.cd-scrolling-bg {
     .about section.about-details ul.questions li {
       list-style-type: circle;
       margin: 10px 25px; }
+    .about section.about-details .dnld {
+      color: #F8E4E4;
+      padding: 15px;
+      border: 1px solid #F8E4E4;
+      display: inline-block;
+      margin-top: 15px; }
+      .about section.about-details .dnld:hover {
+        color: #e8a7a7;
+        border-style: dotted; }
     .about section.about-details img {
       display: inline-block;
       margin-top: 50px; }
