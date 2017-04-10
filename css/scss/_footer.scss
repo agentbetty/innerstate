@@ -1,31 +1,16 @@
 footer {
-  margin-top:25px;
+  margin-top:50px;
 
   .folio {
     position: relative;
-    float:right;
-    height:35px;
-
-    .circle {
-      background-color: transparent;
-      border: 6px solid $white;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      position: absolute;
-      bottom:0;
-      right:0;
-      margin-bottom: -30px;
-    }
+    height:30px;
 
     p {
       @include font-size(10px, 13px);
       margin:0;
-      color:$white;
-    }
+      color:darken($babyslate, 10%);
 
-    p:nth-child(3) {
-      color:$yellow;
+      a {color:$white;}
     }
   }
 }

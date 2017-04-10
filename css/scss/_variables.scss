@@ -28,8 +28,8 @@ $worky: 		'Work Sans', Helvetica, arial, sans-serif;
 $gary:  		'EB Garamond', Georgia, serif;
 
 // mq
-// $mobile: ~"only screen and (max-width:520px)";
-// $tablet-p: ~"only screen and (min-width:521px) and (max-width:768px)";
-// $tablet-h: ~"only screen and (min-width:769px) and (max-width:992px)";
-// $desktop-s: ~"only screen and (min-width:992px) and (max-width:1200px)";
-
+$phone:0px;
+$tablet-p:520px;
+$tablet-h:768px;
+$desktop-s:992px;
+$desktop: 1200px;
