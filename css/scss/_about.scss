@@ -7,11 +7,24 @@
   background-attachment:fixed;
 
     section.about-details {
-      margin-top: 120px;
+      margin: 120px 0;
+
+      @include phone {
+        margin:75px 15px 15px;
+      }
+
+      @include tablet-p {
+        margin:75px 15px 15px;
+      }
 
       .row {
           div:nth-child(3) {
-            h2 {margin-top: 60px;}
+            h2 {
+              margin-top: 60px;
+
+              @include phone {margin-top:15px;}
+              @include tablet-p {margin-top:15px;}
+            }
 
             ul + h2 {
               margin-top: 35px;
@@ -21,20 +34,46 @@
 
       h1 {
         font-family: $gary;
-        color:$white;
+        color:$night;
         @include font-size(45px, 27px);
         margin-bottom: 20px;
+
+        @include phone {
+          @include font-size(30px, 33px);
+          margin:0;
+          text-align: center;
+        }
+
+        @include tablet-p {
+          @include font-size(30px, 33px);
+          text-align:center;
+        }
       }
 
       h2 {
         color:$slate;
         @include font-size(24px, 27px);
         margin-top:35px;
+
+        @include phone {
+          @include font-size(18px, 21px);
+          margin: 25px 0 0 0;
+        }
+
+        @include tablet-p {
+          @include font-size(21px, 24px);
+          margin: 25px 0 0 0;
+        }
       }
 
       p {
         margin:15px 0;
         @include font-size(15px, 18px);
+
+        @include phone {
+          margin-top:5px;
+          @include font-size(12px, 16px);
+        }
 
         em {
           color:darken($yellow, 15%);
@@ -42,14 +81,38 @@
         }
       }
 
-      ul.quick-list {
-        margin:15px 0;
-        text-transform: uppercase;
-        color:$yellow;
-        @include font-size(15px, 18px);
-      }
+      .wrap {
+
+          @include tablet-p {
+            float:left;
+            width:48%;
+            margin-right: 2%;
+          }
+
+          @include phone {
+            float:left;
+            width:48%;
+            margin-right: 2%;
+          }
+
+          ul {
+            margin:15px 0;
+            text-transform: uppercase;
+            color:darken($yellow, 7%);
+            @include font-size(15px, 18px);
+
+            @include phone {
+              @include font-size(12px, 16px);
+            }
+          } 
+        }
 
       ul.questions {
+
+      @include phone {
+        @include font-size(12px, 16px);
+      }
+
         li {
           list-style-type: circle;
           margin:10px 25px;
@@ -57,15 +120,23 @@
       }
 
       .dnld {
-        color:$babypink;
+        color:darken($babypink, 15%);
         padding:15px;
         border:1px solid $babypink;
         display: inline-block;
-        margin-top:15px;
+        margin-top:25px;
 
         &:hover {
-          color:darken($babypink, 15%);
-          border-style:dotted;
+          color:$white;
+          border-color:$white;
+        }
+
+        @include tablet-p { 
+          display: none;
+        }
+
+        @include phone { 
+          display: none;
         }
       }
 

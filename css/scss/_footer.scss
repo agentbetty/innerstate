@@ -4,6 +4,7 @@ footer {
   .folio {
     position: relative;
     height:30px;
+    text-align:center;
 
     p {
       @include font-size(10px, 13px);
