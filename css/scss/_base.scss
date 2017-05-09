@@ -2,10 +2,9 @@ html,
 body,
 .main {
   height:100%;
-  min-width:360px;
+  min-width:340px;
   min-height: 480px;
 }
-
 // TODO:
 // hey! break these up into individual files
 // don't forget your proportional font / line height mixin
@@ -18,10 +17,15 @@ body,
 // resume
 // object fit fix for ie
 // happy browser for object-fit (ie) and vh/vw (opera)
+// add in flexbox for centering
 
 body {
   font-family: $worky;
   color:$night;
+
+  @include tablet-p {border-top:10px solid yellow;}
+  @include tablet-h {border-top:10px solid purple;}
+  @include desktop-s {border-top:10px solid green;}
 
   // – – – – – – – – – – general styles
   h1, h2, h3, p {
@@ -35,32 +39,34 @@ body {
 
   li {
     list-style-type: none;
-    padding:2px;
+    padding:2px 0;
   }
 
   img{
     max-width:100%;
   }
 
-  a:link {color:$hotpink;}
-  a:visited {color:$hotpink;}
-  a:hover {border-bottom:1px solid $yellow;text-decoration:none;}
-  a:active {color:$hotpink;} 
-  a:focus {border-bottom:1px solid $yellow;}
+  a:link {color: $hotpink;}
+  a:visited {color: $hotpink;}
+  a:hover {color: $yellow;text-decoration:none;}
+  a:active {color: $hotpink;} 
+  a:focus {color: $yellow;}
 
   // – – – – – – – – – – global
   a.arrow {
+    background:transparent url('/img/arrow-down.svg') no-repeat;
     height:40px;
     width:40px;
     display: block;
-    background:transparent url('/img/arrow-down.svg') no-repeat;
     position:absolute;
     bottom:50px;
 
     &:hover {
       background:transparent url('/img/arrow-down-on.svg') no-repeat;
       border-bottom-width:0;
-    } 
+    }
+
+    @include phone {display:none;} 
   }
 
   aside {
@@ -68,24 +74,22 @@ body {
     color:$salon;
     text-transform: uppercase; 
     margin-bottom:2px;
+
+    @include phone {
+      @include font-size(12px, 15px);
+    }
+    @include tablet-p {
+      @include font-size(12px, 15px);
+    }
   }
 
   .color-wrap {
-    background-color: $khaki;
     height:100vh;
 
     img {
       width:95%;
       float:right;
     }
-  }
-
-  .pattern-wrap {
-    background: transparent url('/img/patterns/circles-and-roundabouts.gif') repeat;
-  }
-
-  .texture-wrap {
-    background: lighten($khaki, 2%);
   }
 
    .vertical-align { // – – – – – – – – – – vertical align
@@ -99,6 +103,7 @@ body {
 
 		section.identity {
 			text-align:center;
+      background-color:$night;
       background-image: url('/img/bg-home.jpg');
 
 			h1 {
@@ -106,12 +111,48 @@ body {
 				@include font-size(115px, 125px);
 				font-family: $gary;
         padding:20% 0 0;
+
+        @include phone {
+          @include font-size(45px, 48px);
+          padding-top:60%;
+        }
+
+        @include tablet-p {
+          @include font-size(50px, 55px);
+          padding-top:40%;
+        }
+
+        @include tablet-h {
+          @include font-size(75px, 85px);
+          padding-top:40%;
+        }
+
+        @include desktop-s {
+          @include font-size(75px, 85px); 
+          padding-top:30%;
+        }
 			}
 
 			h2.roles {
         display:none;
         @include font-size(27px, 30px);
         font-weight: 300;
+
+        @include phone {
+          @include font-size(21px, 24px);
+        }
+
+        @include tablet-p {
+          @include font-size(18px, 21px);
+        }
+
+        @include tablet-h {
+          @include font-size(21px, 24px);
+        }
+
+        @include desktop-s {
+          @include font-size(21px, 24px);
+        }
 
         span {
           display:inline-block;
@@ -123,7 +164,23 @@ body {
         }
 			}
 
-        a.arrow { margin-left:50%; }
+        a.arrow { 
+          left:50%;
+          margin-left:-20px; 
+        }
+
+        .contact {          
+          h3 {  
+            color:$white;
+            @include font-size(15px, 18px);
+            text-align: center;
+            font-weight: 300;
+            position: absolute;
+            bottom: 50px;
+            width:100%;
+            margin:0 auto;
+          }
+        }
 		}
 
     section.feature {
@@ -132,7 +189,7 @@ body {
         position: absolute;
         top: 50%;
         left:50%;
-        margin-left:-193px;
+        margin-left:-178px;
         margin-top:-75px;
         z-index: 2;
       }
@@ -150,34 +207,59 @@ body {
         height:100%;
         min-height: 400px;
         padding:15% 0 0;
-        top: 50%;
         top:-50%;
         margin-top:15%; 
 
+        @include phone {
+          padding-top:5%;
+          margin-top:0;
+        }
+
+        @include desktop-s {
+          min-height:300px;
+        }
+
         h2 {
           margin:0 0 100px 0;
+
+          @include phone {
+            @include font-size(24px, 27px);
+            margin:0 0 25px;
+          }
+
+          @include tablet-p {
+            @include font-size(18px, 21px);
+            margin:0 0 25px;
+          }
+
+          @include desktop-s {
+            @include font-size(21px, 24px);
+            margin:0 0 50px;
+          }
         }
 
-        h3 {
+        h3, ul {
           @include font-size(15px, 18px);
           margin:0 0 25px 0;
+          font-weight:300;
+          color:$slate;
         }
         
-        ul {
-          @include font-size(21px, 24px);
-          font-family: $gary;
-        }
-      }
-      
-      .arrow {bottom:25px;}
-
-      .project-bio {
-
         .intro {
-          @include font-size(27px, 30px);
+          @include font-size(24px, 27px);
           font-weight: 300;
           max-width: 500px;
           margin-right:50px;
+          color:$slate;
+
+          @include phone {
+            @include font-size(18px, 21px);
+            margin:25px 0 0;
+          }
+          @include desktop-s {
+            @include font-size(18px, 21px);
+            margin-right:0;
+          }
         }
 
         .more {
@@ -185,68 +267,101 @@ body {
           font-family: $gary;
           max-width: 500px;
           margin:15px 50px 0 0;
-        } 
-      }
+          color:$slate;
 
+          @include phone {
+            @include font-size(15px, 18px);
+            margin-right:0;
+          }
+
+          @include desktop-s {
+            @include font-size(15px, 18px);
+            margin-right:0;
+          }
+        }
+      }
+      
+      .arrow {bottom:25px;}
+ 
       #three {
         position: relative;
 
-        .previous, .next {
-          background-color:transparent;
-          border:25px solid $white;
-          position:absolute;
-          z-index: 10;
-          right:-40px;
-          height:75px;
-          width:75px;
-          border-radius: 75px;
-          @include font-size(21px, 24px);
-          font-family: $gary;
-          bottom:100px;
-          font-style:italic;
+        // .previous, .next {
+        //   background-color:transparent;
+        //   border:25px solid $white;
+        //   position:absolute;
+        //   z-index: 10;
+        //   right:-40px;
+        //   height:75px;
+        //   width:75px;
+        //   border-radius: 75px;
+        //   @include font-size(21px, 24px);
+        //   font-family: $gary;
+        //   bottom:100px;
+        //   font-style:italic;
 
-          a {
-            text-align: center;
-            font-weight: bold;
-            display: block;
-            margin-left:-100px;
-            color:$yellow;
-            width:100px;
-          }
-        }
+        //   a {
+        //     text-align: center;
+        //     font-weight: bold;
+        //     display: block;
+        //     margin-left:-100px;
+        //     color:$yellow;
+        //     width:100px;
+        //   }
+        // }
 
-        .previous {
-          left:0;
+        // .previous {
+        //   left:0;
 
-          a {
-            margin-left:35px;
-          }
-        }
+        //   a {
+        //     margin-left:35px;
+        //   }
+        // }
 
           .pattern-wrap {
+            background: transparent url('/img/ghel/ghel-bg.jpg') repeat;
 
-          img {
-            display: block;
-            height:95vh; 
-            margin-left:-150px; 
-            margin-top:75px;
-            float:left;
-          }
+            img {
+              display: block; 
+              margin:50px auto;
 
-          .project-basics {
-            float:left;
-            margin-left:-95px;
-            margin-top:0;
-            padding-top:10%;
-
-            h3 {
-              @include font-size(21px, 24px);
-              font-family:$gary;
-              font-style: italic;
+              @include phone {
+                margin:0;
+              }
             }
-          }
         }
       }
     }
 	}
+}
+
+#two {
+  background: linear-gradient(
+    to right, 
+    darken($khaki, 5%) 0%, 
+    darken($khaki, 5%) 50%, 
+    $white 50%, 
+    $white 100%
+  );
+
+  @include phone {
+    background: linear-gradient(
+    to right, 
+    lighten($khaki, 5%) 0%, 
+    lighten($khaki, 5%) 50%, 
+    lighten($khaki, 5%) 50%, 
+    lighten($khaki, 5%) 100%
+  );
+  }
+
+  img {
+    display:block;
+    padding-top:20%;
+
+    @include phone {
+      padding-top: 35px;
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
 }

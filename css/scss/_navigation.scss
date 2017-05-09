@@ -69,33 +69,48 @@ padding: 0;
   border-left: 1px solid lighten($night, 3%);
   background-color: rgba(0, 0, 0, 0.9);
 
-  @include phone {width:250px;}
-
   ul {
     text-align: right;
     font-weight: 300;
+    @include font-size(21px, 21px);
 
     h4 {
       margin:0;
-      font-weight: normal;
+      font-weight: 300;
+    }
+
+    h5 {
+      color:darken($light-grey, 60%);
+      @include font-size(12px, 15px);
     }
 
     li {
-      margin-top:15px;
+      margin:15px 0;
 
       a {
-        color:$white;
+        color:lighten($hotpink, 5%);
+
         &:hover {
           border-bottom-width:0;
           color:lighten($fuschia, 10%);
+          background: -webkit-linear-gradient(45deg, lighten($fuschia, 10%), $fuschia);
+          background: linear-gradient(45deg, lighten($fuschia, 10%), $fuschia);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
 
-      ul {
-        li {
-          margin-top:5px;
+      .hi {
+          background: -webkit-linear-gradient(45deg, lighten($hotpink, 10%), $orange);
+          background: linear-gradient(45deg, lighten($hotpink, 10%), $orange);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
 
-          a {color:lighten($hotpink, 10%);}
+        &:hover {
+          background: -webkit-linear-gradient(45deg, lighten($fuschia, 10%), $fuschia);
+          background: linear-gradient(45deg, lighten($fuschia, 10%), $fuschia);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
     }
@@ -123,8 +138,6 @@ padding: 0;
 #drawer-toggle:checked ~ #drawer-toggle-label, 
 #drawer-toggle:checked ~ header { 
   right: 300px; 
-
-  @include phone {right:260px;}
 } 
 
 #drawer-toggle:checked ~ #drawer { 
@@ -164,15 +177,13 @@ nav.navbar {
     a.navbar-brand {
       padding:20px 15px 0;
 
-      &:hover {border-bottom-width:0;}
+      @include phone {display:none;}
 
-      @include phone {
-        width:75px;
-      }
+      &:hover {border-bottom-width:0;}
 
       div.circle {
           background-color: transparent;
-          border: 6px solid $white;
+          border: 6px solid lighten($slate, 35%);
           width: 25px;
           height: 25px;
           border-radius: 50%;
@@ -183,11 +194,10 @@ nav.navbar {
       p {
         @include font-size(10px, 13px);
         margin:0;
-        color:$white;
+        color:lighten($slate, 35%);
       }
 
       p + p {
-        color: lighten($slate, 25%);
 
         @include phone {display:none;}
       }
@@ -201,6 +211,11 @@ nav.navbar {
     padding-bottom:15px;
 
     a.navbar-brand {
+
+      @include phone {
+        display:inline-block;
+        width:75px;
+      }
 
       div.circle {
           border: 6px solid $night;
