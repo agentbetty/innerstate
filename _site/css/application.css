@@ -6329,21 +6329,14 @@ template {
         color: #e80059; }
         #drawer ul li a:hover {
           border-bottom-width: 0;
-          color: #ff1fa9;
-          background: -webkit-linear-gradient(45deg, #ff1fa9, #EB0091);
-          background: linear-gradient(45deg, #ff1fa9, #EB0091);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; }
+          color: #ff1fa9; }
       #drawer ul li .hi {
-        background: -webkit-linear-gradient(45deg, #ff0263, #FF7D0D);
-        background: linear-gradient(45deg, #ff0263, #FF7D0D);
+        background: -webkit-linear-gradient(45deg, white, #F8E4E4);
+        background: linear-gradient(45deg, white, #F8E4E4);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
         #drawer ul li .hi:hover {
-          background: -webkit-linear-gradient(45deg, #ff1fa9, #EB0091);
-          background: linear-gradient(45deg, #ff1fa9, #EB0091);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; }
+          color: #ff1fa9; }
 
 /* actual page content pane */
 #page-content {
@@ -6396,7 +6389,7 @@ nav.navbar .navbar-header a.navbar-brand {
     border-bottom-width: 0; }
   nav.navbar .navbar-header a.navbar-brand div.circle {
     background-color: transparent;
-    border: 6px solid #c0cbd3;
+    border: 6px solid #fff;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -6408,7 +6401,11 @@ nav.navbar .navbar-header a.navbar-brand {
     line-height: 1.3;
     /* 13px */
     margin: 0;
-    color: #c0cbd3; }
+    color: #758e9e;
+    background: -webkit-linear-gradient(45deg, #eaeaea, #758e9e);
+    background: linear-gradient(45deg, #eaeaea, #758e9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   @media (min-width: 0px) and (max-width: 519px) {
     nav.navbar .navbar-header a.navbar-brand p + p {
       display: none; } }
@@ -6416,6 +6413,12 @@ nav.navbar .navbar-header a.navbar-brand {
 .about nav.navbar {
   background-color: rgba(217, 222, 225, 0.9);
   padding-bottom: 15px; }
+  @media (min-width: 1200px) {
+    .about nav.navbar {
+      background-color: transparent; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .about nav.navbar {
+      background-color: transparent; } }
   @media (min-width: 0px) and (max-width: 519px) {
     .about nav.navbar a.navbar-brand {
       display: inline-block;
@@ -6453,9 +6456,7 @@ footer {
       line-height: 1.3;
       /* 13px */
       margin: 0;
-      color: #c7c7cd; }
-      footer .folio p a {
-        color: #fff; }
+      color: #F8E4E4; }
 
 html,
 body,
@@ -6801,6 +6802,26 @@ body {
     bottom: 25px; }
   body.home section.feature #three, body.worka section.feature #three {
     position: relative; }
+    body.home section.feature #three .previous, body.home section.feature #three .next, body.worka section.feature #three .previous, body.worka section.feature #three .next {
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      height: 160px;
+      width: 75px;
+      font-size: 1.125em;
+      /* 18px */
+      line-height: 1.16667;
+      /* 21px */
+      bottom: 0;
+      padding-right: 15px; }
+      body.home section.feature #three .previous a, body.home section.feature #three .next a, body.worka section.feature #three .previous a, body.worka section.feature #three .next a {
+        color: #D1B100; }
+        body.home section.feature #three .previous a span, body.home section.feature #three .next a span, body.worka section.feature #three .previous a span, body.worka section.feature #three .next a span {
+          color: #e8a7a7; }
+    body.home section.feature #three .previous, body.worka section.feature #three .previous {
+      left: 0; }
+      body.home section.feature #three .previous a, body.worka section.feature #three .previous a {
+        margin-left: 35px; }
     body.home section.feature #three .pattern-wrap, body.worka section.feature #three .pattern-wrap {
       background: transparent url("/img/ghel/ghel-bg.jpg") repeat; }
       body.home section.feature #three .pattern-wrap img, body.worka section.feature #three .pattern-wrap img {
@@ -6865,7 +6886,7 @@ body {
     background: transparent url("/img/arrow-down-on.svg") no-repeat; }
 
 .about {
-  background: #e2e2e5 url("/img/bg-about.jpg") no-repeat center bottom;
+  background: #F8E4E4 url("/img/bg-about.jpg") no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

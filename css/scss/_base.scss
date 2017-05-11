@@ -5,18 +5,13 @@ body,
   min-width:340px;
   min-height: 480px;
 }
-// TODO:
-// hey! break these up into individual files
 // don't forget your proportional font / line height mixin
 // test the bootstrap js, use and or delete
 // sanitize this mess
-// animations
 // retina images
 // elizabethm email signature update
 // don't forget to maximize jekyll data
-// resume
-// object fit fix for ie
-// happy browser for object-fit (ie) and vh/vw (opera)
+// object fit fix for ie + happy browser for object-fit (ie) and vh/vw (opera)
 // add in flexbox for centering
 
 body {
@@ -286,37 +281,32 @@ body {
       #three {
         position: relative;
 
-        // .previous, .next {
-        //   background-color:transparent;
-        //   border:25px solid $white;
-        //   position:absolute;
-        //   z-index: 10;
-        //   right:-40px;
-        //   height:75px;
-        //   width:75px;
-        //   border-radius: 75px;
-        //   @include font-size(21px, 24px);
-        //   font-family: $gary;
-        //   bottom:100px;
-        //   font-style:italic;
+        .previous, .next {
+          position:absolute;
+          z-index: 10;
+          right:0;
+          height:160px;
+          width:75px;
+          @include font-size(18px, 21px);
+          bottom:0;
+          padding-right:15px;
 
-        //   a {
-        //     text-align: center;
-        //     font-weight: bold;
-        //     display: block;
-        //     margin-left:-100px;
-        //     color:$yellow;
-        //     width:100px;
-        //   }
-        // }
+          a {
+            color:$yellow;
 
-        // .previous {
-        //   left:0;
+            span {
+              color:darken($babypink, 15%);
+            }
+          }
+        }
 
-        //   a {
-        //     margin-left:35px;
-        //   }
-        // }
+        .previous {
+          left:0;
+
+          a {
+            margin-left:35px;
+          }
+        }
 
           .pattern-wrap {
             background: transparent url('/img/ghel/ghel-bg.jpg') repeat;

@@ -93,24 +93,17 @@ padding: 0;
         &:hover {
           border-bottom-width:0;
           color:lighten($fuschia, 10%);
-          background: -webkit-linear-gradient(45deg, lighten($fuschia, 10%), $fuschia);
-          background: linear-gradient(45deg, lighten($fuschia, 10%), $fuschia);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
         }
       }
 
       .hi {
-          background: -webkit-linear-gradient(45deg, lighten($hotpink, 10%), $orange);
-          background: linear-gradient(45deg, lighten($hotpink, 10%), $orange);
+          background: -webkit-linear-gradient(45deg, lighten($white, 10%), $babypink);
+          background: linear-gradient(45deg, lighten($white, 10%), $babypink);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
 
         &:hover {
-          background: -webkit-linear-gradient(45deg, lighten($fuschia, 10%), $fuschia);
-          background: linear-gradient(45deg, lighten($fuschia, 10%), $fuschia);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color:lighten($fuschia, 10%);
         }
       }
     }
@@ -183,7 +176,7 @@ nav.navbar {
 
       div.circle {
           background-color: transparent;
-          border: 6px solid lighten($slate, 35%);
+          border: 6px solid $white;
           width: 25px;
           height: 25px;
           border-radius: 50%;
@@ -194,7 +187,11 @@ nav.navbar {
       p {
         @include font-size(10px, 13px);
         margin:0;
-        color:lighten($slate, 35%);
+        color:$babyslate;
+        background: -webkit-linear-gradient(45deg, $light-grey, $babyslate);
+        background: linear-gradient(45deg, $light-grey, $babyslate);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       p + p {
@@ -209,6 +206,9 @@ nav.navbar {
   nav.navbar {
     background-color:rgba(217, 222, 225, 0.9);
     padding-bottom:15px;
+
+    @include desktop {background-color: transparent;}
+    @include tablet-h {background-color: transparent;}
 
     a.navbar-brand {
 
