@@ -6819,9 +6819,8 @@ body {
         body.home section.feature #three .previous a span, body.home section.feature #three .next a span, body.worka section.feature #three .previous a span, body.worka section.feature #three .next a span {
           color: #e8a7a7; }
     body.home section.feature #three .previous, body.worka section.feature #three .previous {
-      left: 0; }
-      body.home section.feature #three .previous a, body.worka section.feature #three .previous a {
-        margin-left: 35px; }
+      left: 0;
+      padding-left: 15px; }
     body.home section.feature #three .pattern-wrap, body.worka section.feature #three .pattern-wrap {
       background: transparent url("/img/ghel/ghel-bg.jpg") repeat; }
       body.home section.feature #three .pattern-wrap img, body.worka section.feature #three .pattern-wrap img {
