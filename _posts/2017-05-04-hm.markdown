@@ -1,0 +1,27 @@
+---
+layout: work
+permalink: /project/healthmap
+keyword: work
+title: HealthMAP
+logo: /img/hm/hm-logo.png
+logo-alt: HealthMap logo
+hero: /img/hm/hm-hero.jpg
+hero-alt: x-x-x-x-x-x
+funding: Emory University,<br>The Center for Behavioral Health Policy Studies
+year: 2016
+link: https://squishymedia.com/project/healthmap
+link-print: Android App
+role-1: Brand Strategist
+role-2: Information Architect
+role-3: Art Director
+two-1: /img/hm/hm-app-1.png
+two-1-alt: HealthMAP Android application
+two-2: /img/hm/hm-app-2.png
+two-2-alt: HealthMAP application
+bio-1: x-x-x-x-x-x-x-x-.
+bio-2: x-x-x-x-x-x-x-x-.
+bio-3: x-x-x-x-x-x-x-x-.
+three: /img/emory/healthMAP-3.png
+three-alt: HealthMAP application
+---
+

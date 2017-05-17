@@ -1,0 +1,26 @@
+---
+layout: work
+permalink: /project/asa24
+keyword: work
+title: Automated Self-Administered Recall System (ASA24)
+logo: /img/asa24/asa24-logo.png
+logo-alt: ASA24 logo
+hero: /img/asa24/asa24-hero.jpg
+hero-alt: x-x-x-
+funding: HHS, NIH, NCI, and USA.gov
+year: 2013&ndash;2016
+link: https://asa24.nci.nih.gov/2016/language
+link-print: asa24.nci.nih.gov
+role-1: Brand Strategist
+role-2: UX Designer
+role-3: Front-End Developer
+two-1: /img/asa24/asa24-ipad-2.png
+two-1-alt: ASA24 x-x-x-x-x- on iPad
+two-2: /img/ghel/ghel-ipad-1.png
+two-2-alt: ASA24 x-x-x-x-x- on iPad
+bio-1: The Automated .  . x-x-x-x-x-x-x-x-.
+bio-2: x-x-x-x-x-x-x-x-.
+bio-3: x-x-x-x-x-x-x-x-.
+three: /img/asa24/asa24-desktop.png
+three-alt: ASA24 home page on a desktop
+---

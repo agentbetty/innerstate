@@ -1,0 +1,27 @@
+---
+layout: work
+permalink: /project/tlp
+keyword: work
+title: Teacher &amp; Leadership Programs
+logo: /img/tlp/tlp-logo.png
+logo-alt: Teacher &amp; Leadership Programs logo
+hero: /img/tlp/tlp-hero.jpg
+hero-alt: x-x-x-
+funding: Department of Education &amp; Westat
+year: 2016&ndash;2017
+link: http://www.tlpcommunity.org
+link-print: tlpcommunity.org
+role-1: Brand Strategist
+role-2: Art Director
+role-3: UX Designer
+two-1: /img/tlp/tlp-ipad-1.png
+two-1-alt: Teacher and Leadership Programs on iPad
+two-2: 
+two-2-alt: Teacher and Leadership Programs on iPad
+bio-1: x-x-x-x-x-x-x-x-.
+bio-2: x-x-x-x-x-x-x-x-.
+bio-3: x-x-x-x-x-x-x-x-.
+three: /img/tlp/tlp-desktop.png
+three-alt: Teacher and Leadership Programs home page on a desktop
+
+---

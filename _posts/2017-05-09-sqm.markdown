@@ -1,0 +1,27 @@
+---
+layout: work
+permalink: /project/sqm
+keyword: work
+title: SquishyMedia
+logo: /img/sqm/sqm-logo.png
+logo-alt: SquishyMedia logo
+hero: /img/sqm/sqm-hero.jpg
+hero-alt: x-x-x-
+funding: SquishyMedia (internal project)
+year: 2016
+link: http://www.sqm.io
+link-print: sqm.io
+role-1: Brand Strategist
+role-2: Art Director
+role-3: Front-End Developer
+two-1: /img/sqm/sqm-ipad-1.png
+two-1-alt: sqm.io on iPad
+two-2: /img/sqm/sqm-ipad-2.png
+two-2-alt: sqm.io on iPad
+bio-1: x-x-x-x-x-x-x-x-.
+bio-2: x-x-x-x-x-x-x-x-.
+bio-3: x-x-x-x-x-x-x-x-.
+three: /img/sqm/sqm-desktop.png
+three-alt: sqm.io home page on a desktop
+
+---

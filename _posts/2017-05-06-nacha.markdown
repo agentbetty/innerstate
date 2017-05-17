@@ -1,0 +1,26 @@
+---
+layout: work
+permalink: /project/nacha
+keyword: work
+title: NACHA
+logo: /img/nacha/nacha-logo.png
+logo-alt: NACHA logo
+hero: /img/nacha/nacha-hero.jpg
+hero-alt: x-x-x-x-x-x
+funding: National Automated Clearing House Association (NACHA)
+year: 2012&ndash;2016
+link: http://www.nacha.org
+link-print: nacha.org
+role-1: Communication Strategist
+role-2: UX Designer
+role-3: Front-End Developer
+two-1: /img/nacha/nacha-ipad-1.png
+two-1-alt: NACHA on iPad
+two-2: /img/nacha/nacha-ipad-2.png
+two-2-alt: NACHA on iPad
+bio-1: x-x-x-x-x-x-x-x-.
+bio-2: x-x-x-x-x-x-x-x-.
+bio-3: x-x-x-x-x-x-x-x-.
+three: /img/nacha/nacha-desktop.png
+three-alt: NACHA home page on a desktop
+---

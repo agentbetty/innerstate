@@ -1,0 +1,26 @@
+---
+layout: work
+permalink: /project/blp
+keyword: work
+title: Bend La-Pine School District
+logo: /img/blp/blp-logo.png
+logo-alt: Bend La-Pine logo
+hero: /img/blp/blp-hero.jpg
+hero-alt: Teachers leading children in learning about gardening
+funding: Bend La-Pine Schools
+year: 2015
+link: https://www.bend.k12.or.us
+link-print: bend.k12.or.us
+role-1: Brand Strategist
+role-2: UX Designer
+role-3: Information Architect
+two-1: img/blp/blp-ipad-2.png
+two-1-alt: Bend La-Pine School District on iPad
+two-2: img/blp/blp-ipad-1.png
+two-2-alt: Bend La-Pine School District on iPad
+bio-1: x-x-x-x-x-x-x-x-.
+bio-2: x-x-x-x-x-x-x-x-.
+bio-3: x-x-x-x-x-x-x-x-.
+three: /img/blp/blp-desktop.png
+three-alt: Bend La-Pine School District home page on a desktop
+---

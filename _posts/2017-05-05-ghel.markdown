@@ -1,0 +1,26 @@
+---
+layout: work
+permalink: /project/ghel
+keyword: work
+title: Global Health eLearning Center (GHeL)
+logo: /img/ghel/ghel-logo.png
+logo-alt: Global Health eLearning logo
+hero: /img/ghel/ghel-hero.jpg
+hero-alt: Image of mother and child
+funding: USAID, K4Health, and Johns Hopkins University
+year: 2016&ndash;2017
+link: http://www.globalhealthlearning.org
+link-print: globalhealthlearning.org
+role-1: Brand Strategist
+role-2: Art Director
+role-3: Information Architect
+two-1: /img/ghel/ghel-ipad-2.png
+two-1-alt: Global Health eLearning learning dashboard on iPad
+two-2: /img/ghel/ghel-ipad-1.png
+two-2-alt: Global Health eLearning learning dashboard on iPad
+bio-1: GHeL provides online courses and certificate programs for global health professionals.
+bio-2: I expanded their underutilized brand with a fresh color palette and strategy alongside a new, vibrant visual refresh. We also implemented course and certificate recommendations, faceted searches, card filtering, and an upgraded dashboard to support these health professionals in their learning.
+bio-3: Alongside extending the brand and creating a refresh, I worked with a team to flesh out wire frames for a holistic and intuitive user experience.
+three: /img/ghel/ghel-desktop.png
+three-alt: Global Health eLearning home page on a desktop
+---

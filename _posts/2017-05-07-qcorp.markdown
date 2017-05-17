@@ -1,0 +1,26 @@
+---
+layout: work
+permalink: /project/qcorp
+keyword: work
+title: Q Corp
+logo: /img/qcorp/qcorp-logo.png
+logo-alt: Q Corp logo
+hero: /img/qcorp/qcorp-hero.jpg
+hero-alt: x-x-x-x-x-x
+funding: Oregon Health Care Quality Corporation (Q Corp)
+year: 2011&ndash;2014
+link: http://www.q-corp.org/
+link-print: q-corp.org
+role-1: Brand Strategist
+role-2: UX Designer
+two-1: /img/qcorp/qcorp-ipad-1.png
+two-1-alt: Q Corp on iPad
+two-2: /img/qcorp/qcorp-ipad-2.png
+two-2-alt: Q Corp on iPad
+bio-1: x-x-x-x-x-x-x-x-.
+bio-2: x-x-x-x-x-x-x-x-.
+bio-3: x-x-x-x-x-x-x-x-.
+three: /img/qcorp/qcorp-desktop.png
+three-alt: Q Corp home page on a desktop
+
+---

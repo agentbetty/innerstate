@@ -1,0 +1,28 @@
+---
+layout: work
+permalink: /project/epay
+keyword: work
+title: Electronic Payments
+logo: /img/ep/ep-logo.png
+logo-alt: Direct Deposit and Direct Payment logos
+hero: /img/ep/ep-hero.jpg
+hero-alt: x-x-x-x-x-x
+funding: National Automated Clearing House Association (NACHA)
+year: 2011&ndash;2016
+link: https://electronicpayments.org
+link-print: electronicpayments.org
+role-1: Brand Strategist
+role-2: Information Architect
+role-3: Content Strategist
+role-4: UX Designer
+role-5: Front-End Developer
+two-1: /img/ep/ep-ipad-2.png
+two-1-alt: Electronic Payments on iPad
+two-2: /img/ep/ep-ipad-1.png
+two-2-alt: Electronic Payments on iPad
+bio-1: x-x-x-x-x-x-x-x-.
+bio-2: x-x-x-x-x-x-x-x-.
+bio-3: x-x-x-x-x-x-x-x-.
+three: /img/ep/ep-desktop.png
+three-alt: Electronic Payments home page on a desktop
+---

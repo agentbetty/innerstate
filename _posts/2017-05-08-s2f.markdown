@@ -1,0 +1,27 @@
+---
+layout: work
+permalink: /project/s2f
+keyword: work
+title: Start2farm
+logo: /img/s2f/s2f-logo.png
+logo-alt: Start2farm logo
+hero: /img/s2f/s2f-hero.jpg
+hero-alt: x-x-x-x-x-x
+funding: USDA, NIFA, National Agriculture Library, and the Farm Bureau
+year: 2011
+link: 
+link-print: start2farm.gov (retired)
+role-1: Brand Strategist
+role-2: UX Designer
+role-3: Front-End Developer
+two-1: /img/s2f/s2f-ipad-1.png
+two-1-alt: Start2farm on iPad
+two-2: /img/s2f/s2f-ipad-2.png
+two-2-alt: Start2farm on iPad
+bio-1: x-x-x-x-x-x-x-x-.
+bio-2: x-x-x-x-x-x-x-x-.
+bio-3: x-x-x-x-x-x-x-x-.
+three: /img/s2f/s2f-desktop.png
+three-alt: Start2farm home page on a desktop
+
+---
