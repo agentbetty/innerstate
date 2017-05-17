@@ -10,7 +10,6 @@ body,
 // sanitize this mess
 // retina images
 // elizabethm email signature update
-// don't forget to maximize jekyll data
 // object fit fix for ie + happy browser for object-fit (ie) and vh/vw (opera)
 // add in flexbox for centering
 
@@ -94,7 +93,7 @@ body {
     }
 
   // – – – – – – – – – – home layout (+ featured project)
-	&.home, &.worka {
+	&.home, &.work {
 
 		section.identity {
 			text-align:center;
@@ -184,8 +183,8 @@ body {
         position: absolute;
         top: 50%;
         left:50%;
-        margin-left:-178px;
-        margin-top:-75px;
+        margin-left:-195px;
+        margin-top:-195px;
         z-index: 2;
       }
 
@@ -289,24 +288,29 @@ body {
           width:75px;
           @include font-size(18px, 21px);
           bottom:0;
-          padding-right:15px;
+          padding-right:25px;
 
           a {
             color:$yellow;
 
+            &:hover {color:$hotpink;}
+
             span {
               color:darken($babypink, 15%);
+
+              &:hover {color:black;}
             }
           }
         }
 
         .previous {
           left:0;
-          padding-left:15px;
+          padding-left:25px;
         }
 
           .pattern-wrap {
             background: transparent url('/img/ghel/ghel-bg.jpg') repeat;
+            border-bottom:1px solid $hotpink;
 
             img {
               display: block; 
@@ -331,14 +335,14 @@ body {
     $white 100%
   );
 
-  @include phone {
-    background: linear-gradient(
-    to right, 
-    lighten($khaki, 5%) 0%, 
-    lighten($khaki, 5%) 50%, 
-    lighten($khaki, 5%) 50%, 
-    lighten($khaki, 5%) 100%
-  );
+    @include phone {
+      background: linear-gradient(
+      to right, 
+      lighten($khaki, 5%) 0%, 
+      lighten($khaki, 5%) 50%, 
+      lighten($khaki, 5%) 50%, 
+      lighten($khaki, 5%) 100%
+    );
   }
 
   img {

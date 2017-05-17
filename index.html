@@ -18,34 +18,35 @@ keyword: home
 		<a class="arrow" href="#one">&nbsp;</a>
 	</section>
 
+	{% for feature in site.data.feature %}
 	<section class="cd-scrolling-bg feature hide-phone">
 		<div class="container-fluid">
 			<div class="row" id="one">
 				<div class="col-xs-8 no-pad">
-					<img class="logo" src="/img/ghel/ghel-logo.png" alt="Global Health eLearning logo">
-					<img class="cover" src="/img/ghel/ghel-hero.jpg" alt="Image of mother and child with Global Health eLearning Center logo">
+					<img class="logo" src="{{feature.logo}}" alt="{{feature.logo-alt}}">
+					<img class="cover" src="{{feature.hero}}" alt="{{feature.hero-alt}}">
 				</div>
 				<div class="col-xs-4 height">
 						<div class="project-basics">
 							<aside>Client</aside>
-							<h2>Global Health eLearning<br>Center</h2>
+							<h2>{{feature.title}}</h2>
 
 							<aside>Funding</aside>
-							<h3>USAID, K4Health, and Johns Hopkins University</h3>
+							<h3>{{feature.funding}}</h3>
 							
 							<aside>Year</aside>
-							<h3>2016&ndash;2017</h3>
+							<h3>{{feature.year}}</h3>
 
 							<aside>Site</aside>
 							<h3>
-								<a href="http://www.globalhealthlearning.org" target="_blank">globalhealthlearning.org</a>
+								<a href="{{feature.link}}" target="_blank">{{feature.link-print}}</a>
 							</h3>
 
 							<aside>My Role</aside>
 							<ul>
-								<li>Brand Strategist</li>
-								<li>UX Designer</li>
-								<li>Information Architect</li>
+								<li>{{feature.role-1}}</li>
+								<li>{{feature.role-2}}</li>
+								<li>{{feature.role-3}}</li>
 						</div>
 					<a href="#two" class="arrow">&nbsp;</a>
 				</div>
@@ -53,40 +54,38 @@ keyword: home
 
 			<div class="row" id="two">
 				<div class="col-xs-4">
-					<img src="/img/ghel/ghel-ipad-2.png" alt="Global Health eLearning learning dashboard on iPad">
+					<img src="{{feature.two-1}}" alt="{{feature.two-1-alt}}">
 				</div>
 				<div class="col-xs-4">
-					<img src="/img/ghel/ghel-ipad-1.png" alt="Global Health eLearning learning dashboard on iPad">
+					<img src="{{feature.two-2}}" alt="{{feature.two-2-alt}}">
 				</div>
 
 				<div class="col-xs-4 height">
 					<div class="project-bio">
 						<aside>Client</aside>
-						<h2>Global Health eLearning<br>Center</h2>
+						<h2>{{feature.title}}</h2>
 
-						<p class="intro">GHeL provides online courses and certificate programs for global health professionals.</p>
-						<p class="more">I expanded their underutilized brand with a fresh color palette and strategy alongside a new, vibrant visual refresh. We also implemented course and certificate recommendations, faceted searches, card filtering, and an upgraded dashboard to support these health professionals in their learning.</p>
-						<p class="more">Alongside extending the brand and creating a refresh, I worked with a team to flesh out wire frames for a holistic and intuitive user experience.</p>
+						<p class="intro">{{feature.bio-1}}</p>
+						<p class="more">{{feature.bio-2}}</p>
+						<p class="more">{{feature.bio-3}}</p>
 					</div>
 					<a href="#three" class="arrow">&nbsp;</a>
 				</div>
 			</div>
 
 			<div class="row hide-phone" id="three">
-			<div class="previous">
-					<a href="#">prev project <span>&laquo;</span></a>
-				</div> 
 				<div class="next">
 					<a href="#">next project <span>&rarr;</span></a>
 				</div>
 
 				<div class="col-xs-12 pattern-wrap">
-					<a href="http://www.globalhealthlearning.org" target="_blank">
-						<img src="/img/ghel/ghel-desktop.png" alt="Global Health eLearning home page on a desktop">
+					<a href="{{feature.link}}" target="_blank">
+						<img src="{{feature.three}}" alt="{{feature.three-alt}}">
 					</a>
 				</div>
 			</div>
 		</div>
 	</section>
+	{% endfor %}
 </div>	
 

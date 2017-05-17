@@ -1,0 +1,79 @@
+---
+layout: default
+keyword: work
+---
+<main>
+		<section class="cd-scrolling-bg feature hide-phone">
+		<div class="container-fluid">
+			<div class="row" id="one">
+				<div class="col-xs-8 no-pad">
+					<img class="logo" src="{{page.logo}}" alt="{{page.logo-alt}}">
+					<img class="cover" src="{{page.hero}}" alt="{{page.hero-alt}}">
+				</div>
+				<div class="col-xs-4 height">
+						<div class="project-basics">
+							<aside>Client</aside>
+							<h2>{{page.title}}</h2>
+
+							<aside>Funding</aside>
+							<h3>{{page.funding}}</h3>
+							
+							<aside>Year</aside>
+							<h3>{{page.year}}</h3>
+
+							<aside>Site</aside>
+							<h3>
+								<a href="{{page.link}}" target="_blank">{{page.link-print}}</a>
+							</h3>
+
+							<aside>My Role</aside>
+							<ul>
+								<li>{{page.role-1}}</li>
+								<li>{{page.role-2}}</li>
+								<li>{{page.role-3}}</li>
+								<li>{{page.role-4}}</li>
+								<li>{{page.role-5}}</li>
+						</div>
+					<a href="#two" class="arrow">&nbsp;</a>
+				</div>
+			</div>
+
+			<div class="row" id="two">
+				<div class="col-xs-4">
+					<img src="{{page.two-1}}" alt="{{page.two-1-alt}}">
+				</div>
+				<div class="col-xs-4">
+					<img src="{{page.two-2}}" alt="{{page.two-2-alt}}">
+				</div>
+
+				<div class="col-xs-4 height">
+					<div class="project-bio">
+						<aside>Client</aside>
+						<h2>{{page.title}}</h2>
+
+						<p class="intro">{{page.bio-1}}</p>
+						<p class="more">{{page.bio-2}}</p>
+						<p class="more">{{page.bio-3}}</p>
+					</div>
+					<a href="#three" class="arrow">&nbsp;</a>
+				</div>
+			</div>
+
+			<div class="row hide-phone" id="three">
+			<div class="previous">
+					<a href="#">prev project <span>&larr;</span></a>
+				</div> 
+				<div class="next">
+					<a href="#">next project <span>&rarr;</span></a>
+				</div>
+
+				<div class="col-xs-12 pattern-wrap">
+					<a href="{{page.link}}" target="_blank">
+						<img src="{{page.three}}" alt="{{page.three-alt}}">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+

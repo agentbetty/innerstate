@@ -1,5 +1,4 @@
 footer {
-  margin-top:50px;
 
   @include phone {
     display: none;
@@ -8,12 +7,12 @@ footer {
   .folio {
     position: relative;
     height:30px;
-    text-align:center;
+    padding-top:10px;
 
     p {
       @include font-size(10px, 13px);
       margin:0;
-      color:$babypink;
+      color:$slate;
     }
   }
 }
