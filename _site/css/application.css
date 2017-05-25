@@ -6826,6 +6826,26 @@ body {
     body.home section.feature #three .pattern-wrap, body.work section.feature #three .pattern-wrap {
       background: transparent url("/img/ghel/ghel-bg.jpg") repeat;
       border-bottom: 1px solid #CE004F; }
+      body.home section.feature #three .pattern-wrap.asa24, body.work section.feature #three .pattern-wrap.asa24 {
+        background: transparent url("/img/asa24/asa24-bg.jpg") repeat; }
+      body.home section.feature #three .pattern-wrap.blp, body.work section.feature #three .pattern-wrap.blp {
+        background: transparent url("/img/s2f/s2f-bg.jpg") repeat; }
+      body.home section.feature #three .pattern-wrap.ep, body.work section.feature #three .pattern-wrap.ep {
+        background: transparent url("/img/ep/ep-bg.jpg") repeat; }
+      body.home section.feature #three .pattern-wrap.hm, body.work section.feature #three .pattern-wrap.hm {
+        background: transparent url("/img/hm/hm-bg.jpg") repeat; }
+      body.home section.feature #three .pattern-wrap.ghel, body.work section.feature #three .pattern-wrap.ghel {
+        background: transparent url("/img/ghel/ghel-bg.jpg") repeat; }
+      body.home section.feature #three .pattern-wrap.nacha, body.work section.feature #three .pattern-wrap.nacha {
+        background: transparent url("/img/nacha/nacha-bg.jpg") repeat; }
+      body.home section.feature #three .pattern-wrap.qcorp, body.work section.feature #three .pattern-wrap.qcorp {
+        background: transparent url("/img/qcorp/qcorp-bg.jpg") repeat; }
+      body.home section.feature #three .pattern-wrap.s2f, body.work section.feature #three .pattern-wrap.s2f {
+        background: transparent url("/img/s2f/s2f-bg.jpg") repeat; }
+      body.home section.feature #three .pattern-wrap.sqm, body.work section.feature #three .pattern-wrap.sqm {
+        background: transparent url("/img/sqm/sqm-bg.jpg") repeat; }
+      body.home section.feature #three .pattern-wrap.tlp, body.work section.feature #three .pattern-wrap.tlp {
+        background: transparent url("/img/tlp/tlp-bg.jpg") repeat; }
       body.home section.feature #three .pattern-wrap img, body.work section.feature #three .pattern-wrap img {
         display: block;
         margin: 50px auto; }
