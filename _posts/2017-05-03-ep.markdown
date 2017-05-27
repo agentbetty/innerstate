@@ -25,4 +25,5 @@ bio-2: x-x-x-x-x-x-x-x-.
 bio-3: x-x-x-x-x-x-x-x-.
 three: /img/ep/ep-desktop.png
 three-alt: Electronic Payments home page on a desktop
+colorClass: ep
 ---

@@ -22,5 +22,6 @@ bio-2: x-x-x-x-x-x-x-x-.
 bio-3: x-x-x-x-x-x-x-x-.
 three: /img/qcorp/qcorp-desktop.png
 three-alt: Q Corp home page on a desktop
+colorClass: qcorp
 
 ---

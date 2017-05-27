@@ -15,13 +15,13 @@ role-1: Brand Strategist
 role-2: Art Director
 role-3: UX Designer
 two-1: /img/tlp/tlp-ipad-1.png
-two-1-alt: Teacher and Leadership Programs on iPad
-two-2: 
-two-2-alt: Teacher and Leadership Programs on iPad
+two-1-alt: Teacher and Leadership Programs Resources landing page on iPad
+two-2: /img/tlp/tlp-ipad-2.png
+two-2-alt: Teacher and Leadership Programs Grant profile on iPad
 bio-1: x-x-x-x-x-x-x-x-.
 bio-2: x-x-x-x-x-x-x-x-.
 bio-3: x-x-x-x-x-x-x-x-.
-three: /img/tlp/tlp-desktop.png
+three: /img/tlp/tlp-desktop.jpg
 three-alt: Teacher and Leadership Programs home page on a desktop
-
+colorClass: tlp
 ---

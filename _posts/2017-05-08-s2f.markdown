@@ -23,5 +23,5 @@ bio-2: x-x-x-x-x-x-x-x-.
 bio-3: x-x-x-x-x-x-x-x-.
 three: /img/s2f/s2f-desktop.png
 three-alt: Start2farm home page on a desktop
-
+colorClass: s2f
 ---

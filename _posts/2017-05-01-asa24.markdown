@@ -23,4 +23,5 @@ bio-2: x-x-x-x-x-x-x-x-.
 bio-3: x-x-x-x-x-x-x-x-.
 three: /img/asa24/asa24-desktop.png
 three-alt: ASA24 home page on a desktop
+colorClass: asa24
 ---

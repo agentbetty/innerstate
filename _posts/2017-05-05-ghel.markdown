@@ -23,4 +23,5 @@ bio-2: I expanded their underutilized brand with a fresh color palette and strat
 bio-3: Alongside extending the brand and creating a refresh, I worked with a team to flesh out wire frames for a holistic and intuitive user experience.
 three: /img/ghel/ghel-desktop.png
 three-alt: Global Health eLearning home page on a desktop
+colorClass: ghel
 ---

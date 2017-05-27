@@ -21,7 +21,8 @@ two-2-alt: HealthMAP application
 bio-1: x-x-x-x-x-x-x-x-.
 bio-2: x-x-x-x-x-x-x-x-.
 bio-3: x-x-x-x-x-x-x-x-.
-three: /img/emory/healthMAP-3.png
+three: /img/hm/hm-desktop.png
 three-alt: HealthMAP application
+colorClass: hm
 ---
 

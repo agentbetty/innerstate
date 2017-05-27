@@ -23,4 +23,6 @@ bio-2: x-x-x-x-x-x-x-x-.
 bio-3: x-x-x-x-x-x-x-x-.
 three: /img/nacha/nacha-desktop.png
 three-alt: NACHA home page on a desktop
+colorClass: nacha
+
 ---

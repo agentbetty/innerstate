@@ -308,18 +308,29 @@ body {
           padding-left:25px;
         }
 
-          .pattern-wrap {
-            background: transparent url('/img/ghel/ghel-bg.jpg') repeat;
-            border-bottom:1px solid $hotpink;
+        .pattern-wrap {
+          background: transparent url('/img/ghel/ghel-bg.jpg') repeat; // feature by default
+          border-bottom:1px solid $hotpink;
 
-            img {
-              display: block; 
-              margin:50px auto;
+          &.asa24 {background: transparent url('/img/asa24/asa24-bg.jpg') repeat;}
+          &.blp {background: transparent url('/img/blp/blp-bg.jpg') repeat;}
+          &.ep {background: transparent url('/img/ep/ep-bg.jpg') repeat;}
+          &.hm {background: transparent url('/img/hm/hm-bg.jpg') repeat;}
+          &.ghel {background: transparent url('/img/ghel/ghel-bg.jpg') repeat;}
+          &.nacha {background: transparent url('/img/nacha/nacha-bg.jpg') repeat;}
+          &.qcorp {background: transparent url('/img/qcorp/qcorp-bg.jpg') repeat;}
+          &.s2f {background: transparent url('/img/s2f/s2f-bg.jpg') repeat;}
+          &.sqm {background: transparent url('/img/sqm/sqm-bg.jpg') repeat;}
+          &.tlp {background: transparent url('/img/tlp/tlp-bg.jpg') repeat;}
 
-              @include phone {
-                margin:0;
-              }
+          img {
+            display: block; 
+            margin:50px auto;
+
+            @include phone {
+              margin:0;
             }
+          }
         }
       }
     }

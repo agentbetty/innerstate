@@ -23,5 +23,5 @@ bio-2: x-x-x-x-x-x-x-x-.
 bio-3: x-x-x-x-x-x-x-x-.
 three: /img/sqm/sqm-desktop.png
 three-alt: sqm.io home page on a desktop
-
+colorClass: sqm
 ---
