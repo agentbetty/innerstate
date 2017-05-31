@@ -202,7 +202,7 @@ body {
         min-height: 400px;
         padding:15% 0 0;
         top:-50%;
-        margin-top:15%; 
+        margin-top:10%; 
 
         @include phone {
           padding-top:5%;
@@ -214,7 +214,7 @@ body {
         }
 
         h2 {
-          margin:0 0 100px 0;
+          margin:0 0 50px 0;
 
           @include phone {
             @include font-size(24px, 27px);
@@ -228,7 +228,6 @@ body {
 
           @include desktop-s {
             @include font-size(21px, 24px);
-            margin:0 0 50px;
           }
         }
 
@@ -240,7 +239,7 @@ body {
         }
         
         .intro {
-          @include font-size(24px, 27px);
+          @include font-size(22px, 25px);
           font-weight: 300;
           max-width: 500px;
           margin-right:50px;
@@ -284,10 +283,9 @@ body {
           position:absolute;
           z-index: 10;
           right:0;
-          height:160px;
           width:75px;
           @include font-size(18px, 21px);
-          bottom:0;
+          bottom:35%;
           padding-right:25px;
 
           a {

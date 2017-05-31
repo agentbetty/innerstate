@@ -119,12 +119,12 @@
         }       
       }
 
-      .dnld {
+      .more {
         color:darken($babypink, 15%);
         padding:15px;
         border:1px solid $babypink;
         display: inline-block;
-        margin-top:25px;
+        margin:25px 10px 0 0;
 
         &:hover {
           color:$white;
@@ -145,4 +145,10 @@
         margin-top:50px;
       }
     }
-	}
+
+    footer {
+        p {color:$babypink;}
+    }
+}
+
+

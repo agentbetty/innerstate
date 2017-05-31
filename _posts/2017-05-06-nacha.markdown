@@ -8,19 +8,19 @@ logo-alt: NACHA logo
 hero: /img/nacha/nacha-hero.jpg
 hero-alt: x-x-x-x-x-x
 funding: National Automated Clearing House Association (NACHA)
-year: 2012&ndash;2016
+year: 2014&ndash;2016
 link: http://www.nacha.org
 link-print: nacha.org
 role-1: Communication Strategist
 role-2: UX Designer
 role-3: Front-End Developer
 two-1: /img/nacha/nacha-ipad-1.png
-two-1-alt: NACHA on iPad
+two-1-alt: NACHA Membership Widget on iPad
 two-2: /img/nacha/nacha-ipad-2.png
-two-2-alt: NACHA on iPad
-bio-1: x-x-x-x-x-x-x-x-.
-bio-2: x-x-x-x-x-x-x-x-.
-bio-3: x-x-x-x-x-x-x-x-.
+two-2-alt: NACHA Education and Events on iPad
+bio-1: Over my 3-year engagement with NACHA, I worked with teams internal to NACHA and our own set of developers, designers, and content strategist to evolve the online presence of the Association.
+bio-2: I redesigned and themed their main Drupal site, alongside our Content Strategist, Iput together a Communication Strategy that incoporated thier new online brand strategy with fresh tone and content.
+bio-3: We continued to support NACHA with visual updates to the site, a continued evolution of their messaging in both print and online media, as well as help them maintaing a strong, trusted voice in the financial payments community.
 three: /img/nacha/nacha-desktop.png
 three-alt: NACHA home page on a desktop
 colorClass: nacha

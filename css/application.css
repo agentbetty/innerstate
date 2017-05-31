@@ -6655,7 +6655,7 @@ body {
     min-height: 400px;
     padding: 15% 0 0;
     top: -50%;
-    margin-top: 15%; }
+    margin-top: 10%; }
     @media (min-width: 0px) and (max-width: 519px) {
       body.home section.feature .project-basics,
       body.home section.feature .project-bio,
@@ -6676,7 +6676,7 @@ body {
     body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
     body.work section.feature .project-bio h2,
     body.work section.feature .project-link h2 {
-      margin: 0 0 100px 0; }
+      margin: 0 0 50px 0; }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature .project-basics h2,
         body.home section.feature .project-bio h2,
@@ -6708,8 +6708,7 @@ body {
           font-size: 1.3125em;
           /* 21px */
           line-height: 1.14286;
-          /* 24px */
-          margin: 0 0 50px; } }
+          /* 24px */ } }
     body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
     body.home section.feature .project-bio h3,
     body.home section.feature .project-bio ul,
@@ -6731,10 +6730,10 @@ body {
     body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
     body.work section.feature .project-bio .intro,
     body.work section.feature .project-link .intro {
-      font-size: 1.5em;
-      /* 24px */
-      line-height: 1.125;
-      /* 27px */
+      font-size: 1.375em;
+      /* 22px */
+      line-height: 1.13636;
+      /* 25px */
       font-weight: 300;
       max-width: 500px;
       margin-right: 50px;
@@ -6804,13 +6803,12 @@ body {
       position: absolute;
       z-index: 10;
       right: 0;
-      height: 160px;
       width: 75px;
       font-size: 1.125em;
       /* 18px */
       line-height: 1.16667;
       /* 21px */
-      bottom: 0;
+      bottom: 35%;
       padding-right: 25px; }
       body.home section.feature #three .previous a, body.home section.feature #three .next a, body.work section.feature #three .previous a, body.work section.feature #three .next a {
         color: #D1B100; }
@@ -7016,23 +7014,25 @@ body {
     .about .about-details ul.questions li {
       list-style-type: circle;
       margin: 10px 25px; }
-    .about .about-details .dnld {
+    .about .about-details .more {
       color: #e8a7a7;
       padding: 15px;
       border: 1px solid #F8E4E4;
       display: inline-block;
-      margin-top: 25px; }
-      .about .about-details .dnld:hover {
+      margin: 25px 10px 0 0; }
+      .about .about-details .more:hover {
         color: #fff;
         border-color: #fff; }
       @media (min-width: 520px) and (max-width: 767px) {
-        .about .about-details .dnld {
+        .about .about-details .more {
           display: none; } }
       @media (min-width: 0px) and (max-width: 519px) {
-        .about .about-details .dnld {
+        .about .about-details .more {
           display: none; } }
     .about .about-details img {
       display: inline-block;
       margin-top: 50px; }
+  .about footer p {
+    color: #F8E4E4; }
 
 /*# sourceMappingURL=application.css.map */
