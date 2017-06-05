@@ -14,13 +14,13 @@ link-print: asa24.nci.nih.gov
 role-1: Brand Strategist
 role-2: UX Designer
 role-3: Front-End Developer
-two-1: /img/asa24/asa24-ipad-2.png
-two-1-alt: ASA24 x-x-x-x-x- on iPad
-two-2: /img/ghel/ghel-ipad-1.png
-two-2-alt: ASA24 x-x-x-x-x- on iPad
-bio-1: We worked with the NCI and Westat on this multi-year online dietary recall that supports the research of hundreds of studies every year.
-bio-2: Researchers studying the link between cancer and diet are able to set up studies and their participants are able to utilize the online experience to document their food choices. This iteration of ASA24 took the project from an antiquate, non-responsive Silverlight version into one written in Angular, with a clean, tablet-first design, 508 compliancy, and RESTful API. 
-bio-3: I was the front-end developer and UX designer on this project. I worked closely with our team&mdash;project manager, information architect, and  developer&mdash;as well as weekly sprint meetings with the client to map out how this project would evolve from a technical point of view, all while advocating for strong visual and content strategies.
+two-1: /img/asa24/asa24-ipad-1.png
+two-1-alt: ASA24 My Food & Drinks dashboard on iPad
+two-2: /img/asa24/asa24-ipad-2.png
+two-2-alt: ASA24 Details pass on iPad
+bio-1: We worked with the National Cancer Institute and Westat on this multi-year project to overhaul an online dietary recall that supports the research of hundreds of studies every year.
+bio-2: Researchers studying the link between cancer and diet are able to set up studies and their participants are able to utilize the online experience (AMPM methodology) to document their food choices. This iteration of ASA24 took the project from an antiquated, non-responsive Silverlight version into one written in Angular, with a clean, tablet-first design, 508 compliancy, and RESTful API. 
+bio-3: I was the front-end developer and UX designer on this project. I worked closely with our team&mdash;project manager, information architect, and developer&mdash;as well as weekly sprint meetings with the client to map out how this project would evolve from a technical point of view, all while advocating for strong visual and content strategies.
 three: /img/asa24/asa24-desktop.png
 three-alt: ASA24 home page on a desktop
 colorClass: asa24

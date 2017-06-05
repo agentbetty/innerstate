@@ -6,10 +6,10 @@ title: Start2farm
 logo: /img/s2f/s2f-logo.png
 logo-alt: Start2farm logo
 hero: /img/s2f/s2f-hero.jpg
-hero-alt: x-x-x-x-x-x
+hero-alt: Close-up shot of wheat grass growing in a field.
 funding: USDA, NIFA, National Agriculture Library, and the Farm Bureau
-year: 2011
-link: 
+year: 2011&mdash;2013
+link:  http://newfarmers.usda.gov
 link-print: start2farm.gov (retired)
 role-1: Brand Strategist
 role-2: UX Designer
@@ -18,9 +18,9 @@ two-1: /img/s2f/s2f-ipad-1.png
 two-1-alt: Start2farm on iPad
 two-2: /img/s2f/s2f-ipad-2.png
 two-2-alt: Start2farm on iPad
-bio-1: x-x-x-x-x-x-x-x-.
-bio-2: x-x-x-x-x-x-x-x-.
-bio-3: x-x-x-x-x-x-x-x-.
+bio-1: In 2011 we began working with the USDA to design and develop Start2Farm.gov&#58; an online database connecting beginning farmers and ranchers with available programs and resources.
+bio-2: Our Drupal site managed complicated taxomonies and faceted search (using <a href="http://lucene.apache.org/solr/">Solr</a>) in order to provide a smart and easy-to-access aggregation of farming and ranching resources.
+bio-3: In 2015, the site content was merged into the USDA's newfarmers.usda.gov.
 three: /img/s2f/s2f-desktop.png
 three-alt: Start2farm home page on a desktop
 colorClass: s2f

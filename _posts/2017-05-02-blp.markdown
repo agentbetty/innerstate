@@ -12,15 +12,15 @@ year: 2015
 link: https://www.bend.k12.or.us
 link-print: bend.k12.or.us
 role-1: Brand Strategist
-role-2: UX Designer
-role-3: Information Architect
+role-2: Information Architect 
+role-3: Art Director and UX Designer
 two-1: /img/blp/blp-ipad-2.png
 two-1-alt: Bend La-Pine School District on iPad
 two-2: /img/blp/blp-ipad-1.png
 two-2-alt: Bend La-Pine School District on iPad
-bio-1: x-x-x-x-x-x-x-x-.
-bio-2: x-x-x-x-x-x-x-x-.
-bio-3: x-x-x-x-x-x-x-x-.
+bio-1: This multi-site Drupal project included a main, district site as well as 29 elementary, middle, and high school sites.
+bio-2: We worked with the team at Bend La-Pine to develop a strong, online presence with clear access to important information at the district level while carving out spaces for schools to have their own, personalized sites within the district's ecosystem.
+bio-3: Migrating all of these schools sites as well as updating the district site to include responsive, information-focused design gave educators the platform to share important news and events, while creating a clear path to information and peace of mind for busy parents.
 three: /img/blp/blp-desktop.png
 three-alt: Bend La-Pine School District home page on a desktop
 colorClass: blp

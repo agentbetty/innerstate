@@ -1,7 +1,7 @@
 ---
-layout: work
+layout: work-alt
 permalink: /project/qcorp
-keyword: work
+keyword: work-alt
 title: Q Corp &amp; PCPCI
 logo: /img/qcorp/qcorp-logo.png
 logo-alt: Q Corp logo

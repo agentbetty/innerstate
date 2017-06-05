@@ -7,7 +7,6 @@ body,
 }
 // don't forget your proportional font / line height mixin
 // test the bootstrap js, use and or delete
-// sanitize this mess
 // retina images
 // elizabethm email signature update
 // object fit fix for ie + happy browser for object-fit (ie) and vh/vw (opera)
@@ -93,12 +92,12 @@ body {
     }
 
   // – – – – – – – – – – home layout (+ featured project)
-	&.home, &.work {
+	&.home, &.work , &.work-alt{
 
 		section.identity {
-			text-align:center;
-      background-color:$night;
-      background-image: url('/img/bg-home.jpg');
+          	   text-align:center;
+                background-color:$night;
+                background-image: url('/img/bg-home.jpg');
 
 			h1 {
 				color:$white;
@@ -127,10 +126,11 @@ body {
         }
 			}
 
-			h2.roles {
-        display:none;
-        @include font-size(27px, 30px);
-        font-weight: 300;
+	h2.roles {
+          display:none;
+          border:1px solid red;
+          @include font-size(27px, 30px);
+          font-weight: 300;
 
         @include phone {
           @include font-size(21px, 24px);
@@ -256,14 +256,14 @@ body {
         }
 
         .more {
-          @include font-size(21px, 24px);
+          @include font-size(18px, 21px);
           font-family: $gary;
           max-width: 500px;
           margin:15px 50px 0 0;
           color:$slate;
 
           @include phone {
-            @include font-size(15px, 18px);
+            @include font-size(12px, 15px);
             margin-right:0;
           }
 

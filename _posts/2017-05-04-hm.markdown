@@ -11,18 +11,18 @@ funding: Emory University,<br>The Center for Behavioral Health Policy Studies
 year: 2016
 link: https://squishymedia.com/project/healthmap
 link-print: Android App
-role-1: Brand Strategist
+role-1: Art Director
 role-2: Information Architect
-role-3: Art Director
+role-3: Brand Strategist
 two-1: /img/hm/hm-app-1.png
 two-1-alt: HealthMAP Android application
 two-2: /img/hm/hm-app-2.png
 two-2-alt: HealthMAP application
-bio-1: x-x-x-x-x-x-x-x-.
-bio-2: x-x-x-x-x-x-x-x-.
-bio-3: x-x-x-x-x-x-x-x-.
+bio-1: The Center for Behavioral Health Policy Studies at Emory University wanted to research study participants’ activity levels and assist with nutrition education, so we built an Android app they could distribute to participants.
+bio-2: We designed an app with an easy-to-use interface for novic users in order to track participant activity and weightloss, provide healthy eating tips, and facilitate interaction with a health coach. 
+bio-3: The app features include a pedometer, calorie and diet monitors, daily milestones, congratulatory notifications, and food choice education.
 three: /img/hm/hm-desktop.png
-three-alt: HealthMAP application
+three-alt: Multiple screenshots for the HealthMAP android app&#58;  welcome screen, alert modal, dash diet tips screen, my daily weight screen.
 colorClass: hm
 ---
 

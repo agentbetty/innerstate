@@ -6541,11 +6541,11 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
-  body.home section.identity, body.work section.identity {
+  body.home section.identity, body.work section.identity, body.work-alt section.identity {
     text-align: center;
     background-color: #001726;
     background-image: url("/img/bg-home.jpg"); }
-    body.home section.identity h1, body.work section.identity h1 {
+    body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
       color: #fff;
       font-size: 7.1875em;
       /* 115px */
@@ -6554,75 +6554,76 @@ body {
       font-family: "EB Garamond", Georgia, serif;
       padding: 20% 0 0; }
       @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.identity h1, body.work section.identity h1 {
+        body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
           font-size: 2.8125em;
           /* 45px */
           line-height: 1.06667;
           /* 48px */
           padding-top: 60%; } }
       @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.identity h1, body.work section.identity h1 {
+        body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
           font-size: 3.125em;
           /* 50px */
           line-height: 1.1;
           /* 55px */
           padding-top: 40%; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        body.home section.identity h1, body.work section.identity h1 {
+        body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
           font-size: 4.6875em;
           /* 75px */
           line-height: 1.13333;
           /* 85px */
           padding-top: 40%; } }
       @media (min-width: 992px) and (max-width: 1199px) {
-        body.home section.identity h1, body.work section.identity h1 {
+        body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
           font-size: 4.6875em;
           /* 75px */
           line-height: 1.13333;
           /* 85px */
           padding-top: 30%; } }
-    body.home section.identity h2.roles, body.work section.identity h2.roles {
+    body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
       display: none;
+      border: 1px solid red;
       font-size: 1.6875em;
       /* 27px */
       line-height: 1.11111;
       /* 30px */
       font-weight: 300; }
       @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.identity h2.roles, body.work section.identity h2.roles {
+        body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
           font-size: 1.3125em;
           /* 21px */
           line-height: 1.14286;
           /* 24px */ } }
       @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.identity h2.roles, body.work section.identity h2.roles {
+        body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
           font-size: 1.125em;
           /* 18px */
           line-height: 1.16667;
           /* 21px */ } }
       @media (min-width: 768px) and (max-width: 991px) {
-        body.home section.identity h2.roles, body.work section.identity h2.roles {
+        body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
           font-size: 1.3125em;
           /* 21px */
           line-height: 1.14286;
           /* 24px */ } }
       @media (min-width: 992px) and (max-width: 1199px) {
-        body.home section.identity h2.roles, body.work section.identity h2.roles {
+        body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
           font-size: 1.3125em;
           /* 21px */
           line-height: 1.14286;
           /* 24px */ } }
-      body.home section.identity h2.roles span, body.work section.identity h2.roles span {
+      body.home section.identity h2.roles span, body.work section.identity h2.roles span, body.work-alt section.identity h2.roles span {
         display: inline-block;
         background: -webkit-linear-gradient(45deg, #EB0091, #FF7D0D);
         background: linear-gradient(45deg, #EB0091, #FF7D0D);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 0; }
-    body.home section.identity a.arrow, body.work section.identity a.arrow {
+    body.home section.identity a.arrow, body.work section.identity a.arrow, body.work-alt section.identity a.arrow {
       left: 50%;
       margin-left: -20px; }
-    body.home section.identity .contact h3, body.work section.identity .contact h3 {
+    body.home section.identity .contact h3, body.work section.identity .contact h3, body.work-alt section.identity .contact h3 {
       color: #fff;
       font-size: 0.9375em;
       /* 15px */
@@ -6634,14 +6635,14 @@ body {
       bottom: 50px;
       width: 100%;
       margin: 0 auto; }
-  body.home section.feature img.logo, body.work section.feature img.logo {
+  body.home section.feature img.logo, body.work section.feature img.logo, body.work-alt section.feature img.logo {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -195px;
     margin-top: -195px;
     z-index: 2; }
-  body.home section.feature img.cover, body.work section.feature img.cover {
+  body.home section.feature img.cover, body.work section.feature img.cover, body.work-alt section.feature img.cover {
     display: block;
     width: 100vw;
     height: 100vh;
@@ -6650,7 +6651,9 @@ body {
   body.home section.feature .project-bio,
   body.home section.feature .project-link, body.work section.feature .project-basics,
   body.work section.feature .project-bio,
-  body.work section.feature .project-link {
+  body.work section.feature .project-link, body.work-alt section.feature .project-basics,
+  body.work-alt section.feature .project-bio,
+  body.work-alt section.feature .project-link {
     height: 100%;
     min-height: 400px;
     padding: 15% 0 0;
@@ -6661,7 +6664,9 @@ body {
       body.home section.feature .project-bio,
       body.home section.feature .project-link, body.work section.feature .project-basics,
       body.work section.feature .project-bio,
-      body.work section.feature .project-link {
+      body.work section.feature .project-link, body.work-alt section.feature .project-basics,
+      body.work-alt section.feature .project-bio,
+      body.work-alt section.feature .project-link {
         padding-top: 5%;
         margin-top: 0; } }
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -6669,20 +6674,26 @@ body {
       body.home section.feature .project-bio,
       body.home section.feature .project-link, body.work section.feature .project-basics,
       body.work section.feature .project-bio,
-      body.work section.feature .project-link {
+      body.work section.feature .project-link, body.work-alt section.feature .project-basics,
+      body.work-alt section.feature .project-bio,
+      body.work-alt section.feature .project-link {
         min-height: 300px; } }
     body.home section.feature .project-basics h2,
     body.home section.feature .project-bio h2,
     body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
     body.work section.feature .project-bio h2,
-    body.work section.feature .project-link h2 {
+    body.work section.feature .project-link h2, body.work-alt section.feature .project-basics h2,
+    body.work-alt section.feature .project-bio h2,
+    body.work-alt section.feature .project-link h2 {
       margin: 0 0 50px 0; }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature .project-basics h2,
         body.home section.feature .project-bio h2,
         body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
         body.work section.feature .project-bio h2,
-        body.work section.feature .project-link h2 {
+        body.work section.feature .project-link h2, body.work-alt section.feature .project-basics h2,
+        body.work-alt section.feature .project-bio h2,
+        body.work-alt section.feature .project-link h2 {
           font-size: 1.5em;
           /* 24px */
           line-height: 1.125;
@@ -6693,7 +6704,9 @@ body {
         body.home section.feature .project-bio h2,
         body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
         body.work section.feature .project-bio h2,
-        body.work section.feature .project-link h2 {
+        body.work section.feature .project-link h2, body.work-alt section.feature .project-basics h2,
+        body.work-alt section.feature .project-bio h2,
+        body.work-alt section.feature .project-link h2 {
           font-size: 1.125em;
           /* 18px */
           line-height: 1.16667;
@@ -6704,7 +6717,9 @@ body {
         body.home section.feature .project-bio h2,
         body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
         body.work section.feature .project-bio h2,
-        body.work section.feature .project-link h2 {
+        body.work section.feature .project-link h2, body.work-alt section.feature .project-basics h2,
+        body.work-alt section.feature .project-bio h2,
+        body.work-alt section.feature .project-link h2 {
           font-size: 1.3125em;
           /* 21px */
           line-height: 1.14286;
@@ -6717,7 +6732,11 @@ body {
     body.work section.feature .project-bio h3,
     body.work section.feature .project-bio ul,
     body.work section.feature .project-link h3,
-    body.work section.feature .project-link ul {
+    body.work section.feature .project-link ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
+    body.work-alt section.feature .project-bio h3,
+    body.work-alt section.feature .project-bio ul,
+    body.work-alt section.feature .project-link h3,
+    body.work-alt section.feature .project-link ul {
       font-size: 0.9375em;
       /* 15px */
       line-height: 1.2;
@@ -6729,7 +6748,9 @@ body {
     body.home section.feature .project-bio .intro,
     body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
     body.work section.feature .project-bio .intro,
-    body.work section.feature .project-link .intro {
+    body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
+    body.work-alt section.feature .project-bio .intro,
+    body.work-alt section.feature .project-link .intro {
       font-size: 1.375em;
       /* 22px */
       line-height: 1.13636;
@@ -6743,7 +6764,9 @@ body {
         body.home section.feature .project-bio .intro,
         body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
         body.work section.feature .project-bio .intro,
-        body.work section.feature .project-link .intro {
+        body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
+        body.work-alt section.feature .project-bio .intro,
+        body.work-alt section.feature .project-link .intro {
           font-size: 1.125em;
           /* 18px */
           line-height: 1.16667;
@@ -6754,7 +6777,9 @@ body {
         body.home section.feature .project-bio .intro,
         body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
         body.work section.feature .project-bio .intro,
-        body.work section.feature .project-link .intro {
+        body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
+        body.work-alt section.feature .project-bio .intro,
+        body.work-alt section.feature .project-link .intro {
           font-size: 1.125em;
           /* 18px */
           line-height: 1.16667;
@@ -6764,11 +6789,13 @@ body {
     body.home section.feature .project-bio .more,
     body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
     body.work section.feature .project-bio .more,
-    body.work section.feature .project-link .more {
-      font-size: 1.3125em;
+    body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
+    body.work-alt section.feature .project-bio .more,
+    body.work-alt section.feature .project-link .more {
+      font-size: 1.125em;
+      /* 18px */
+      line-height: 1.16667;
       /* 21px */
-      line-height: 1.14286;
-      /* 24px */
       font-family: "EB Garamond", Georgia, serif;
       max-width: 500px;
       margin: 15px 50px 0 0;
@@ -6778,28 +6805,32 @@ body {
         body.home section.feature .project-bio .more,
         body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
         body.work section.feature .project-bio .more,
-        body.work section.feature .project-link .more {
-          font-size: 0.9375em;
+        body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
+        body.work-alt section.feature .project-bio .more,
+        body.work-alt section.feature .project-link .more {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
           /* 15px */
-          line-height: 1.2;
-          /* 18px */
           margin-right: 0; } }
       @media (min-width: 992px) and (max-width: 1199px) {
         body.home section.feature .project-basics .more,
         body.home section.feature .project-bio .more,
         body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
         body.work section.feature .project-bio .more,
-        body.work section.feature .project-link .more {
+        body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
+        body.work-alt section.feature .project-bio .more,
+        body.work-alt section.feature .project-link .more {
           font-size: 0.9375em;
           /* 15px */
           line-height: 1.2;
           /* 18px */
           margin-right: 0; } }
-  body.home section.feature .arrow, body.work section.feature .arrow {
+  body.home section.feature .arrow, body.work section.feature .arrow, body.work-alt section.feature .arrow {
     bottom: 25px; }
-  body.home section.feature #three, body.work section.feature #three {
+  body.home section.feature #three, body.work section.feature #three, body.work-alt section.feature #three {
     position: relative; }
-    body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next {
+    body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
       position: absolute;
       z-index: 10;
       right: 0;
@@ -6810,45 +6841,45 @@ body {
       /* 21px */
       bottom: 35%;
       padding-right: 25px; }
-      body.home section.feature #three .previous a, body.home section.feature #three .next a, body.work section.feature #three .previous a, body.work section.feature #three .next a {
+      body.home section.feature #three .previous a, body.home section.feature #three .next a, body.work section.feature #three .previous a, body.work section.feature #three .next a, body.work-alt section.feature #three .previous a, body.work-alt section.feature #three .next a {
         color: #D1B100; }
-        body.home section.feature #three .previous a:hover, body.home section.feature #three .next a:hover, body.work section.feature #three .previous a:hover, body.work section.feature #three .next a:hover {
+        body.home section.feature #three .previous a:hover, body.home section.feature #three .next a:hover, body.work section.feature #three .previous a:hover, body.work section.feature #three .next a:hover, body.work-alt section.feature #three .previous a:hover, body.work-alt section.feature #three .next a:hover {
           color: #CE004F; }
-        body.home section.feature #three .previous a span, body.home section.feature #three .next a span, body.work section.feature #three .previous a span, body.work section.feature #three .next a span {
+        body.home section.feature #three .previous a span, body.home section.feature #three .next a span, body.work section.feature #three .previous a span, body.work section.feature #three .next a span, body.work-alt section.feature #three .previous a span, body.work-alt section.feature #three .next a span {
           color: #e8a7a7; }
-          body.home section.feature #three .previous a span:hover, body.home section.feature #three .next a span:hover, body.work section.feature #three .previous a span:hover, body.work section.feature #three .next a span:hover {
+          body.home section.feature #three .previous a span:hover, body.home section.feature #three .next a span:hover, body.work section.feature #three .previous a span:hover, body.work section.feature #three .next a span:hover, body.work-alt section.feature #three .previous a span:hover, body.work-alt section.feature #three .next a span:hover {
             color: black; }
-    body.home section.feature #three .previous, body.work section.feature #three .previous {
+    body.home section.feature #three .previous, body.work section.feature #three .previous, body.work-alt section.feature #three .previous {
       left: 0;
       padding-left: 25px; }
-    body.home section.feature #three .pattern-wrap, body.work section.feature #three .pattern-wrap {
+    body.home section.feature #three .pattern-wrap, body.work section.feature #three .pattern-wrap, body.work-alt section.feature #three .pattern-wrap {
       background: transparent url("/img/ghel/ghel-bg.jpg") repeat;
       border-bottom: 1px solid #CE004F; }
-      body.home section.feature #three .pattern-wrap.asa24, body.work section.feature #three .pattern-wrap.asa24 {
+      body.home section.feature #three .pattern-wrap.asa24, body.work section.feature #three .pattern-wrap.asa24, body.work-alt section.feature #three .pattern-wrap.asa24 {
         background: transparent url("/img/asa24/asa24-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.blp, body.work section.feature #three .pattern-wrap.blp {
+      body.home section.feature #three .pattern-wrap.blp, body.work section.feature #three .pattern-wrap.blp, body.work-alt section.feature #three .pattern-wrap.blp {
         background: transparent url("/img/blp/blp-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.ep, body.work section.feature #three .pattern-wrap.ep {
+      body.home section.feature #three .pattern-wrap.ep, body.work section.feature #three .pattern-wrap.ep, body.work-alt section.feature #three .pattern-wrap.ep {
         background: transparent url("/img/ep/ep-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.hm, body.work section.feature #three .pattern-wrap.hm {
+      body.home section.feature #three .pattern-wrap.hm, body.work section.feature #three .pattern-wrap.hm, body.work-alt section.feature #three .pattern-wrap.hm {
         background: transparent url("/img/hm/hm-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.ghel, body.work section.feature #three .pattern-wrap.ghel {
+      body.home section.feature #three .pattern-wrap.ghel, body.work section.feature #three .pattern-wrap.ghel, body.work-alt section.feature #three .pattern-wrap.ghel {
         background: transparent url("/img/ghel/ghel-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.nacha, body.work section.feature #three .pattern-wrap.nacha {
+      body.home section.feature #three .pattern-wrap.nacha, body.work section.feature #three .pattern-wrap.nacha, body.work-alt section.feature #three .pattern-wrap.nacha {
         background: transparent url("/img/nacha/nacha-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.qcorp, body.work section.feature #three .pattern-wrap.qcorp {
+      body.home section.feature #three .pattern-wrap.qcorp, body.work section.feature #three .pattern-wrap.qcorp, body.work-alt section.feature #three .pattern-wrap.qcorp {
         background: transparent url("/img/qcorp/qcorp-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.s2f, body.work section.feature #three .pattern-wrap.s2f {
+      body.home section.feature #three .pattern-wrap.s2f, body.work section.feature #three .pattern-wrap.s2f, body.work-alt section.feature #three .pattern-wrap.s2f {
         background: transparent url("/img/s2f/s2f-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.sqm, body.work section.feature #three .pattern-wrap.sqm {
+      body.home section.feature #three .pattern-wrap.sqm, body.work section.feature #three .pattern-wrap.sqm, body.work-alt section.feature #three .pattern-wrap.sqm {
         background: transparent url("/img/sqm/sqm-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.tlp, body.work section.feature #three .pattern-wrap.tlp {
+      body.home section.feature #three .pattern-wrap.tlp, body.work section.feature #three .pattern-wrap.tlp, body.work-alt section.feature #three .pattern-wrap.tlp {
         background: transparent url("/img/tlp/tlp-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap img, body.work section.feature #three .pattern-wrap img {
+      body.home section.feature #three .pattern-wrap img, body.work section.feature #three .pattern-wrap img, body.work-alt section.feature #three .pattern-wrap img {
         display: block;
         margin: 50px auto; }
         @media (min-width: 0px) and (max-width: 519px) {
-          body.home section.feature #three .pattern-wrap img, body.work section.feature #three .pattern-wrap img {
+          body.home section.feature #three .pattern-wrap img, body.work section.feature #three .pattern-wrap img, body.work-alt section.feature #three .pattern-wrap img {
             margin: 0; } }
 
 #two {

@@ -18,9 +18,9 @@ two-1: /img/sqm/sqm-ipad-1.png
 two-1-alt: sqm.io on iPad
 two-2: /img/sqm/sqm-ipad-2.png
 two-2-alt: sqm.io on iPad
-bio-1: x-x-x-x-x-x-x-x-.
-bio-2: x-x-x-x-x-x-x-x-.
-bio-3: x-x-x-x-x-x-x-x-.
+bio-1: Branding and website update for the agency I worked for until 2017.
+bio-2: Squishymedia's client list is made of primarily government, health care, and non-profit clients. It is important to the evolution of our brand that we stay a little quirky, always technically savvy, and provide high design all with in the context of a dependable, secure, and trusted partner.
+bio-3: 
 three: /img/sqm/sqm-desktop.png
 three-alt: sqm.io home page on a desktop
 colorClass: sqm
