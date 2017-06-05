@@ -6407,7 +6407,7 @@ nav.navbar .navbar-header a.navbar-brand {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   @media (min-width: 0px) and (max-width: 519px) {
-    nav.navbar .navbar-header a.navbar-brand p + p {
+    nav.navbar .navbar-header a.navbar-brand p.name {
       display: none; } }
 
 .about nav.navbar {

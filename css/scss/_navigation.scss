@@ -194,7 +194,7 @@ nav.navbar {
         -webkit-text-fill-color: transparent;
       }
 
-      p + p {
+      p.name {
 
         @include phone {display:none;}
       }
