@@ -128,7 +128,6 @@ body {
 
 	    h2.roles {
         display:none;
-        border:1px solid red;
         @include font-size(27px, 30px);
         font-weight: 300;
 
@@ -385,5 +384,7 @@ body {
       $white 50%, 
       darken($babypink, 5%) 100%
     );
+
+    img {padding-top:20%;}
   }
 }

@@ -6446,8 +6446,8 @@ nav.navbar .navbar-header a.navbar-brand {
     display: none; } }
 footer .folio {
   position: relative;
-  height: 30px;
-  padding-top: 10px; }
+  padding-top: 15px;
+  backgound: #F8E4E4; }
   footer .folio p {
     font-size: 0.625em;
     /* 10px */
@@ -6583,7 +6583,6 @@ body {
           padding-top: 30%; } }
     body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
       display: none;
-      border: 1px solid red;
       font-size: 1.6875em;
       /* 27px */
       line-height: 1.11111;
@@ -6900,6 +6899,8 @@ body {
   background: linear-gradient(to right, #e7e5e1 0%, #fff 50%, #fff 50%, #F8E4E4 100%); }
 .work-alt #three {
   background: linear-gradient(to right, #F2F1EF 0%, #fff 50%, #fff 50%, #f3d0d0 100%); }
+  .work-alt #three img {
+    padding-top: 20%; }
 
 .cd-fixed-bg {
   min-height: 100%;
@@ -6947,6 +6948,9 @@ body {
     @media (min-width: 520px) and (max-width: 767px) {
       .about .about-details {
         margin: 75px 15px 15px; } }
+    @media (min-width: 1200px) {
+      .about .about-details {
+        margin-bottom: 275px; } }
     .about .about-details .row div:nth-child(3) h2 {
       margin-top: 60px; }
       @media (min-width: 0px) and (max-width: 519px) {

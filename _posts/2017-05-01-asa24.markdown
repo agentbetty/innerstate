@@ -9,7 +9,7 @@ hero: /img/asa24/asa24-hero.jpg
 hero-alt: Photo of an empty plate, fork, and knife on a wooden table
 funding: HHS, NIH, NCI, and USA.gov
 year: 2013&ndash;2016
-link: https://asa24.nci.nih.gov/2016/language
+link: https://asa24.nci.nih.gov
 link-print: asa24.nci.nih.gov
 role-1: Brand Strategist
 role-2: UX Designer

@@ -6,8 +6,7 @@ footer {
 
   .folio {
     position: relative;
-    height:30px;
-    padding-top:10px;
+    padding-top:15px;backgound: $babypink;
 
     p {
       @include font-size(10px, 13px);

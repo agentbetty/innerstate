@@ -60,13 +60,8 @@ keyword: work
 			</div>
 
 			<div class="row hide-phone" id="three">
-			<div class="previous">
-					<a href="#">prev project <span>&larr;</span></a>
-				</div> 
-				<div class="next">
-					<a href="#">next project <span>&rarr;</span></a>
-				</div>
-
+				{% include post-nav.html %}
+				
 				<div class="col-xs-12 pattern-wrap {{ page.colorClass }}">
 					<a href="{{page.link}}" target="_blank">
 						<img src="{{page.three}}" alt="{{page.three-alt}}">
