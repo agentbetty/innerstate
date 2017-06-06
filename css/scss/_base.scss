@@ -92,7 +92,7 @@ body {
     }
 
   // – – – – – – – – – – home layout (+ featured project)
-	&.home, &.work , &.work-alt{
+	&.home, &.work , &.work-alt {
 
 		section.identity {
           	   text-align:center;
@@ -126,11 +126,11 @@ body {
         }
 			}
 
-	h2.roles {
-          display:none;
-          border:1px solid red;
-          @include font-size(27px, 30px);
-          font-weight: 300;
+	    h2.roles {
+        display:none;
+        border:1px solid red;
+        @include font-size(27px, 30px);
+        font-weight: 300;
 
         @include phone {
           @include font-size(21px, 24px);
@@ -363,5 +363,27 @@ body {
       width: 75%;
       margin: 0 auto;
     }
+  }
+}
+
+.work-alt {
+  #two {
+    background: linear-gradient(
+      to right, 
+      darken($khaki, 5%) 0%, 
+      $white 50%, 
+      $white 50%, 
+      $babypink 100%
+    );
+  }
+
+  #three {
+    background: linear-gradient(
+      to right, 
+      $khaki 0%, 
+      $white 50%, 
+      $white 50%, 
+      darken($babypink, 5%) 100%
+    );
   }
 }

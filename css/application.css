@@ -6896,6 +6896,11 @@ body {
         width: 75%;
         margin: 0 auto; } }
 
+.work-alt #two {
+  background: linear-gradient(to right, #e7e5e1 0%, #fff 50%, #fff 50%, #F8E4E4 100%); }
+.work-alt #three {
+  background: linear-gradient(to right, #F2F1EF 0%, #fff 50%, #fff 50%, #f3d0d0 100%); }
+
 .cd-fixed-bg {
   min-height: 100%;
   background-size: cover;
