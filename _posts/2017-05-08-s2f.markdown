@@ -2,6 +2,7 @@
 layout: work
 permalink: /project/s2f
 keyword: work
+title-long: Start2farm
 title: Start2farm
 logo: /img/s2f/s2f-logo.png
 logo-alt: Start2farm logo

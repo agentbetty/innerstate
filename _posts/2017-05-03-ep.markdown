@@ -2,7 +2,8 @@
 layout: work
 permalink: /project/epay
 keyword: work
-title: Electronic Payments
+title-long: Electronic Payments
+title: EPAY
 logo: /img/ep/ep-logo.png
 logo-alt: Direct Deposit and Direct Payment logos
 hero: /img/ep/ep-hero.jpg

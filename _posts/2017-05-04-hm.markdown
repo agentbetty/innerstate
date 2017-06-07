@@ -2,6 +2,7 @@
 layout: work
 permalink: /project/healthmap
 keyword: work
+title-long: HealthMAP
 title: HealthMAP
 logo: /img/hm/hm-logo.png
 logo-alt: HealthMap logo

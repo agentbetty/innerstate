@@ -2,7 +2,8 @@
 layout: work
 permalink: /project/ghel
 keyword: work
-title: Global Health eLearning Center (GHeL)
+title-long: Global Health eLearning Center (GHeL)
+title: GHeL
 logo: /img/ghel/ghel-logo.png
 logo-alt: Global Health eLearning logo
 hero: /img/ghel/ghel-hero.jpg

@@ -2,7 +2,8 @@
 layout: work
 permalink: /project/tlp
 keyword: work
-title: Teacher &amp; Leadership Programs
+title-long: Teacher &amp; Leadership Programs
+title: TLP
 logo: /img/tlp/tlp-logo.png
 logo-alt: Teacher &amp; Leadership Programs logo
 hero: /img/tlp/tlp-hero.jpg

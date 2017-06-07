@@ -16,18 +16,23 @@ body {
   font-family: $worky;
   color:$night;
 
-  @include tablet-p {border-top:10px solid yellow;}
-  @include tablet-h {border-top:10px solid purple;}
-  @include desktop-s {border-top:10px solid green;}
+  @include phone {border-top:10px solid blue;}
+  @include tablet-p {border-top:10px solid green;}
+  @include tablet-h {border-top:10px solid yellow;}
+  @include desktop-s {border-top:10px solid orange;}
+  @include desktop {border-top:10px solid red;}
 
   // – – – – – – – – – – general styles
-  h1, h2, h3, p {
-    margin:0 0 2px 0;
-  }
+  h1, h2, h3, p { margin:0 0 2px 0;}
 
   h2 {
-    @include font-size(33px, 39px);
+    @include font-size(30px, 33px);
     font-weight: 300;
+
+      @include phone {@include font-size(15px, 18px);}
+      @include tablet-p {@include font-size(18px, 21px);}
+      @include tablet-h {@include font-size(21px, 24px);}
+      @include desktop-s {@include font-size(24px, 27px);}
   }
 
   li {
@@ -35,9 +40,7 @@ body {
     padding:2px 0;
   }
 
-  img{
-    max-width:100%;
-  }
+  img{ max-width:100%; }
 
   a:link {color: $hotpink;}
   a:visited {color: $hotpink;}
@@ -59,7 +62,8 @@ body {
       border-bottom-width:0;
     }
 
-    @include phone {display:none;} 
+    @include phone {display:none;}
+    @include tablet-p {display:none;} 
   }
 
   aside {
@@ -69,7 +73,7 @@ body {
     margin-bottom:2px;
 
     @include phone {
-      @include font-size(12px, 15px);
+      @include font-size(10px, 12px);
     }
     @include tablet-p {
       @include font-size(12px, 15px);
@@ -85,7 +89,7 @@ body {
     }
   }
 
-   .vertical-align { // – – – – – – – – – – vertical align
+   .vertical-align {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
@@ -95,67 +99,67 @@ body {
 	&.home, &.work , &.work-alt {
 
 		section.identity {
-          	   text-align:center;
-                background-color:$night;
-                background-image: url('/img/bg-home.jpg');
+      	    text-align:center;
+            background-color:$night;
+            background-image: url('/img/bg-home.jpg');
 
 			h1 {
 				color:$white;
 				@include font-size(115px, 125px);
 				font-family: $gary;
-        padding:20% 0 0;
+                padding:20% 0 0;
 
-        @include phone {
-          @include font-size(45px, 48px);
-          padding-top:60%;
-        }
+                @include phone {
+                    @include font-size(45px, 48px);
+                    padding-top:60%;
+                }
 
-        @include tablet-p {
-          @include font-size(50px, 55px);
-          padding-top:40%;
-        }
+                @include tablet-p {
+                    @include font-size(50px, 55px);
+                    padding-top:40%;
+                }
 
-        @include tablet-h {
-          @include font-size(75px, 85px);
-          padding-top:40%;
-        }
+                @include tablet-h {
+                    @include font-size(75px, 85px);
+                    padding-top:40%;
+                }
 
-        @include desktop-s {
-          @include font-size(75px, 85px); 
-          padding-top:30%;
-        }
+                @include desktop-s {
+                    @include font-size(75px, 85px); 
+                    padding-top:30%;
+                }
 			}
 
 	    h2.roles {
-        display:none;
-        @include font-size(27px, 30px);
-        font-weight: 300;
+            display:none;
+            @include font-size(27px, 30px);
+            font-weight: 300;
 
-        @include phone {
-          @include font-size(21px, 24px);
-        }
+                @include phone {
+                  @include font-size(21px, 24px);
+                }
 
-        @include tablet-p {
-          @include font-size(18px, 21px);
-        }
+                @include tablet-p {
+                  @include font-size(18px, 21px);
+                }
 
-        @include tablet-h {
-          @include font-size(21px, 24px);
-        }
+                @include tablet-h {
+                  @include font-size(21px, 24px);
+                }
 
-        @include desktop-s {
-          @include font-size(21px, 24px);
-        }
+                @include desktop-s {
+                  @include font-size(21px, 24px);
+                }
 
-        span {
-          display:inline-block;
-          background: -webkit-linear-gradient(45deg, $fuschia, $orange);
-          background: linear-gradient(45deg, $fuschia, $orange);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          margin:0;
-        }
-			}
+            span {
+              display:inline-block;
+              background: -webkit-linear-gradient(45deg, $fuschia, $orange);
+              background: linear-gradient(45deg, $fuschia, $orange);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              margin:0;
+            }
+		}
 
         a.arrow { 
           left:50%;
@@ -163,18 +167,18 @@ body {
         }
 
         .contact {          
-          h3 {  
-            color:$white;
-            @include font-size(15px, 18px);
-            text-align: center;
-            font-weight: 300;
-            position: absolute;
-            bottom: 50px;
-            width:100%;
-            margin:0 auto;
-          }
+            h3 {  
+                color:$white;
+                @include font-size(15px, 18px);
+                text-align: center;
+                font-weight: 300;
+                position: absolute;
+                bottom: 50px;
+                width:100%;
+                margin:0 auto;
+            }
         }
-		}
+	}
 
     section.feature {
 
@@ -185,6 +189,15 @@ body {
         margin-left:-195px;
         margin-top:-195px;
         z-index: 2;
+
+        @include phone {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top:0;
+            width: 100px;
+        }
       }
 
       img.cover {
@@ -201,40 +214,31 @@ body {
         min-height: 400px;
         padding:15% 0 0;
         top:-50%;
-        margin-top:10%; 
+        margin-top:75px; 
 
         @include phone {
-          padding-top:5%;
-          margin-top:0;
+            height:auto;
         }
 
-        @include desktop-s {
-          min-height:300px;
+        @include tablet-p {
+            height:auto;
         }
 
-        h2 {
-          margin:0 0 50px 0;
-
-          @include phone {
-            @include font-size(24px, 27px);
-            margin:0 0 25px;
-          }
-
-          @include tablet-p {
-            @include font-size(18px, 21px);
-            margin:0 0 25px;
-          }
-
-          @include desktop-s {
-            @include font-size(21px, 24px);
-          }
+        @include tablet-h {
+            height:auto;
         }
+
+        h2 {margin:0 0 25px 0;}
 
         h3, ul {
           @include font-size(15px, 18px);
           margin:0 0 25px 0;
           font-weight:300;
           color:$slate;
+
+          @include phone {@include font-size(12px, 15px);}
+          @include tablet-p {@include font-size(12px, 15px);}
+
         }
         
         .intro {
@@ -244,14 +248,25 @@ body {
           margin-right:50px;
           color:$slate;
 
-          @include phone {
-            @include font-size(18px, 21px);
-            margin:25px 0 0;
-          }
-          @include desktop-s {
-            @include font-size(18px, 21px);
-            margin-right:0;
-          }
+            @include phone {
+                @include font-size(12px, 15px);
+                max-width:inherit;
+                margin-right:0;
+            }
+
+            @include tablet-p {
+                @include font-size(18px, 21px);
+                max-width:inherit;
+                margin-right:0;
+            }
+            
+            @include tablet-h {
+                @include font-size(18px, 21px);
+                max-width:inherit;
+                margin-right:0;
+              }
+            
+            @include desktop-s {@include font-size(18px, 21px);}
         }
 
         .more {
@@ -263,7 +278,18 @@ body {
 
           @include phone {
             @include font-size(12px, 15px);
-            margin-right:0;
+                max-width:inherit;
+                margin-right:0;
+          }
+
+           @include tablet-p {
+                max-width:inherit;
+                margin-right:0;
+          }
+
+          @include tablet-h {
+                max-width:inherit;
+                margin-right:0;
           }
 
           @include desktop-s {
@@ -272,37 +298,104 @@ body {
           }
         }
       }
-      
-      .arrow {bottom:25px;}
+
+    .arrow {bottom:25px;}  
+
+    #two {
+        background: linear-gradient(
+            to right, 
+            darken($khaki, 5%) 0%, 
+            darken($khaki, 5%) 50%, 
+            $white 50%, 
+            $white 100%
+        );
+
+        @include tablet-h {
+            background: linear-gradient(
+                to right, 
+                $khaki 0%, 
+                $khaki 66.75%, 
+                $white 66.75%, 
+                $white 100%
+            );     
+        }
+
+        img {
+            padding-top:100px;
+
+            @include phone {padding-top:25px;}
+            @include tablet-p {padding-top:25px;}
+        }
+
+        .height {
+            @include tablet-h {height:auto;}
+        }
+
+        .arrow {
+            @include tablet-h {
+                display: block;
+                margin-left:70%;
+                position: relative;
+            }
+        }
+    } 
  
       #three {
         position: relative;
 
+        img {
+            display: block;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+
         .previous, .next {
-          position:absolute;
-          z-index: 10;
-          right:0;
-          width:75px;
-          @include font-size(18px, 21px);
-          bottom:35%;
-          padding-right:25px;
+            position:absolute;
+            z-index: 10;
+            right:0;
+            width:160px;
+            @include font-size(18px, 21px);
+            bottom:35%;
+            padding:15px;
+            background-color: $white;
+            border-bottom:1px solid $hotpink;  
 
-          a {
-            color:$yellow;
+                @include phone {
+                    @include font-size(12px, 15px);
+                    padding:10px;
+                    width:100px;
+                  }
+                @include tablet-p {
+                    @include font-size(12px, 15px);
+                    padding:10px;
+                    width:100px;
+                  }
+                @include tablet-h {
+                    @include font-size(15px, 18px);
+                    width:125px;
+                  }
+                @include desktop-s {
+                    @include font-size(15px, 18px);
+                    width:135px;
+                  }
 
-            &:hover {color:$hotpink;}
-
-            span {
-              color:darken($babypink, 15%);
-
-              &:hover {color:black;}
+            div {
+                color: $slate;
+                @include font-size(12px, 15px);
+                text-transform: uppercase;
             }
-          }
+
+            a {
+                color:darken($yellow, 5%);
+
+                &:hover {color:$hotpink;}
+            }
         }
 
         .previous {
           left:0;
-          padding-left:25px;
+          padding-left:0;
+          text-align: right;
         }
 
         .pattern-wrap {
@@ -320,51 +413,13 @@ body {
           &.sqm {background: transparent url('/img/sqm/sqm-bg.jpg') repeat;}
           &.tlp {background: transparent url('/img/tlp/tlp-bg.jpg') repeat;}
 
-          img {
-            display: block; 
-            margin:50px auto;
-
-            @include phone {
-              margin:0;
-            }
-          }
         }
       }
     }
-	}
-}
-
-#two {
-  background: linear-gradient(
-    to right, 
-    darken($khaki, 5%) 0%, 
-    darken($khaki, 5%) 50%, 
-    $white 50%, 
-    $white 100%
-  );
-
-    @include phone {
-      background: linear-gradient(
-      to right, 
-      lighten($khaki, 5%) 0%, 
-      lighten($khaki, 5%) 50%, 
-      lighten($khaki, 5%) 50%, 
-      lighten($khaki, 5%) 100%
-    );
-  }
-
-  img {
-    display:block;
-    padding-top:20%;
-
-    @include phone {
-      padding-top: 35px;
-      width: 75%;
-      margin: 0 auto;
-    }
   }
 }
 
+// WORK ALT
 .work-alt {
   #two {
     background: linear-gradient(
@@ -388,3 +443,16 @@ body {
     img {padding-top:20%;}
   }
 }
+
+// PHONE
+@include phone {
+    .phone {
+        .col-xs-8, 
+        .col-xs-4 {
+            width:50%;
+        }
+    }
+}
+
+
+

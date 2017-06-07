@@ -6466,23 +6466,53 @@ body,
 body {
   font-family: "Work Sans", Helvetica, arial, sans-serif;
   color: #001726; }
+  @media (min-width: 0px) and (max-width: 519px) {
+    body {
+      border-top: 10px solid blue; } }
   @media (min-width: 520px) and (max-width: 767px) {
     body {
-      border-top: 10px solid yellow; } }
+      border-top: 10px solid green; } }
   @media (min-width: 768px) and (max-width: 991px) {
     body {
-      border-top: 10px solid purple; } }
+      border-top: 10px solid yellow; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     body {
-      border-top: 10px solid green; } }
+      border-top: 10px solid orange; } }
+  @media (min-width: 1200px) {
+    body {
+      border-top: 10px solid red; } }
   body h1, body h2, body h3, body p {
     margin: 0 0 2px 0; }
   body h2 {
-    font-size: 2.0625em;
+    font-size: 1.875em;
+    /* 30px */
+    line-height: 1.1;
     /* 33px */
-    line-height: 1.18182;
-    /* 39px */
     font-weight: 300; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      body h2 {
+        font-size: 0.9375em;
+        /* 15px */
+        line-height: 1.2;
+        /* 18px */ } }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body h2 {
+        font-size: 1.125em;
+        /* 18px */
+        line-height: 1.16667;
+        /* 21px */ } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body h2 {
+        font-size: 1.3125em;
+        /* 21px */
+        line-height: 1.14286;
+        /* 24px */ } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      body h2 {
+        font-size: 1.5em;
+        /* 24px */
+        line-height: 1.125;
+        /* 27px */ } }
   body li {
     list-style-type: none;
     padding: 2px 0; }
@@ -6512,6 +6542,9 @@ body {
     @media (min-width: 0px) and (max-width: 519px) {
       body a.arrow {
         display: none; } }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body a.arrow {
+        display: none; } }
   body aside {
     font-size: 0.9375em;
     /* 15px */
@@ -6522,10 +6555,10 @@ body {
     margin-bottom: 2px; }
     @media (min-width: 0px) and (max-width: 519px) {
       body aside {
-        font-size: 0.75em;
-        /* 12px */
-        line-height: 1.25;
-        /* 15px */ } }
+        font-size: 0.625em;
+        /* 10px */
+        line-height: 1.2;
+        /* 12px */ } }
     @media (min-width: 520px) and (max-width: 767px) {
       body aside {
         font-size: 0.75em;
@@ -6641,6 +6674,14 @@ body {
     margin-left: -195px;
     margin-top: -195px;
     z-index: 2; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      body.home section.feature img.logo, body.work section.feature img.logo, body.work-alt section.feature img.logo {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: 0;
+        width: 100px; } }
   body.home section.feature img.cover, body.work section.feature img.cover, body.work-alt section.feature img.cover {
     display: block;
     width: 100vw;
@@ -6657,7 +6698,7 @@ body {
     min-height: 400px;
     padding: 15% 0 0;
     top: -50%;
-    margin-top: 10%; }
+    margin-top: 75px; }
     @media (min-width: 0px) and (max-width: 519px) {
       body.home section.feature .project-basics,
       body.home section.feature .project-bio,
@@ -6666,9 +6707,8 @@ body {
       body.work section.feature .project-link, body.work-alt section.feature .project-basics,
       body.work-alt section.feature .project-bio,
       body.work-alt section.feature .project-link {
-        padding-top: 5%;
-        margin-top: 0; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
+        height: auto; } }
+    @media (min-width: 520px) and (max-width: 767px) {
       body.home section.feature .project-basics,
       body.home section.feature .project-bio,
       body.home section.feature .project-link, body.work section.feature .project-basics,
@@ -6676,7 +6716,16 @@ body {
       body.work section.feature .project-link, body.work-alt section.feature .project-basics,
       body.work-alt section.feature .project-bio,
       body.work-alt section.feature .project-link {
-        min-height: 300px; } }
+        height: auto; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body.home section.feature .project-basics,
+      body.home section.feature .project-bio,
+      body.home section.feature .project-link, body.work section.feature .project-basics,
+      body.work section.feature .project-bio,
+      body.work section.feature .project-link, body.work-alt section.feature .project-basics,
+      body.work-alt section.feature .project-bio,
+      body.work-alt section.feature .project-link {
+        height: auto; } }
     body.home section.feature .project-basics h2,
     body.home section.feature .project-bio h2,
     body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
@@ -6684,45 +6733,7 @@ body {
     body.work section.feature .project-link h2, body.work-alt section.feature .project-basics h2,
     body.work-alt section.feature .project-bio h2,
     body.work-alt section.feature .project-link h2 {
-      margin: 0 0 50px 0; }
-      @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.feature .project-basics h2,
-        body.home section.feature .project-bio h2,
-        body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
-        body.work section.feature .project-bio h2,
-        body.work section.feature .project-link h2, body.work-alt section.feature .project-basics h2,
-        body.work-alt section.feature .project-bio h2,
-        body.work-alt section.feature .project-link h2 {
-          font-size: 1.5em;
-          /* 24px */
-          line-height: 1.125;
-          /* 27px */
-          margin: 0 0 25px; } }
-      @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.feature .project-basics h2,
-        body.home section.feature .project-bio h2,
-        body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
-        body.work section.feature .project-bio h2,
-        body.work section.feature .project-link h2, body.work-alt section.feature .project-basics h2,
-        body.work-alt section.feature .project-bio h2,
-        body.work-alt section.feature .project-link h2 {
-          font-size: 1.125em;
-          /* 18px */
-          line-height: 1.16667;
-          /* 21px */
-          margin: 0 0 25px; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body.home section.feature .project-basics h2,
-        body.home section.feature .project-bio h2,
-        body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
-        body.work section.feature .project-bio h2,
-        body.work section.feature .project-link h2, body.work-alt section.feature .project-basics h2,
-        body.work-alt section.feature .project-bio h2,
-        body.work-alt section.feature .project-link h2 {
-          font-size: 1.3125em;
-          /* 21px */
-          line-height: 1.14286;
-          /* 24px */ } }
+      margin: 0 0 25px 0; }
     body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
     body.home section.feature .project-bio h3,
     body.home section.feature .project-bio ul,
@@ -6743,6 +6754,42 @@ body {
       margin: 0 0 25px 0;
       font-weight: 300;
       color: #5C7484; }
+      @media (min-width: 0px) and (max-width: 519px) {
+        body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
+        body.home section.feature .project-bio h3,
+        body.home section.feature .project-bio ul,
+        body.home section.feature .project-link h3,
+        body.home section.feature .project-link ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
+        body.work section.feature .project-bio h3,
+        body.work section.feature .project-bio ul,
+        body.work section.feature .project-link h3,
+        body.work section.feature .project-link ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
+        body.work-alt section.feature .project-bio h3,
+        body.work-alt section.feature .project-bio ul,
+        body.work-alt section.feature .project-link h3,
+        body.work-alt section.feature .project-link ul {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */ } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
+        body.home section.feature .project-bio h3,
+        body.home section.feature .project-bio ul,
+        body.home section.feature .project-link h3,
+        body.home section.feature .project-link ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
+        body.work section.feature .project-bio h3,
+        body.work section.feature .project-bio ul,
+        body.work section.feature .project-link h3,
+        body.work section.feature .project-link ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
+        body.work-alt section.feature .project-bio h3,
+        body.work-alt section.feature .project-bio ul,
+        body.work-alt section.feature .project-link h3,
+        body.work-alt section.feature .project-link ul {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */ } }
     body.home section.feature .project-basics .intro,
     body.home section.feature .project-bio .intro,
     body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
@@ -6766,12 +6813,13 @@ body {
         body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
         body.work-alt section.feature .project-bio .intro,
         body.work-alt section.feature .project-link .intro {
-          font-size: 1.125em;
-          /* 18px */
-          line-height: 1.16667;
-          /* 21px */
-          margin: 25px 0 0; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */
+          max-width: inherit;
+          margin-right: 0; } }
+      @media (min-width: 520px) and (max-width: 767px) {
         body.home section.feature .project-basics .intro,
         body.home section.feature .project-bio .intro,
         body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
@@ -6783,7 +6831,34 @@ body {
           /* 18px */
           line-height: 1.16667;
           /* 21px */
+          max-width: inherit;
           margin-right: 0; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.feature .project-basics .intro,
+        body.home section.feature .project-bio .intro,
+        body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
+        body.work section.feature .project-bio .intro,
+        body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
+        body.work-alt section.feature .project-bio .intro,
+        body.work-alt section.feature .project-link .intro {
+          font-size: 1.125em;
+          /* 18px */
+          line-height: 1.16667;
+          /* 21px */
+          max-width: inherit;
+          margin-right: 0; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body.home section.feature .project-basics .intro,
+        body.home section.feature .project-bio .intro,
+        body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
+        body.work section.feature .project-bio .intro,
+        body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
+        body.work-alt section.feature .project-bio .intro,
+        body.work-alt section.feature .project-link .intro {
+          font-size: 1.125em;
+          /* 18px */
+          line-height: 1.16667;
+          /* 21px */ } }
     body.home section.feature .project-basics .more,
     body.home section.feature .project-bio .more,
     body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
@@ -6811,6 +6886,27 @@ body {
           /* 12px */
           line-height: 1.25;
           /* 15px */
+          max-width: inherit;
+          margin-right: 0; } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.feature .project-basics .more,
+        body.home section.feature .project-bio .more,
+        body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
+        body.work section.feature .project-bio .more,
+        body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
+        body.work-alt section.feature .project-bio .more,
+        body.work-alt section.feature .project-link .more {
+          max-width: inherit;
+          margin-right: 0; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.feature .project-basics .more,
+        body.home section.feature .project-bio .more,
+        body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
+        body.work section.feature .project-bio .more,
+        body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
+        body.work-alt section.feature .project-bio .more,
+        body.work-alt section.feature .project-link .more {
+          max-width: inherit;
           margin-right: 0; } }
       @media (min-width: 992px) and (max-width: 1199px) {
         body.home section.feature .project-basics .more,
@@ -6827,30 +6923,91 @@ body {
           margin-right: 0; } }
   body.home section.feature .arrow, body.work section.feature .arrow, body.work-alt section.feature .arrow {
     bottom: 25px; }
+  body.home section.feature #two, body.work section.feature #two, body.work-alt section.feature #two {
+    background: linear-gradient(to right, #e7e5e1 0%, #e7e5e1 50%, #fff 50%, #fff 100%); }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body.home section.feature #two, body.work section.feature #two, body.work-alt section.feature #two {
+        background: linear-gradient(to right, #F2F1EF 0%, #F2F1EF 66.75%, #fff 66.75%, #fff 100%); } }
+    body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
+      padding-top: 100px; }
+      @media (min-width: 0px) and (max-width: 519px) {
+        body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
+          padding-top: 25px; } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
+          padding-top: 25px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body.home section.feature #two .height, body.work section.feature #two .height, body.work-alt section.feature #two .height {
+        height: auto; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body.home section.feature #two .arrow, body.work section.feature #two .arrow, body.work-alt section.feature #two .arrow {
+        display: block;
+        margin-left: 70%;
+        position: relative; } }
   body.home section.feature #three, body.work section.feature #three, body.work-alt section.feature #three {
     position: relative; }
+    body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+      display: block;
+      margin: 0 auto;
+      padding-top: 100px; }
     body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
       position: absolute;
       z-index: 10;
       right: 0;
-      width: 75px;
+      width: 160px;
       font-size: 1.125em;
       /* 18px */
       line-height: 1.16667;
       /* 21px */
       bottom: 35%;
-      padding-right: 25px; }
+      padding: 15px;
+      background-color: #fff;
+      border-bottom: 1px solid #CE004F; }
+      @media (min-width: 0px) and (max-width: 519px) {
+        body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */
+          padding: 10px;
+          width: 100px; } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */
+          padding: 10px;
+          width: 100px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */
+          width: 125px; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */
+          width: 135px; } }
+      body.home section.feature #three .previous div, body.home section.feature #three .next div, body.work section.feature #three .previous div, body.work section.feature #three .next div, body.work-alt section.feature #three .previous div, body.work-alt section.feature #three .next div {
+        color: #5C7484;
+        font-size: 0.75em;
+        /* 12px */
+        line-height: 1.25;
+        /* 15px */
+        text-transform: uppercase; }
       body.home section.feature #three .previous a, body.home section.feature #three .next a, body.work section.feature #three .previous a, body.work section.feature #three .next a, body.work-alt section.feature #three .previous a, body.work-alt section.feature #three .next a {
-        color: #D1B100; }
+        color: #b89b00; }
         body.home section.feature #three .previous a:hover, body.home section.feature #three .next a:hover, body.work section.feature #three .previous a:hover, body.work section.feature #three .next a:hover, body.work-alt section.feature #three .previous a:hover, body.work-alt section.feature #three .next a:hover {
           color: #CE004F; }
-        body.home section.feature #three .previous a span, body.home section.feature #three .next a span, body.work section.feature #three .previous a span, body.work section.feature #three .next a span, body.work-alt section.feature #three .previous a span, body.work-alt section.feature #three .next a span {
-          color: #e8a7a7; }
-          body.home section.feature #three .previous a span:hover, body.home section.feature #three .next a span:hover, body.work section.feature #three .previous a span:hover, body.work section.feature #three .next a span:hover, body.work-alt section.feature #three .previous a span:hover, body.work-alt section.feature #three .next a span:hover {
-            color: black; }
     body.home section.feature #three .previous, body.work section.feature #three .previous, body.work-alt section.feature #three .previous {
       left: 0;
-      padding-left: 25px; }
+      padding-left: 0;
+      text-align: right; }
     body.home section.feature #three .pattern-wrap, body.work section.feature #three .pattern-wrap, body.work-alt section.feature #three .pattern-wrap {
       background: transparent url("/img/ghel/ghel-bg.jpg") repeat;
       border-bottom: 1px solid #CE004F; }
@@ -6874,26 +7031,6 @@ body {
         background: transparent url("/img/sqm/sqm-bg.jpg") repeat; }
       body.home section.feature #three .pattern-wrap.tlp, body.work section.feature #three .pattern-wrap.tlp, body.work-alt section.feature #three .pattern-wrap.tlp {
         background: transparent url("/img/tlp/tlp-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap img, body.work section.feature #three .pattern-wrap img, body.work-alt section.feature #three .pattern-wrap img {
-        display: block;
-        margin: 50px auto; }
-        @media (min-width: 0px) and (max-width: 519px) {
-          body.home section.feature #three .pattern-wrap img, body.work section.feature #three .pattern-wrap img, body.work-alt section.feature #three .pattern-wrap img {
-            margin: 0; } }
-
-#two {
-  background: linear-gradient(to right, #e7e5e1 0%, #e7e5e1 50%, #fff 50%, #fff 100%); }
-  @media (min-width: 0px) and (max-width: 519px) {
-    #two {
-      background: linear-gradient(to right, #fdfdfd 0%, #fdfdfd 50%, #fdfdfd 50%, #fdfdfd 100%); } }
-  #two img {
-    display: block;
-    padding-top: 20%; }
-    @media (min-width: 0px) and (max-width: 519px) {
-      #two img {
-        padding-top: 35px;
-        width: 75%;
-        margin: 0 auto; } }
 
 .work-alt #two {
   background: linear-gradient(to right, #e7e5e1 0%, #fff 50%, #fff 50%, #F8E4E4 100%); }
@@ -6902,6 +7039,10 @@ body {
   .work-alt #three img {
     padding-top: 20%; }
 
+@media (min-width: 0px) and (max-width: 519px) {
+  .phone .col-xs-8,
+  .phone .col-xs-4 {
+    width: 50%; } }
 .cd-fixed-bg {
   min-height: 100%;
   background-size: cover;

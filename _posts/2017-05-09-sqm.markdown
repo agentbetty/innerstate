@@ -2,6 +2,7 @@
 layout: work
 permalink: /project/sqm
 keyword: work
+title-long: SquishyMedia
 title: SquishyMedia
 logo: /img/sqm/sqm-logo.png
 logo-alt: SquishyMedia logo

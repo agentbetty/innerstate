@@ -2,7 +2,8 @@
 layout: work
 permalink: /project/asa24
 keyword: work
-title: Automated Self-Administered Recall System (ASA24)
+title: ASA24
+title-long: Automated Self-Administered Recall System (ASA24)
 logo: /img/asa24/asa24-logo.png
 logo-alt: ASA24 logo
 hero: /img/asa24/asa24-hero.jpg

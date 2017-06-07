@@ -2,7 +2,8 @@
 layout: work-alt
 permalink: /project/qcorp
 keyword: work-alt
-title: Q Corp &amp; PCPCI
+title-long: Q Corp &amp; PCPCI
+title: Q Corp
 logo: /img/qcorp/qcorp-logo.png
 logo-alt: Q Corp logo
 hero: /img/qcorp/qcorp-hero.jpg

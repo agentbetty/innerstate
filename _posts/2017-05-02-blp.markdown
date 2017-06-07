@@ -2,7 +2,8 @@
 layout: work
 permalink: /project/blp
 keyword: work
-title: Bend La-Pine School District
+title-long: Bend La-Pine School District
+title: Bend La-Pine
 logo: /img/blp/blp-logo.png
 logo-alt: Bend La-Pine logo
 hero: /img/blp/blp-hero.jpg
