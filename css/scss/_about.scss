@@ -151,7 +151,13 @@
     }
 
     footer {
-        p {color:$babypink;}
+        p {
+          color:$babypink;
+
+          a {color:$yellow;}
+          span {color:$white;}
+
+        }
     }
 }
 

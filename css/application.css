@@ -6456,6 +6456,8 @@ footer p {
   color: #5C7484;
   height: 50px;
   text-align: center; }
+  footer p span {
+    color: #D1B100; }
 
 html,
 body,
@@ -7201,5 +7203,9 @@ body {
       margin-top: 50px; }
   .about footer p {
     color: #F8E4E4; }
+    .about footer p a {
+      color: #D1B100; }
+    .about footer p span {
+      color: #fff; }
 
 /*# sourceMappingURL=application.css.map */
