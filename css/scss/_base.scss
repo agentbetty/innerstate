@@ -20,7 +20,6 @@ body {
   @include tablet-p {border-top:10px solid green;}
   @include tablet-h {border-top:10px solid yellow;}
   @include desktop-s {border-top:10px solid orange;}
-  @include desktop {border-top:10px solid red;}
 
   // – – – – – – – – – – general styles
   h1, h2, h3, p { margin:0 0 2px 0;}
@@ -99,35 +98,35 @@ body {
 	&.home, &.work , &.work-alt {
 
 		section.identity {
-      	    text-align:center;
-            background-color:$night;
-            background-image: url('/img/bg-home.jpg');
+  	    text-align:center;
+        background-color:$night;
+        background-image: url('/img/bg-home.jpg');
 
 			h1 {
 				color:$white;
 				@include font-size(115px, 125px);
 				font-family: $gary;
-                padding:20% 0 0;
+        padding:20% 0 0;
 
-                @include phone {
-                    @include font-size(45px, 48px);
-                    padding-top:60%;
-                }
+            @include phone {
+                @include font-size(45px, 48px);
+                padding-top:60%;
+            }
 
-                @include tablet-p {
-                    @include font-size(50px, 55px);
-                    padding-top:40%;
-                }
+            @include tablet-p {
+                @include font-size(50px, 55px);
+                padding-top:40%;
+            }
 
-                @include tablet-h {
-                    @include font-size(75px, 85px);
-                    padding-top:40%;
-                }
+            @include tablet-h {
+                @include font-size(75px, 85px);
+                padding-top:40%;
+            }
 
-                @include desktop-s {
-                    @include font-size(75px, 85px); 
-                    padding-top:30%;
-                }
+            @include desktop-s {
+                @include font-size(75px, 85px); 
+                padding-top:30%;
+            }
 			}
 
 	    h2.roles {
@@ -159,26 +158,13 @@ body {
               -webkit-text-fill-color: transparent;
               margin:0;
             }
-		}
+		  }
 
-        a.arrow { 
-          left:50%;
-          margin-left:-20px; 
-        }
-
-        .contact {          
-            h3 {  
-                color:$white;
-                @include font-size(15px, 18px);
-                text-align: center;
-                font-weight: 300;
-                position: absolute;
-                bottom: 50px;
-                width:100%;
-                margin:0 auto;
-            }
-        }
-	}
+      a.arrow { 
+        left:50%;
+        margin-left:-20px; 
+      }
+	  }
 
     section.feature {
 
@@ -346,7 +332,7 @@ body {
         img {
             display: block;
             margin: 0 auto;
-            padding-top: 100px;
+            padding-top: 25px;
         }
 
         .previous, .next {
@@ -421,26 +407,29 @@ body {
 
 // WORK ALT
 .work-alt {
-  #two {
-    background: linear-gradient(
-      to right, 
-      darken($khaki, 5%) 0%, 
-      $white 50%, 
-      $white 50%, 
-      $babypink 100%
-    );
-  }
+ section.feature {
 
-  #three {
-    background: linear-gradient(
-      to right, 
-      $khaki 0%, 
-      $white 50%, 
-      $white 50%, 
-      darken($babypink, 5%) 100%
-    );
+    #two {
+      background: linear-gradient(
+        to right, 
+        darken($khaki, 5%) 0%, 
+        $white 50%, 
+        $white 50%, 
+        $babypink 100%
+      )!important;
+    }
 
-    img {padding-top:20%;}
+    #three {
+      background: linear-gradient(
+        to right, 
+        $khaki 0%, 
+        $white 50%, 
+        $white 50%, 
+        darken($babypink, 5%) 100%
+      );
+
+      img {padding-top:20%;}
+    }
   }
 }
 

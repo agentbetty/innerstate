@@ -1,19 +1,11 @@
 footer {
 
-  @include phone {
-    display: none;
-  }
-
-  .folio {
-    position: relative;
-    padding-top:15px;backgound: $babypink;
-
     p {
-      @include font-size(10px, 13px);
-      margin:0;
-      color:$slate;
+        @include font-size(10px, 55px);
+        color:$slate;
+        height:50px;
+        text-align: center;
     }
-  }
 }
 
 

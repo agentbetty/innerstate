@@ -1,7 +1,7 @@
 ---
-layout: work
+layout: work-alt
 permalink: /project/s2f
-keyword: work
+keyword: work-alt
 title-long: Start2farm
 title: Start2farm
 logo: /img/s2f/s2f-logo.png

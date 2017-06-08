@@ -74,6 +74,11 @@ padding: 0;
     font-weight: 300;
     @include font-size(21px, 21px);
 
+    //@include phone ()
+    @include tablet-p {@include font-size(15px, 18px);}
+    @include tablet-h {@include font-size(15px, 18px);}
+    @include desktop-s {@include font-size(18px, 21px);}
+
     h4 {
       margin:0;
       font-weight: 300;
@@ -86,6 +91,11 @@ padding: 0;
 
     li {
       margin:15px 0;
+
+      //@include phone ()
+      @include tablet-p {margin: 5px 0;}
+      @include tablet-h {margin: 10px 0;}
+      @include desktop-s {margin: 10px 0;} 
 
       a {
         color:lighten($hotpink, 5%);
@@ -204,11 +214,6 @@ nav.navbar {
 
 .about {
   nav.navbar {
-    background-color:rgba(217, 222, 225, 0.9);
-    padding-bottom:15px;
-
-    @include desktop {background-color: transparent;}
-    @include tablet-h {background-color: transparent;}
 
     a.navbar-brand {
 
@@ -230,23 +235,6 @@ nav.navbar {
       }
     } 
   } 
-
-  #drawer {
-    border-left-width: 0;
-    background-color: rgba(255, 255, 255, 0.95);
-
-    ul li {
-      a {
-        color:$hotpink;
-        &:hover {color:$night;}
-      }
-
-      h4 a {
-        color:$night;
-        &:hover {color:$salon;}
-      }
-    } 
-  }
 }
 
 
