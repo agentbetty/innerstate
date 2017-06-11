@@ -7,7 +7,7 @@ title: HealthMAP
 logo: /img/hm/hm-logo.png
 logo-alt: HealthMap logo
 hero: /img/hm/hm-hero.jpg
-hero-alt: x-x-x-x-x-x
+hero-alt: Bowl of veggies in a skillet
 funding: Emory University,<br>The Center for Behavioral Health Policy Studies
 year: 2016
 link: https://squishymedia.com/project/healthmap

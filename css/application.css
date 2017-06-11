@@ -6276,6 +6276,9 @@ template {
   top: 15px;
   right: 20px;
   cursor: pointer; }
+  @media (min-width: 0px) and (max-width: 519px) {
+    #drawer-toggle-label {
+      right: 0; } }
 
 /* adds our "hamburger" menu icon */
 #drawer-toggle-label:before {
@@ -6289,6 +6292,9 @@ template {
   font-weight: 300;
   background-color: #CE004F;
   box-shadow: 0 10px 0 #EB0091, 0 20px 0 #FF7D0D; }
+  @media (min-width: 0px) and (max-width: 519px) {
+    #drawer-toggle-label:before {
+      right: 20px; } }
 
 #drawer-toggle-label:hover:before {
   color: #CE004F; }
@@ -6314,12 +6320,20 @@ template {
     /* 21px */
     line-height: 1;
     /* 21px */ }
+    @media (min-width: 0px) and (max-width: 519px) {
+      #drawer ul {
+        font-size: 0.75em;
+        /* 12px */
+        line-height: 1.25;
+        /* 15px */
+        margin-top: 35px; } }
     @media (min-width: 520px) and (max-width: 767px) {
       #drawer ul {
         font-size: 0.9375em;
         /* 15px */
         line-height: 1.2;
-        /* 18px */ } }
+        /* 18px */
+        margin-top: 35px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       #drawer ul {
         font-size: 0.9375em;
@@ -6341,8 +6355,17 @@ template {
       /* 12px */
       line-height: 1.25;
       /* 15px */ }
+      @media (min-width: 0px) and (max-width: 519px) {
+        #drawer ul h5 {
+          display: none; } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        #drawer ul h5 {
+          display: none; } }
     #drawer ul li {
       margin: 15px 0; }
+      @media (min-width: 0px) and (max-width: 519px) {
+        #drawer ul li {
+          margin: 5px 0; } }
       @media (min-width: 520px) and (max-width: 767px) {
         #drawer ul li {
           margin: 5px 0; } }
@@ -6440,7 +6463,7 @@ nav.navbar .navbar-header a.navbar-brand {
 @media (min-width: 0px) and (max-width: 519px) {
   .about nav.navbar a.navbar-brand {
     display: inline-block;
-    width: 75px; } }
+    width: 150px; } }
 .about nav.navbar a.navbar-brand div.circle {
   border: 6px solid #001726; }
 .about nav.navbar a.navbar-brand p {
@@ -6484,10 +6507,10 @@ body {
   body h1, body h2, body h3, body p {
     margin: 0 0 2px 0; }
   body h2 {
-    font-size: 1.875em;
+    font-size: 1.6875em;
+    /* 27px */
+    line-height: 1.11111;
     /* 30px */
-    line-height: 1.1;
-    /* 33px */
     font-weight: 300; }
     @media (min-width: 0px) and (max-width: 519px) {
       body h2 {
@@ -6503,10 +6526,10 @@ body {
         /* 21px */ } }
     @media (min-width: 768px) and (max-width: 991px) {
       body h2 {
-        font-size: 1.3125em;
-        /* 21px */
-        line-height: 1.14286;
-        /* 24px */ } }
+        font-size: 1.125em;
+        /* 18px */
+        line-height: 1.16667;
+        /* 21px */ } }
     @media (min-width: 992px) and (max-width: 1199px) {
       body h2 {
         font-size: 1.5em;
@@ -6545,35 +6568,9 @@ body {
     @media (min-width: 520px) and (max-width: 767px) {
       body a.arrow {
         display: none; } }
-  body aside {
-    font-size: 0.9375em;
-    /* 15px */
-    line-height: 1.4;
-    /* 21px */
-    color: #03619D;
-    text-transform: uppercase;
-    margin-bottom: 2px; }
-    @media (min-width: 0px) and (max-width: 519px) {
-      body aside {
-        font-size: 0.625em;
-        /* 10px */
-        line-height: 1.2;
-        /* 12px */ } }
-    @media (min-width: 520px) and (max-width: 767px) {
-      body aside {
-        font-size: 0.75em;
-        /* 12px */
-        line-height: 1.25;
-        /* 15px */ } }
-  body .color-wrap {
-    height: 100vh; }
-    body .color-wrap img {
-      width: 95%;
-      float: right; }
-  body .vertical-align {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body a.arrow {
+        display: none; } }
   body.home section.identity, body.work section.identity, body.work-alt section.identity {
     text-align: center;
     background-color: #001726;
@@ -6591,29 +6588,27 @@ body {
           font-size: 2.8125em;
           /* 45px */
           line-height: 1.06667;
-          /* 48px */
-          padding-top: 60%; } }
+          /* 48px */ } }
       @media (min-width: 520px) and (max-width: 767px) {
         body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
           font-size: 3.125em;
           /* 50px */
           line-height: 1.1;
-          /* 55px */
-          padding-top: 40%; } }
+          /* 55px */ } }
       @media (min-width: 768px) and (max-width: 991px) {
         body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
           font-size: 4.6875em;
           /* 75px */
           line-height: 1.13333;
           /* 85px */
-          padding-top: 40%; } }
+          padding-top: 150px; } }
       @media (min-width: 992px) and (max-width: 1199px) {
         body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
           font-size: 4.6875em;
           /* 75px */
           line-height: 1.13333;
           /* 85px */
-          padding-top: 30%; } }
+          padding-top: 150px; } }
     body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
       display: none;
       font-size: 1.6875em;
@@ -6629,16 +6624,16 @@ body {
           /* 24px */ } }
       @media (min-width: 520px) and (max-width: 767px) {
         body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
-          font-size: 1.125em;
-          /* 18px */
-          line-height: 1.16667;
-          /* 21px */ } }
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */ } }
       @media (min-width: 768px) and (max-width: 991px) {
         body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
-          font-size: 1.3125em;
-          /* 21px */
-          line-height: 1.14286;
-          /* 24px */ } }
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */ } }
       @media (min-width: 992px) and (max-width: 1199px) {
         body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
           font-size: 1.3125em;
@@ -6664,77 +6659,79 @@ body {
     z-index: 2; }
     @media (min-width: 0px) and (max-width: 519px) {
       body.home section.feature img.logo, body.work section.feature img.logo, body.work-alt section.feature img.logo {
-        position: absolute;
         top: 25%;
-        left: 50%;
-        margin-left: -50px;
+        margin-left: -80px;
         margin-top: 0;
-        width: 100px; } }
+        width: 160px; } }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body.home section.feature img.logo, body.work section.feature img.logo, body.work-alt section.feature img.logo {
+        top: 25%;
+        margin-left: -80px;
+        margin-top: 0;
+        width: 160px; } }
   body.home section.feature img.cover, body.work section.feature img.cover, body.work-alt section.feature img.cover {
     display: block;
     width: 100vw;
     height: 100vh;
     object-fit: cover; }
   body.home section.feature .project-basics,
-  body.home section.feature .project-bio,
-  body.home section.feature .project-link, body.work section.feature .project-basics,
-  body.work section.feature .project-bio,
-  body.work section.feature .project-link, body.work-alt section.feature .project-basics,
-  body.work-alt section.feature .project-bio,
-  body.work-alt section.feature .project-link {
-    height: 100%;
-    min-height: 400px;
-    padding: 15% 0 0;
-    top: -50%;
-    margin-top: 75px; }
-    @media (min-width: 0px) and (max-width: 519px) {
-      body.home section.feature .project-basics,
-      body.home section.feature .project-bio,
-      body.home section.feature .project-link, body.work section.feature .project-basics,
-      body.work section.feature .project-bio,
-      body.work section.feature .project-link, body.work-alt section.feature .project-basics,
-      body.work-alt section.feature .project-bio,
-      body.work-alt section.feature .project-link {
-        height: auto; } }
-    @media (min-width: 520px) and (max-width: 767px) {
-      body.home section.feature .project-basics,
-      body.home section.feature .project-bio,
-      body.home section.feature .project-link, body.work section.feature .project-basics,
-      body.work section.feature .project-bio,
-      body.work section.feature .project-link, body.work-alt section.feature .project-basics,
-      body.work-alt section.feature .project-bio,
-      body.work-alt section.feature .project-link {
-        height: auto; } }
+  body.home section.feature .project-bio, body.work section.feature .project-basics,
+  body.work section.feature .project-bio, body.work-alt section.feature .project-basics,
+  body.work-alt section.feature .project-bio {
+    margin-top: 150px;
+    font-weight: 300;
+    color: #5C7484; }
     @media (min-width: 768px) and (max-width: 991px) {
       body.home section.feature .project-basics,
-      body.home section.feature .project-bio,
-      body.home section.feature .project-link, body.work section.feature .project-basics,
-      body.work section.feature .project-bio,
-      body.work section.feature .project-link, body.work-alt section.feature .project-basics,
-      body.work-alt section.feature .project-bio,
-      body.work-alt section.feature .project-link {
-        height: auto; } }
+      body.home section.feature .project-bio, body.work section.feature .project-basics,
+      body.work section.feature .project-bio, body.work-alt section.feature .project-basics,
+      body.work-alt section.feature .project-bio {
+        margin-top: 60px; } }
     body.home section.feature .project-basics h2,
-    body.home section.feature .project-bio h2,
-    body.home section.feature .project-link h2, body.work section.feature .project-basics h2,
-    body.work section.feature .project-bio h2,
-    body.work section.feature .project-link h2, body.work-alt section.feature .project-basics h2,
-    body.work-alt section.feature .project-bio h2,
-    body.work-alt section.feature .project-link h2 {
-      margin: 0 0 25px 0; }
+    body.home section.feature .project-bio h2, body.work section.feature .project-basics h2,
+    body.work section.feature .project-bio h2, body.work-alt section.feature .project-basics h2,
+    body.work-alt section.feature .project-bio h2 {
+      margin-bottom: 25px; }
+    body.home section.feature .project-basics aside,
+    body.home section.feature .project-bio aside, body.work section.feature .project-basics aside,
+    body.work section.feature .project-bio aside, body.work-alt section.feature .project-basics aside,
+    body.work-alt section.feature .project-bio aside {
+      color: #FF6969;
+      text-transform: uppercase; }
+      @media (min-width: 0px) and (max-width: 519px) {
+        body.home section.feature .project-basics aside,
+        body.home section.feature .project-bio aside, body.work section.feature .project-basics aside,
+        body.work section.feature .project-bio aside, body.work-alt section.feature .project-basics aside,
+        body.work-alt section.feature .project-bio aside {
+          font-size: 0.625em;
+          /* 10px */
+          line-height: 1.2;
+          /* 12px */ } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.feature .project-basics aside,
+        body.home section.feature .project-bio aside, body.work section.feature .project-basics aside,
+        body.work section.feature .project-bio aside, body.work-alt section.feature .project-basics aside,
+        body.work-alt section.feature .project-bio aside {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */ } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.feature .project-basics aside,
+        body.home section.feature .project-bio aside, body.work section.feature .project-basics aside,
+        body.work section.feature .project-bio aside, body.work-alt section.feature .project-basics aside,
+        body.work-alt section.feature .project-bio aside {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */ } }
     body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
     body.home section.feature .project-bio h3,
-    body.home section.feature .project-bio ul,
-    body.home section.feature .project-link h3,
-    body.home section.feature .project-link ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
+    body.home section.feature .project-bio ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
     body.work section.feature .project-bio h3,
-    body.work section.feature .project-bio ul,
-    body.work section.feature .project-link h3,
-    body.work section.feature .project-link ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
+    body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
     body.work-alt section.feature .project-bio h3,
-    body.work-alt section.feature .project-bio ul,
-    body.work-alt section.feature .project-link h3,
-    body.work-alt section.feature .project-link ul {
+    body.work-alt section.feature .project-bio ul {
       font-size: 0.9375em;
       /* 15px */
       line-height: 1.2;
@@ -6745,17 +6742,11 @@ body {
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
         body.home section.feature .project-bio h3,
-        body.home section.feature .project-bio ul,
-        body.home section.feature .project-link h3,
-        body.home section.feature .project-link ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
+        body.home section.feature .project-bio ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
         body.work section.feature .project-bio h3,
-        body.work section.feature .project-bio ul,
-        body.work section.feature .project-link h3,
-        body.work section.feature .project-link ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
+        body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
         body.work-alt section.feature .project-bio h3,
-        body.work-alt section.feature .project-bio ul,
-        body.work-alt section.feature .project-link h3,
-        body.work-alt section.feature .project-link ul {
+        body.work-alt section.feature .project-bio ul {
           font-size: 0.75em;
           /* 12px */
           line-height: 1.25;
@@ -6763,152 +6754,103 @@ body {
       @media (min-width: 520px) and (max-width: 767px) {
         body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
         body.home section.feature .project-bio h3,
-        body.home section.feature .project-bio ul,
-        body.home section.feature .project-link h3,
-        body.home section.feature .project-link ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
+        body.home section.feature .project-bio ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
         body.work section.feature .project-bio h3,
-        body.work section.feature .project-bio ul,
-        body.work section.feature .project-link h3,
-        body.work section.feature .project-link ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
+        body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
         body.work-alt section.feature .project-bio h3,
-        body.work-alt section.feature .project-bio ul,
-        body.work-alt section.feature .project-link h3,
-        body.work-alt section.feature .project-link ul {
-          font-size: 0.75em;
-          /* 12px */
-          line-height: 1.25;
-          /* 15px */ } }
-    body.home section.feature .project-basics .intro,
-    body.home section.feature .project-bio .intro,
-    body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
-    body.work section.feature .project-bio .intro,
-    body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
-    body.work-alt section.feature .project-bio .intro,
-    body.work-alt section.feature .project-link .intro {
-      font-size: 1.375em;
-      /* 22px */
-      line-height: 1.13636;
-      /* 25px */
-      font-weight: 300;
-      max-width: 500px;
-      margin-right: 50px;
-      color: #5C7484; }
-      @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.feature .project-basics .intro,
-        body.home section.feature .project-bio .intro,
-        body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
-        body.work section.feature .project-bio .intro,
-        body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
-        body.work-alt section.feature .project-bio .intro,
-        body.work-alt section.feature .project-link .intro {
+        body.work-alt section.feature .project-bio ul {
           font-size: 0.75em;
           /* 12px */
           line-height: 1.25;
           /* 15px */
-          max-width: inherit;
-          margin-right: 0; } }
+          margin-bottom: 10px; } }
+    body.home section.feature .project-basics .intro,
+    body.home section.feature .project-bio .intro, body.work section.feature .project-basics .intro,
+    body.work section.feature .project-bio .intro, body.work-alt section.feature .project-basics .intro,
+    body.work-alt section.feature .project-bio .intro {
+      font-size: 1.3125em;
+      /* 21px */
+      line-height: 1.14286;
+      /* 24px */
+      margin-bottom: 15px; }
+      @media (min-width: 0px) and (max-width: 519px) {
+        body.home section.feature .project-basics .intro,
+        body.home section.feature .project-bio .intro, body.work section.feature .project-basics .intro,
+        body.work section.feature .project-bio .intro, body.work-alt section.feature .project-basics .intro,
+        body.work-alt section.feature .project-bio .intro {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */ } }
       @media (min-width: 520px) and (max-width: 767px) {
         body.home section.feature .project-basics .intro,
-        body.home section.feature .project-bio .intro,
-        body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
-        body.work section.feature .project-bio .intro,
-        body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
-        body.work-alt section.feature .project-bio .intro,
-        body.work-alt section.feature .project-link .intro {
+        body.home section.feature .project-bio .intro, body.work section.feature .project-basics .intro,
+        body.work section.feature .project-bio .intro, body.work-alt section.feature .project-basics .intro,
+        body.work-alt section.feature .project-bio .intro {
           font-size: 1.125em;
           /* 18px */
           line-height: 1.16667;
-          /* 21px */
-          max-width: inherit;
-          margin-right: 0; } }
+          /* 21px */ } }
       @media (min-width: 768px) and (max-width: 991px) {
         body.home section.feature .project-basics .intro,
-        body.home section.feature .project-bio .intro,
-        body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
-        body.work section.feature .project-bio .intro,
-        body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
-        body.work-alt section.feature .project-bio .intro,
-        body.work-alt section.feature .project-link .intro {
-          font-size: 1.125em;
-          /* 18px */
-          line-height: 1.16667;
-          /* 21px */
-          max-width: inherit;
-          margin-right: 0; } }
+        body.home section.feature .project-bio .intro, body.work section.feature .project-basics .intro,
+        body.work section.feature .project-bio .intro, body.work-alt section.feature .project-basics .intro,
+        body.work-alt section.feature .project-bio .intro {
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */ } }
       @media (min-width: 992px) and (max-width: 1199px) {
         body.home section.feature .project-basics .intro,
-        body.home section.feature .project-bio .intro,
-        body.home section.feature .project-link .intro, body.work section.feature .project-basics .intro,
-        body.work section.feature .project-bio .intro,
-        body.work section.feature .project-link .intro, body.work-alt section.feature .project-basics .intro,
-        body.work-alt section.feature .project-bio .intro,
-        body.work-alt section.feature .project-link .intro {
+        body.home section.feature .project-bio .intro, body.work section.feature .project-basics .intro,
+        body.work section.feature .project-bio .intro, body.work-alt section.feature .project-basics .intro,
+        body.work-alt section.feature .project-bio .intro {
           font-size: 1.125em;
           /* 18px */
           line-height: 1.16667;
           /* 21px */ } }
     body.home section.feature .project-basics .more,
-    body.home section.feature .project-bio .more,
-    body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
-    body.work section.feature .project-bio .more,
-    body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
-    body.work-alt section.feature .project-bio .more,
-    body.work-alt section.feature .project-link .more {
-      font-size: 1.125em;
-      /* 18px */
-      line-height: 1.16667;
-      /* 21px */
+    body.home section.feature .project-bio .more, body.work section.feature .project-basics .more,
+    body.work section.feature .project-bio .more, body.work-alt section.feature .project-basics .more,
+    body.work-alt section.feature .project-bio .more {
+      font-size: 1.0625em;
+      /* 17px */
+      line-height: 1.17647;
+      /* 20px */
       font-family: "EB Garamond", Georgia, serif;
-      max-width: 500px;
-      margin: 15px 50px 0 0;
-      color: #5C7484; }
+      margin-bottom: 15px; }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature .project-basics .more,
-        body.home section.feature .project-bio .more,
-        body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
-        body.work section.feature .project-bio .more,
-        body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
-        body.work-alt section.feature .project-bio .more,
-        body.work-alt section.feature .project-link .more {
+        body.home section.feature .project-bio .more, body.work section.feature .project-basics .more,
+        body.work section.feature .project-bio .more, body.work-alt section.feature .project-basics .more,
+        body.work-alt section.feature .project-bio .more {
           font-size: 0.75em;
           /* 12px */
           line-height: 1.25;
-          /* 15px */
-          max-width: inherit;
-          margin-right: 0; } }
-      @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.feature .project-basics .more,
-        body.home section.feature .project-bio .more,
-        body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
-        body.work section.feature .project-bio .more,
-        body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
-        body.work-alt section.feature .project-bio .more,
-        body.work-alt section.feature .project-link .more {
-          max-width: inherit;
-          margin-right: 0; } }
+          /* 15px */ } }
       @media (min-width: 768px) and (max-width: 991px) {
         body.home section.feature .project-basics .more,
-        body.home section.feature .project-bio .more,
-        body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
-        body.work section.feature .project-bio .more,
-        body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
-        body.work-alt section.feature .project-bio .more,
-        body.work-alt section.feature .project-link .more {
-          max-width: inherit;
-          margin-right: 0; } }
+        body.home section.feature .project-bio .more, body.work section.feature .project-basics .more,
+        body.work section.feature .project-bio .more, body.work-alt section.feature .project-basics .more,
+        body.work-alt section.feature .project-bio .more {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */ } }
       @media (min-width: 992px) and (max-width: 1199px) {
         body.home section.feature .project-basics .more,
-        body.home section.feature .project-bio .more,
-        body.home section.feature .project-link .more, body.work section.feature .project-basics .more,
-        body.work section.feature .project-bio .more,
-        body.work section.feature .project-link .more, body.work-alt section.feature .project-basics .more,
-        body.work-alt section.feature .project-bio .more,
-        body.work-alt section.feature .project-link .more {
+        body.home section.feature .project-bio .more, body.work section.feature .project-basics .more,
+        body.work section.feature .project-bio .more, body.work-alt section.feature .project-basics .more,
+        body.work-alt section.feature .project-bio .more {
           font-size: 0.9375em;
           /* 15px */
           line-height: 1.2;
-          /* 18px */
-          margin-right: 0; } }
+          /* 18px */ } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    body.home section.feature .project-bio, body.work section.feature .project-bio, body.work-alt section.feature .project-bio {
+      width: 500px;
+      padding: 25px;
+      margin: 0 auto; } }
   body.home section.feature .arrow, body.work section.feature .arrow, body.work-alt section.feature .arrow {
     bottom: 25px; }
   body.home section.feature #two, body.work section.feature #two, body.work-alt section.feature #two {
@@ -6917,27 +6859,33 @@ body {
       body.home section.feature #two, body.work section.feature #two, body.work-alt section.feature #two {
         background: linear-gradient(to right, #F2F1EF 0%, #F2F1EF 66.75%, #fff 66.75%, #fff 100%); } }
     body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
-      padding-top: 100px; }
+      padding-top: 90px;
+      display: block;
+      margin: 0 auto; }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
           padding-top: 25px; } }
       @media (min-width: 520px) and (max-width: 767px) {
         body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
           padding-top: 25px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
+          padding-top: 25px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       body.home section.feature #two .height, body.work section.feature #two .height, body.work-alt section.feature #two .height {
         height: auto; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body.home section.feature #two .arrow, body.work section.feature #two .arrow, body.work-alt section.feature #two .arrow {
-        display: block;
-        margin-left: 70%;
-        position: relative; } }
   body.home section.feature #three, body.work section.feature #three, body.work-alt section.feature #three {
     position: relative; }
     body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
       display: block;
       margin: 0 auto;
       padding-top: 25px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+          padding-top: 145px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+          padding-top: 100px; } }
     body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
       position: absolute;
       z-index: 10;
@@ -6947,10 +6895,10 @@ body {
       /* 18px */
       line-height: 1.16667;
       /* 21px */
-      bottom: 35%;
+      bottom: 125px;
       padding: 15px;
       background-color: #fff;
-      border-bottom: 1px solid #CE004F; }
+      border-bottom: 1px solid #FF6969; }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
           font-size: 0.75em;
@@ -6958,7 +6906,8 @@ body {
           line-height: 1.25;
           /* 15px */
           padding: 10px;
-          width: 100px; } }
+          width: 100px;
+          bottom: 3%; } }
       @media (min-width: 520px) and (max-width: 767px) {
         body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
           font-size: 0.75em;
@@ -7023,7 +6972,7 @@ body {
 .work-alt section.feature #two {
   background: linear-gradient(to right, #e7e5e1 0%, #fff 50%, #fff 50%, #F8E4E4 100%) !important; }
 .work-alt section.feature #three {
-  background: linear-gradient(to right, #F2F1EF 0%, #fff 50%, #fff 50%, #f3d0d0 100%); }
+  background: linear-gradient(to right, #f3d0d0 0%, #fff 50%, #fff 50%, #F2F1EF 100%); }
   .work-alt section.feature #three img {
     padding-top: 20%; }
 

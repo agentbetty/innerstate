@@ -11,6 +11,7 @@ body,
 // elizabethm email signature update
 // object fit fix for ie + happy browser for object-fit (ie) and vh/vw (opera)
 // add in flexbox for centering
+// happy browser
 
 body {
   font-family: $worky;
@@ -25,12 +26,12 @@ body {
   h1, h2, h3, p { margin:0 0 2px 0;}
 
   h2 {
-    @include font-size(30px, 33px);
+    @include font-size(27px, 30px);
     font-weight: 300;
 
       @include phone {@include font-size(15px, 18px);}
       @include tablet-p {@include font-size(18px, 21px);}
-      @include tablet-h {@include font-size(21px, 24px);}
+      @include tablet-h {@include font-size(18px, 21px);}
       @include desktop-s {@include font-size(24px, 27px);}
   }
 
@@ -39,7 +40,7 @@ body {
     padding:2px 0;
   }
 
-  img{ max-width:100%; }
+  img {max-width:100%;}
 
   a:link {color: $hotpink;}
   a:visited {color: $hotpink;}
@@ -63,36 +64,8 @@ body {
 
     @include phone {display:none;}
     @include tablet-p {display:none;} 
+    @include tablet-h {display: none;}
   }
-
-  aside {
-    @include font-size(15px, 21px);
-    color:$salon;
-    text-transform: uppercase; 
-    margin-bottom:2px;
-
-    @include phone {
-      @include font-size(10px, 12px);
-    }
-    @include tablet-p {
-      @include font-size(12px, 15px);
-    }
-  }
-
-  .color-wrap {
-    height:100vh;
-
-    img {
-      width:95%;
-      float:right;
-    }
-  }
-
-   .vertical-align {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
 
   // – – – – – – – – – – home layout (+ featured project)
 	&.home, &.work , &.work-alt {
@@ -110,22 +83,20 @@ body {
 
             @include phone {
                 @include font-size(45px, 48px);
-                padding-top:60%;
             }
 
             @include tablet-p {
                 @include font-size(50px, 55px);
-                padding-top:40%;
             }
 
             @include tablet-h {
                 @include font-size(75px, 85px);
-                padding-top:40%;
+                padding-top:150px; 
             }
 
             @include desktop-s {
-                @include font-size(75px, 85px); 
-                padding-top:30%;
+                @include font-size(75px, 85px);
+                padding-top:150px; 
             }
 			}
 
@@ -139,11 +110,11 @@ body {
                 }
 
                 @include tablet-p {
-                  @include font-size(18px, 21px);
+                  @include font-size(15px, 18px);
                 }
 
                 @include tablet-h {
-                  @include font-size(21px, 24px);
+                  @include font-size(15px, 18px);
                 }
 
                 @include desktop-s {
@@ -177,12 +148,17 @@ body {
         z-index: 2;
 
         @include phone {
-            position: absolute;
             top: 25%;
-            left: 50%;
-            margin-left: -50px;
+            margin-left: -80px;
             margin-top:0;
-            width: 100px;
+            width: 160px;
+        }
+
+        @include tablet-p {
+            top: 25%;
+            margin-left: -80px;
+            margin-top:0;
+            width: 160px;
         }
       }
 
@@ -194,27 +170,31 @@ body {
       }
 
       .project-basics,
-      .project-bio,
-      .project-link {
-        height:100%;
-        min-height: 400px;
-        padding:15% 0 0;
-        top:-50%;
-        margin-top:75px; 
+      .project-bio {
+        margin-top:150px; 
+        font-weight:300;
+        color:$slate;
 
-        @include phone {
-            height:auto;
+        @include tablet-h {margin-top:60px;}
+
+        h2 {
+          margin-bottom:25px;
         }
 
-        @include tablet-p {
-            height:auto;
-        }
+        aside {
+          color:$coral;
+          text-transform: uppercase; 
 
-        @include tablet-h {
-            height:auto;
+          @include phone {
+            @include font-size(10px, 12px);
+          }
+          @include tablet-p {
+            @include font-size(12px, 15px);
+          }
+          @include tablet-h {
+            @include font-size(12px, 15px);
+          }
         }
-
-        h2 {margin:0 0 25px 0;}
 
         h3, ul {
           @include font-size(15px, 18px);
@@ -223,78 +203,69 @@ body {
           color:$slate;
 
           @include phone {@include font-size(12px, 15px);}
-          @include tablet-p {@include font-size(12px, 15px);}
-
+          @include tablet-p {@include font-size(12px, 15px);margin-bottom:10px;}
         }
         
         .intro {
-          @include font-size(22px, 25px);
-          font-weight: 300;
-          max-width: 500px;
-          margin-right:50px;
-          color:$slate;
+          @include font-size(21px, 24px);
+          margin-bottom: 15px;
 
             @include phone {
                 @include font-size(12px, 15px);
-                max-width:inherit;
-                margin-right:0;
             }
 
             @include tablet-p {
                 @include font-size(18px, 21px);
-                max-width:inherit;
-                margin-right:0;
             }
             
             @include tablet-h {
-                @include font-size(18px, 21px);
-                max-width:inherit;
-                margin-right:0;
+                @include font-size(15px, 18px);
               }
             
-            @include desktop-s {@include font-size(18px, 21px);}
+            @include desktop-s {
+              @include font-size(18px, 21px);
+            }
         }
 
         .more {
-          @include font-size(18px, 21px);
+          @include font-size(17px, 20px);
           font-family: $gary;
-          max-width: 500px;
-          margin:15px 50px 0 0;
-          color:$slate;
+          margin-bottom: 15px;
 
           @include phone {
             @include font-size(12px, 15px);
-                max-width:inherit;
-                margin-right:0;
           }
 
-           @include tablet-p {
-                max-width:inherit;
-                margin-right:0;
-          }
+           @include tablet-p {}
 
           @include tablet-h {
-                max-width:inherit;
-                margin-right:0;
+            @include font-size(12px, 15px);
           }
 
           @include desktop-s {
             @include font-size(15px, 18px);
-            margin-right:0;
           }
         }
       }
 
-    .arrow {bottom:25px;}  
+      .project-bio {
+          @include tablet-h {
+            width:500px;
+            padding:25px;
+            margin:0 auto;
+          }
+        }
 
-    #two {
-        background: linear-gradient(
-            to right, 
-            darken($khaki, 5%) 0%, 
-            darken($khaki, 5%) 50%, 
-            $white 50%, 
-            $white 100%
-        );
+      .arrow {bottom:25px;}  
+
+      #two {
+          background: linear-gradient(
+              to right, 
+              darken($khaki, 5%) 0%, 
+              darken($khaki, 5%) 50%, 
+              $white 50%, 
+              $white 100%
+          );
 
         @include tablet-h {
             background: linear-gradient(
@@ -307,22 +278,17 @@ body {
         }
 
         img {
-            padding-top:100px;
+            padding-top:90px;
+            display: block; 
+            margin:0 auto;
 
             @include phone {padding-top:25px;}
             @include tablet-p {padding-top:25px;}
+            @include tablet-h {padding-top:25px;}
         }
 
         .height {
             @include tablet-h {height:auto;}
-        }
-
-        .arrow {
-            @include tablet-h {
-                display: block;
-                margin-left:70%;
-                position: relative;
-            }
         }
     } 
  
@@ -333,6 +299,9 @@ body {
             display: block;
             margin: 0 auto;
             padding-top: 25px;
+
+            @include desktop-s {padding-top:145px;}
+            @include tablet-h {padding-top:100px;}
         }
 
         .previous, .next {
@@ -341,15 +310,16 @@ body {
             right:0;
             width:160px;
             @include font-size(18px, 21px);
-            bottom:35%;
+            bottom:125px;
             padding:15px;
             background-color: $white;
-            border-bottom:1px solid $hotpink;  
+            border-bottom:1px solid $coral;  
 
                 @include phone {
                     @include font-size(12px, 15px);
                     padding:10px;
                     width:100px;
+                    bottom:3%;
                   }
                 @include tablet-p {
                     @include font-size(12px, 15px);
@@ -422,10 +392,10 @@ body {
     #three {
       background: linear-gradient(
         to right, 
-        $khaki 0%, 
+        darken($babypink, 5%) 0%, 
         $white 50%, 
         $white 50%, 
-        darken($babypink, 5%) 100%
+        $khaki 100%
       );
 
       img {padding-top:20%;}
