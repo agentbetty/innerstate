@@ -19,9 +19,8 @@ role-2: Information Architect
 role-3: UX Designer
 two-1: /img/qcorp/qcorp-desktop-2.png
 two-1-alt: Q Corp home page on a desktop
-bio-1: I was brought onto the Q Corp project in 2011 to help freshen up their brand and Partner for Quality Care initiative.
-bio-2: I developed a brand strategy to support all three brand&#58; Q Corp, P4QC, and PCPCI. 
-bio-3: 
+bio-1: I was brought onto the Q Corp project in 2011 to help freshen up their brand and strengthen the brand relationships between&#58; Q Corp, PCPCI, and  the Partner for Quality Care initiatives.
+bio-2: In addition to developing brand strategy to support all three brand&emdash;Q Corp, P4QC, and PCPCI&emdash;we extended this strategy to new Drupal sites and both online and print collateral. 
 three: /img/qcorp/qcorp-desktop.png
 three-alt: Q Corp home page on a desktop
 colorClass: qcorp

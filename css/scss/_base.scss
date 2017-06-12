@@ -17,10 +17,9 @@ body {
   font-family: $worky;
   color:$night;
 
-  @include phone {border-top:10px solid blue;}
-  @include tablet-p {border-top:10px solid green;}
-  @include tablet-h {border-top:10px solid yellow;}
-  @include desktop-s {border-top:10px solid orange;}
+  // @include phone {border-top:10px solid blue;}
+  // @include tablet-p {border-top:10px solid green;}
+  // @include tablet-h {border-top:10px solid yellow;}
 
   // – – – – – – – – – – general styles
   h1, h2, h3, p { margin:0 0 2px 0;}
@@ -75,67 +74,95 @@ body {
         background-color:$night;
         background-image: url('/img/bg-home.jpg');
 
-			h1 {
-				color:$white;
-				@include font-size(115px, 125px);
-				font-family: $gary;
-        padding:20% 0 0;
+        .vertical-centering {
+          display: table;
+          width: 100%;
+          height: 100%;
 
-            @include phone {
-                @include font-size(45px, 48px);
-            }
+            div {
+              display: table-cell;
+              text-align: center;
+              vertical-align: middle;
 
-            @include tablet-p {
-                @include font-size(50px, 55px);
-            }
-
-            @include tablet-h {
-                @include font-size(75px, 85px);
-                padding-top:150px; 
-            }
-
-            @include desktop-s {
-                @include font-size(75px, 85px);
-                padding-top:150px; 
-            }
-			}
-
-	    h2.roles {
-            display:none;
-            @include font-size(27px, 30px);
-            font-weight: 300;
-
-                @include phone {
-                  @include font-size(21px, 24px);
+                div.wrap {
+                  height:125px;
+                  margin:0 auto;
+                  display: block;
                 }
 
-                @include tablet-p {
-                  @include font-size(15px, 18px);
+                h1 {
+                  color:$white;
+                  @include font-size(115px, 125px);
+                  font-family: $gary;
+
+                      @include phone {
+                          @include font-size(55px, 58px);
+                      }
+
+                      @include tablet-p {
+                          @include font-size(55px, 58px);
+                      }
+
+                      @include tablet-h {
+                          @include font-size(75px, 85px);
+                      }
+
+                      @include desktop-s {
+                          @include font-size(75px, 85px);
+                      }
                 }
 
-                @include tablet-h {
-                  @include font-size(15px, 18px);
-                }
+                h2.roles {
+                      display:none;
+                      @include font-size(27px, 30px);
+                      font-weight: 300;
 
-                @include desktop-s {
-                  @include font-size(21px, 24px);
-                }
+                          @include phone {
+                            @include font-size(21px, 24px);
+                          }
 
-            span {
-              display:inline-block;
-              background: -webkit-linear-gradient(45deg, $fuschia, $orange);
-              background: linear-gradient(45deg, $fuschia, $orange);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              margin:0;
+                          @include tablet-p {
+                            @include font-size(21px, 24px);
+                          }
+
+                          @include tablet-h {
+                            @include font-size(21px, 24px);
+                          }
+
+                          @include desktop-s {
+                            @include font-size(21px, 24px);
+                          }
+
+                      span {
+                        display:inline-block;
+                        background: -webkit-linear-gradient(45deg, $fuschia, $orange);
+                        background: linear-gradient(45deg, $fuschia, $orange);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin:0;
+                      }
+                }
             }
-		  }
+        }
 
       a.arrow { 
         left:50%;
         margin-left:-20px; 
       }
 	  }
+
+    section.fourohfour {
+        background-color:$babypink;
+        background-image: url('/img/bg-404.jpg')!important;
+
+        h1 {@include font-size(145px, 148px);}
+        h3 {
+          @include font-size(18px, 21px);
+          font-weight: 300;
+          color:$white;
+          margin:15px;
+        }
+    }
 
     section.feature {
 
@@ -249,8 +276,18 @@ body {
       }
 
       .project-bio {
+          @include phone {
+            max-width:340px;
+            padding:25px;
+            margin:0 auto;
+          }
+          @include tablet-p {
+            max-width:500px;
+            padding:25px;
+            margin:0 auto;
+          }
           @include tablet-h {
-            width:500px;
+            max-width:500px;
             padding:25px;
             margin:0 auto;
           }
@@ -288,6 +325,8 @@ body {
         }
 
         .height {
+            @include phone {height:auto;}
+            @include tablet-p {height:auto;}
             @include tablet-h {height:auto;}
         }
     } 
@@ -300,8 +339,10 @@ body {
             margin: 0 auto;
             padding-top: 25px;
 
-            @include desktop-s {padding-top:145px;}
+            @include phone {padding-top:50px;}
+            @include tablet-p {padding-top:100px;}
             @include tablet-h {padding-top:100px;}
+            @include desktop-s {padding-top:145px;}
         }
 
         .previous, .next {
@@ -325,6 +366,7 @@ body {
                     @include font-size(12px, 15px);
                     padding:10px;
                     width:100px;
+                    bottom: 25px;
                   }
                 @include tablet-h {
                     @include font-size(15px, 18px);

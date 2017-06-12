@@ -78,7 +78,7 @@ padding: 0;
     font-weight: 300;
     @include font-size(21px, 21px);
 
-    @include phone {@include font-size(12px, 15px);margin-top:35px;}
+    @include phone {@include font-size(15px, 18px);margin-top:35px;}
     @include tablet-p {@include font-size(15px, 18px);margin-top:35px;}
     @include tablet-h {@include font-size(15px, 18px);}
     @include desktop-s {@include font-size(18px, 21px);}
@@ -187,8 +187,6 @@ nav.navbar {
     a.navbar-brand {
       padding:20px 15px 0;
 
-      @include phone {display:none;}
-
       &:hover {border-bottom-width:0;}
 
       div.circle {
@@ -209,11 +207,6 @@ nav.navbar {
         background: linear-gradient(45deg, $light-grey, $babyslate);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-      }
-
-      p.name {
-
-        @include phone {display:none;}
       }
     }
   }

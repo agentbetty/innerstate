@@ -6322,10 +6322,10 @@ template {
     /* 21px */ }
     @media (min-width: 0px) and (max-width: 519px) {
       #drawer ul {
-        font-size: 0.75em;
-        /* 12px */
-        line-height: 1.25;
+        font-size: 0.9375em;
         /* 15px */
+        line-height: 1.2;
+        /* 18px */
         margin-top: 35px; } }
     @media (min-width: 520px) and (max-width: 767px) {
       #drawer ul {
@@ -6432,9 +6432,6 @@ template {
     margin-left: calc(100% - 50px); } }
 nav.navbar .navbar-header a.navbar-brand {
   padding: 20px 15px 0; }
-  @media (min-width: 0px) and (max-width: 519px) {
-    nav.navbar .navbar-header a.navbar-brand {
-      display: none; } }
   nav.navbar .navbar-header a.navbar-brand:hover {
     border-bottom-width: 0; }
   nav.navbar .navbar-header a.navbar-brand div.circle {
@@ -6456,9 +6453,6 @@ nav.navbar .navbar-header a.navbar-brand {
     background: linear-gradient(45deg, #eaeaea, #758e9e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-  @media (min-width: 0px) and (max-width: 519px) {
-    nav.navbar .navbar-header a.navbar-brand p.name {
-      display: none; } }
 
 @media (min-width: 0px) and (max-width: 519px) {
   .about nav.navbar a.navbar-brand {
@@ -6481,6 +6475,12 @@ footer p {
   text-align: center; }
   footer p span {
     color: #D1B100; }
+@media (min-width: 0px) and (max-width: 519px) {
+  footer {
+    display: none; } }
+@media (min-width: 520px) and (max-width: 767px) {
+  footer {
+    display: none; } }
 
 html,
 body,
@@ -6492,18 +6492,6 @@ body,
 body {
   font-family: "Work Sans", Helvetica, arial, sans-serif;
   color: #001726; }
-  @media (min-width: 0px) and (max-width: 519px) {
-    body {
-      border-top: 10px solid blue; } }
-  @media (min-width: 520px) and (max-width: 767px) {
-    body {
-      border-top: 10px solid green; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    body {
-      border-top: 10px solid yellow; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    body {
-      border-top: 10px solid orange; } }
   body h1, body h2, body h3, body p {
     margin: 0 0 2px 0; }
   body h2 {
@@ -6575,81 +6563,106 @@ body {
     text-align: center;
     background-color: #001726;
     background-image: url("/img/bg-home.jpg"); }
-    body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
-      color: #fff;
-      font-size: 7.1875em;
-      /* 115px */
-      line-height: 1.08696;
-      /* 125px */
-      font-family: "EB Garamond", Georgia, serif;
-      padding: 20% 0 0; }
-      @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
-          font-size: 2.8125em;
-          /* 45px */
-          line-height: 1.06667;
-          /* 48px */ } }
-      @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
-          font-size: 3.125em;
-          /* 50px */
-          line-height: 1.1;
-          /* 55px */ } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
-          font-size: 4.6875em;
-          /* 75px */
-          line-height: 1.13333;
-          /* 85px */
-          padding-top: 150px; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body.home section.identity h1, body.work section.identity h1, body.work-alt section.identity h1 {
-          font-size: 4.6875em;
-          /* 75px */
-          line-height: 1.13333;
-          /* 85px */
-          padding-top: 150px; } }
-    body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
-      display: none;
-      font-size: 1.6875em;
-      /* 27px */
-      line-height: 1.11111;
-      /* 30px */
-      font-weight: 300; }
-      @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
-          font-size: 1.3125em;
-          /* 21px */
-          line-height: 1.14286;
-          /* 24px */ } }
-      @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
-          font-size: 0.9375em;
-          /* 15px */
-          line-height: 1.2;
-          /* 18px */ } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
-          font-size: 0.9375em;
-          /* 15px */
-          line-height: 1.2;
-          /* 18px */ } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body.home section.identity h2.roles, body.work section.identity h2.roles, body.work-alt section.identity h2.roles {
-          font-size: 1.3125em;
-          /* 21px */
-          line-height: 1.14286;
-          /* 24px */ } }
-      body.home section.identity h2.roles span, body.work section.identity h2.roles span, body.work-alt section.identity h2.roles span {
-        display: inline-block;
-        background: -webkit-linear-gradient(45deg, #EB0091, #FF7D0D);
-        background: linear-gradient(45deg, #EB0091, #FF7D0D);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin: 0; }
+    body.home section.identity .vertical-centering, body.work section.identity .vertical-centering, body.work-alt section.identity .vertical-centering {
+      display: table;
+      width: 100%;
+      height: 100%; }
+      body.home section.identity .vertical-centering div, body.work section.identity .vertical-centering div, body.work-alt section.identity .vertical-centering div {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle; }
+        body.home section.identity .vertical-centering div div.wrap, body.work section.identity .vertical-centering div div.wrap, body.work-alt section.identity .vertical-centering div div.wrap {
+          height: 125px;
+          margin: 0 auto;
+          display: block; }
+        body.home section.identity .vertical-centering div h1, body.work section.identity .vertical-centering div h1, body.work-alt section.identity .vertical-centering div h1 {
+          color: #fff;
+          font-size: 7.1875em;
+          /* 115px */
+          line-height: 1.08696;
+          /* 125px */
+          font-family: "EB Garamond", Georgia, serif; }
+          @media (min-width: 0px) and (max-width: 519px) {
+            body.home section.identity .vertical-centering div h1, body.work section.identity .vertical-centering div h1, body.work-alt section.identity .vertical-centering div h1 {
+              font-size: 3.4375em;
+              /* 55px */
+              line-height: 1.05455;
+              /* 58px */ } }
+          @media (min-width: 520px) and (max-width: 767px) {
+            body.home section.identity .vertical-centering div h1, body.work section.identity .vertical-centering div h1, body.work-alt section.identity .vertical-centering div h1 {
+              font-size: 3.4375em;
+              /* 55px */
+              line-height: 1.05455;
+              /* 58px */ } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            body.home section.identity .vertical-centering div h1, body.work section.identity .vertical-centering div h1, body.work-alt section.identity .vertical-centering div h1 {
+              font-size: 4.6875em;
+              /* 75px */
+              line-height: 1.13333;
+              /* 85px */ } }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            body.home section.identity .vertical-centering div h1, body.work section.identity .vertical-centering div h1, body.work-alt section.identity .vertical-centering div h1 {
+              font-size: 4.6875em;
+              /* 75px */
+              line-height: 1.13333;
+              /* 85px */ } }
+        body.home section.identity .vertical-centering div h2.roles, body.work section.identity .vertical-centering div h2.roles, body.work-alt section.identity .vertical-centering div h2.roles {
+          display: none;
+          font-size: 1.6875em;
+          /* 27px */
+          line-height: 1.11111;
+          /* 30px */
+          font-weight: 300; }
+          @media (min-width: 0px) and (max-width: 519px) {
+            body.home section.identity .vertical-centering div h2.roles, body.work section.identity .vertical-centering div h2.roles, body.work-alt section.identity .vertical-centering div h2.roles {
+              font-size: 1.3125em;
+              /* 21px */
+              line-height: 1.14286;
+              /* 24px */ } }
+          @media (min-width: 520px) and (max-width: 767px) {
+            body.home section.identity .vertical-centering div h2.roles, body.work section.identity .vertical-centering div h2.roles, body.work-alt section.identity .vertical-centering div h2.roles {
+              font-size: 1.3125em;
+              /* 21px */
+              line-height: 1.14286;
+              /* 24px */ } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            body.home section.identity .vertical-centering div h2.roles, body.work section.identity .vertical-centering div h2.roles, body.work-alt section.identity .vertical-centering div h2.roles {
+              font-size: 1.3125em;
+              /* 21px */
+              line-height: 1.14286;
+              /* 24px */ } }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            body.home section.identity .vertical-centering div h2.roles, body.work section.identity .vertical-centering div h2.roles, body.work-alt section.identity .vertical-centering div h2.roles {
+              font-size: 1.3125em;
+              /* 21px */
+              line-height: 1.14286;
+              /* 24px */ } }
+          body.home section.identity .vertical-centering div h2.roles span, body.work section.identity .vertical-centering div h2.roles span, body.work-alt section.identity .vertical-centering div h2.roles span {
+            display: inline-block;
+            background: -webkit-linear-gradient(45deg, #EB0091, #FF7D0D);
+            background: linear-gradient(45deg, #EB0091, #FF7D0D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0; }
     body.home section.identity a.arrow, body.work section.identity a.arrow, body.work-alt section.identity a.arrow {
       left: 50%;
       margin-left: -20px; }
+  body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
+    background-color: #F8E4E4;
+    background-image: url("/img/bg-404.jpg") !important; }
+    body.home section.fourohfour h1, body.work section.fourohfour h1, body.work-alt section.fourohfour h1 {
+      font-size: 9.0625em;
+      /* 145px */
+      line-height: 1.02069;
+      /* 148px */ }
+    body.home section.fourohfour h3, body.work section.fourohfour h3, body.work-alt section.fourohfour h3 {
+      font-size: 1.125em;
+      /* 18px */
+      line-height: 1.16667;
+      /* 21px */
+      font-weight: 300;
+      color: #fff;
+      margin: 15px; }
   body.home section.feature img.logo, body.work section.feature img.logo, body.work-alt section.feature img.logo {
     position: absolute;
     top: 50%;
@@ -6846,9 +6859,19 @@ body {
           /* 15px */
           line-height: 1.2;
           /* 18px */ } }
+  @media (min-width: 0px) and (max-width: 519px) {
+    body.home section.feature .project-bio, body.work section.feature .project-bio, body.work-alt section.feature .project-bio {
+      max-width: 340px;
+      padding: 25px;
+      margin: 0 auto; } }
+  @media (min-width: 520px) and (max-width: 767px) {
+    body.home section.feature .project-bio, body.work section.feature .project-bio, body.work-alt section.feature .project-bio {
+      max-width: 500px;
+      padding: 25px;
+      margin: 0 auto; } }
   @media (min-width: 768px) and (max-width: 991px) {
     body.home section.feature .project-bio, body.work section.feature .project-bio, body.work-alt section.feature .project-bio {
-      width: 500px;
+      max-width: 500px;
       padding: 25px;
       margin: 0 auto; } }
   body.home section.feature .arrow, body.work section.feature .arrow, body.work-alt section.feature .arrow {
@@ -6871,6 +6894,12 @@ body {
       @media (min-width: 768px) and (max-width: 991px) {
         body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
           padding-top: 25px; } }
+    @media (min-width: 0px) and (max-width: 519px) {
+      body.home section.feature #two .height, body.work section.feature #two .height, body.work-alt section.feature #two .height {
+        height: auto; } }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body.home section.feature #two .height, body.work section.feature #two .height, body.work-alt section.feature #two .height {
+        height: auto; } }
     @media (min-width: 768px) and (max-width: 991px) {
       body.home section.feature #two .height, body.work section.feature #two .height, body.work-alt section.feature #two .height {
         height: auto; } }
@@ -6880,12 +6909,18 @@ body {
       display: block;
       margin: 0 auto;
       padding-top: 25px; }
-      @media (min-width: 992px) and (max-width: 1199px) {
+      @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
-          padding-top: 145px; } }
+          padding-top: 50px; } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+          padding-top: 100px; } }
       @media (min-width: 768px) and (max-width: 991px) {
         body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
           padding-top: 100px; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+          padding-top: 145px; } }
     body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
       position: absolute;
       z-index: 10;
@@ -6915,7 +6950,8 @@ body {
           line-height: 1.25;
           /* 15px */
           padding: 10px;
-          width: 100px; } }
+          width: 100px;
+          bottom: 25px; } }
       @media (min-width: 768px) and (max-width: 991px) {
         body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
           font-size: 0.9375em;
