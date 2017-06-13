@@ -26,7 +26,7 @@ body {
 
   h2 {
     @include font-size(27px, 30px);
-    font-weight: 300;
+    font-weight: 400;
 
       @include phone {@include font-size(15px, 18px);}
       @include tablet-p {@include font-size(18px, 21px);}
@@ -115,7 +115,7 @@ body {
                 h2.roles {
                       display:none;
                       @include font-size(27px, 30px);
-                      font-weight: 300;
+                      font-weight: 400;
 
                           @include phone {
                             @include font-size(21px, 24px);
@@ -158,7 +158,7 @@ body {
         h1 {@include font-size(145px, 148px);}
         h3 {
           @include font-size(18px, 21px);
-          font-weight: 300;
+          font-weight: 400;
           color:$white;
           margin:15px;
         }
@@ -199,7 +199,7 @@ body {
       .project-basics,
       .project-bio {
         margin-top:150px; 
-        font-weight:300;
+        font-weight:400;
         color:$slate;
 
         @include tablet-h {margin-top:60px;}
@@ -226,7 +226,7 @@ body {
         h3, ul {
           @include font-size(15px, 18px);
           margin:0 0 25px 0;
-          font-weight:300;
+          font-weight:400;
           color:$slate;
 
           @include phone {@include font-size(12px, 15px);}

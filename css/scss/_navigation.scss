@@ -47,7 +47,7 @@ padding: 0;
   width: 30px; 
   right: 5px;
   top: 8px;
-  font-weight: 300;
+  font-weight:400;
   background-color:$hotpink;
   box-shadow: 0 10px 0 $fuschia, 0 20px 0 $orange;
 
@@ -75,7 +75,7 @@ padding: 0;
 
   ul {
     text-align: right;
-    font-weight: 300;
+    font-weight:400;
     @include font-size(21px, 21px);
 
     @include phone {@include font-size(15px, 18px);margin-top:35px;}
@@ -85,7 +85,7 @@ padding: 0;
 
     h4 {
       margin:0;
-      font-weight: 300;
+      font-weight:400;
     }
 
     h5 {
