@@ -135,6 +135,7 @@ body {
 
                       span {
                         display:inline-block;
+                        background-color:$hotpink;
                         background: -webkit-linear-gradient(45deg, $fuschia, $orange);
                         background: linear-gradient(45deg, $fuschia, $orange);
                         -webkit-background-clip: text;
@@ -202,6 +203,7 @@ body {
         font-weight:400;
         color:$slate;
 
+        @include phone {margin-top:75px;}
         @include tablet-h {margin-top:60px;}
 
         h2 {

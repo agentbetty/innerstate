@@ -6223,6 +6223,32 @@ template {
   -webkit-animation: fadein ease-in 1s;
   -o-animation: fadein ease-in 1s; }
 
+.work .cover,
+.work-alt .cover {
+  animation: fadein ease-in .5s;
+  -moz-animation: fadein ease-in .5s;
+  -webkit-animation: fadein ease-in .5s;
+  -o-animation: fadein ease-in .5s; }
+
+.work .logo,
+.work-alt .logo {
+  animation: fadein ease-in 1.5s;
+  -moz-animation: fadein ease-in 1.5s;
+  -webkit-animation: fadein ease-in 1.5s;
+  -o-animation: fadein ease-in 1.5s; }
+
+.about-details {
+  animation: fadein ease-in .5s;
+  -moz-animation: fadein ease-in .5s;
+  -webkit-animation: fadein ease-in .5s;
+  -o-animation: fadein ease-in .5s; }
+
+.about ul {
+  animation: fadein ease-in 1.25s;
+  -moz-animation: fadein ease-in 1.25s;
+  -webkit-animation: fadein ease-in 1.25s;
+  -o-animation: fadein ease-in 1.25s; }
+
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -6639,6 +6665,7 @@ body {
               /* 24px */ } }
           body.home section.identity .vertical-centering div h2.roles span, body.work section.identity .vertical-centering div h2.roles span, body.work-alt section.identity .vertical-centering div h2.roles span {
             display: inline-block;
+            background-color: #CE004F;
             background: -webkit-linear-gradient(45deg, #EB0091, #FF7D0D);
             background: linear-gradient(45deg, #EB0091, #FF7D0D);
             -webkit-background-clip: text;
@@ -6694,6 +6721,12 @@ body {
     margin-top: 150px;
     font-weight: 400;
     color: #5C7484; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      body.home section.feature .project-basics,
+      body.home section.feature .project-bio, body.work section.feature .project-basics,
+      body.work section.feature .project-bio, body.work-alt section.feature .project-basics,
+      body.work-alt section.feature .project-bio {
+        margin-top: 75px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       body.home section.feature .project-basics,
       body.home section.feature .project-bio, body.work section.feature .project-basics,
@@ -7082,7 +7115,7 @@ body {
       /* 45px */
       line-height: 0.6;
       /* 27px */
-      margin-bottom: 20px; }
+      margin-bottom: 40px; }
       @media (min-width: 0px) and (max-width: 519px) {
         .about .about-details h1 {
           font-size: 1.875em;
@@ -7099,26 +7132,11 @@ body {
           /* 33px */
           text-align: center; } }
     .about .about-details h2 {
-      color: #5C7484;
-      font-size: 1.5em;
-      /* 24px */
-      line-height: 1.125;
-      /* 27px */
-      margin-top: 35px; }
-      @media (min-width: 0px) and (max-width: 519px) {
-        .about .about-details h2 {
-          font-size: 1.125em;
-          /* 18px */
-          line-height: 1.16667;
-          /* 21px */
-          margin: 25px 0 0 0; } }
-      @media (min-width: 520px) and (max-width: 767px) {
-        .about .about-details h2 {
-          font-size: 1.3125em;
-          /* 21px */
-          line-height: 1.14286;
-          /* 24px */
-          margin: 25px 0 0 0; } }
+      color: #FF6969;
+      font-size: 1.125em;
+      /* 18px */
+      line-height: 1.16667;
+      /* 21px */ }
     .about .about-details p, .about .about-details ul {
       margin: 15px 0;
       font-size: 0.9375em;
