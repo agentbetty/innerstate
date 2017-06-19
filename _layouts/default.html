@@ -2,6 +2,9 @@
   <html lang="en-US">
     {% include head.html %}
     <body class="{{ page.keyword }}">
+         <!--[if lte IE 9]>
+            <p class="happybrowser"><b>Hey there!</b> You are using an <b>outdated</b> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
       <section>
         {% include navigation.html %}
         {{ content }}
