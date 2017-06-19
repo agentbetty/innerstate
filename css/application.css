@@ -6407,10 +6407,7 @@ template {
           border-bottom-width: 0;
           color: #ff1fa9; }
       #drawer ul li .hi {
-        background: -webkit-linear-gradient(45deg, white, #F8E4E4);
-        background: linear-gradient(45deg, white, #F8E4E4);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; }
+        color: #F8E4E4; }
         #drawer ul li .hi:hover {
           color: #ff1fa9; }
 
@@ -6468,17 +6465,20 @@ nav.navbar .navbar-header a.navbar-brand {
     border-radius: 50%;
     margin-left: -30px;
     float: left; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      nav.navbar .navbar-header a.navbar-brand div.circle {
+        margin-left: 0;
+        border-color: #CE004F; } }
   nav.navbar .navbar-header a.navbar-brand p {
     font-size: 0.625em;
     /* 10px */
     line-height: 1.3;
     /* 13px */
     margin: 0;
-    color: #758e9e;
-    background: -webkit-linear-gradient(45deg, #eaeaea, #758e9e);
-    background: linear-gradient(45deg, #eaeaea, #758e9e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    color: #758e9e; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      nav.navbar .navbar-header a.navbar-brand p {
+        display: none; } }
 
 @media (min-width: 0px) and (max-width: 519px) {
   .about nav.navbar a.navbar-brand {
@@ -6518,6 +6518,13 @@ body,
 body {
   font-family: "Work Sans", Helvetica, arial, sans-serif;
   color: #001726; }
+  body .happybrowser {
+    background-color: #ffcfcf;
+    padding: 15px;
+    position: relative;
+    z-index: 1031;
+    color: #001726;
+    margin: 0; }
   body h1, body h2, body h3, body p {
     margin: 0 0 2px 0; }
   body h2 {
@@ -6665,12 +6672,8 @@ body {
               /* 24px */ } }
           body.home section.identity .vertical-centering div h2.roles span, body.work section.identity .vertical-centering div h2.roles span, body.work-alt section.identity .vertical-centering div h2.roles span {
             display: inline-block;
-            background-color: #CE004F;
-            background: -webkit-linear-gradient(45deg, #EB0091, #FF7D0D);
-            background: linear-gradient(45deg, #EB0091, #FF7D0D);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 0; }
+            margin: 0;
+            color: #FF6969; }
     body.home section.identity a.arrow, body.work section.identity a.arrow, body.work-alt section.identity a.arrow {
       left: 50%;
       margin-left: -20px; }
@@ -7081,14 +7084,25 @@ body {
       display: block; } }
 
 .about {
-  background: #F8E4E4 url("/img/bg-about.jpg") no-repeat center bottom;
+  background: #d9dee1 url("/img/bg-about.jpg") no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed; }
+  @media (min-width: 0px) and (max-width: 519px) {
+    .about {
+      background-position: center 125px; } }
+  @media (min-width: 0px) and (max-width: 519px) {
+    .about .navbar {
+      height: 65px;
+      background-color: rgba(217, 222, 225, 0.95); } }
+  @media (min-width: 520px) and (max-width: 767px) {
+    .about .navbar {
+      height: 65px;
+      background-color: rgba(217, 222, 225, 0.95); } }
   .about .about-details {
-    margin: 120px 0; }
+    margin: 75px 0; }
     @media (min-width: 0px) and (max-width: 519px) {
       .about .about-details {
         margin: 75px 15px 15px; } }
@@ -7098,16 +7112,6 @@ body {
     @media (min-width: 1200px) {
       .about .about-details {
         margin-bottom: 275px; } }
-    .about .about-details .row div:nth-child(3) h2 {
-      margin-top: 60px; }
-      @media (min-width: 0px) and (max-width: 519px) {
-        .about .about-details .row div:nth-child(3) h2 {
-          margin-top: 15px; } }
-      @media (min-width: 520px) and (max-width: 767px) {
-        .about .about-details .row div:nth-child(3) h2 {
-          margin-top: 15px; } }
-    .about .about-details .row div:nth-child(3) ul + h2 {
-      margin-top: 35px; }
     .about .about-details h1 {
       font-family: "EB Garamond", Georgia, serif;
       color: #001726;
@@ -7115,7 +7119,7 @@ body {
       /* 45px */
       line-height: 0.6;
       /* 27px */
-      margin-bottom: 40px; }
+      margin-bottom: 25px; }
       @media (min-width: 0px) and (max-width: 519px) {
         .about .about-details h1 {
           font-size: 1.875em;
@@ -7160,30 +7164,6 @@ body {
     .about .about-details ul li {
       list-style-type: circle;
       margin-left: 15px; }
-    @media (min-width: 520px) and (max-width: 767px) {
-      .about .about-details .wrap {
-        float: left;
-        width: 48%;
-        margin-right: 2%; } }
-    @media (min-width: 0px) and (max-width: 519px) {
-      .about .about-details .wrap {
-        float: left;
-        width: 48%;
-        margin-right: 2%; } }
-    .about .about-details .wrap ul {
-      margin: 15px 0;
-      text-transform: uppercase;
-      color: #ad9300;
-      font-size: 0.9375em;
-      /* 15px */
-      line-height: 1.2;
-      /* 18px */ }
-      @media (min-width: 0px) and (max-width: 519px) {
-        .about .about-details .wrap ul {
-          font-size: 0.75em;
-          /* 12px */
-          line-height: 1.33333;
-          /* 16px */ } }
     .about .about-details .more {
       color: #e8a7a7;
       padding: 15px;

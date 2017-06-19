@@ -1,13 +1,27 @@
 .about {
-  background: $babypink url('/img/bg-about.jpg') no-repeat center bottom;
+  background: #d9dee1 url('/img/bg-about.jpg') no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-attachment:fixed;
 
+  @include phone {background-position: center 125px;}
+
+  .navbar {
+    
+    @include phone {
+      height:65px;
+      background-color: rgba(217, 222, 225, 0.95);
+    }
+    @include tablet-p {
+      height:65px;
+      background-color: rgba(217, 222, 225, 0.95);
+    }
+  }
+
   .about-details {
-      margin: 120px 0;
+      margin: 75px 0;
 
       @include phone {
         margin:75px 15px 15px;
@@ -21,26 +35,11 @@
         margin-bottom: 275px;
       }
 
-      .row {
-          div:nth-child(3) {
-            h2 {
-              margin-top: 60px;
-
-              @include phone {margin-top:15px;}
-              @include tablet-p {margin-top:15px;}
-            }
-
-            ul + h2 {
-              margin-top: 35px;
-            }
-          }
-      }
-
       h1 {
         font-family: $gary;
         color:$night;
         @include font-size(45px, 27px);
-        margin-bottom: 40px;
+        margin-bottom: 25px;
 
         @include phone {
           @include font-size(30px, 33px);
@@ -85,32 +84,6 @@
           margin-left: 15px;
         }
       }
-
-      .wrap {
-
-          @include tablet-p {
-            float:left;
-            width:48%;
-            margin-right: 2%;
-          }
-
-          @include phone {
-            float:left;
-            width:48%;
-            margin-right: 2%;
-          }
-
-          ul {
-            margin:15px 0;
-            text-transform: uppercase;
-            color:darken($yellow, 7%);
-            @include font-size(15px, 18px);
-
-            @include phone {
-              @include font-size(12px, 16px);
-            }
-          } 
-        }
 
       .more {
         color:darken($babypink, 15%);

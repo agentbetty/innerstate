@@ -5,13 +5,11 @@ body,
   min-width:340px;
   min-height: 480px;
 }
-// don't forget your proportional font / line height mixin
-// test the bootstrap js, use and or delete
-// retina images
+
 // elizabethm email signature update
 // object fit fix for ie + happy browser for object-fit (ie) and vh/vw (opera)
-// add in flexbox for centering
 // happy browser
+// gradient back for roles (w ie support)
 
 body {
   font-family: $worky;
@@ -20,6 +18,15 @@ body {
   // @include phone {border-top:10px solid blue;}
   // @include tablet-p {border-top:10px solid green;}
   // @include tablet-h {border-top:10px solid yellow;}
+
+  .happybrowser {
+      background-color:$coral-light;
+      padding:15px;
+      position:relative;
+      z-index: 1031;
+      color:$night;
+      margin:0;
+  }
 
   // – – – – – – – – – – general styles
   h1, h2, h3, p { margin:0 0 2px 0;}
@@ -135,12 +142,8 @@ body {
 
                       span {
                         display:inline-block;
-                        background-color:$hotpink;
-                        background: -webkit-linear-gradient(45deg, $fuschia, $orange);
-                        background: linear-gradient(45deg, $fuschia, $orange);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
                         margin:0;
+                        color:$coral;
                       }
                 }
             }
