@@ -6573,6 +6573,13 @@ body {
     color: #CE004F; }
   body a:focus {
     color: #D1B100; }
+  body blockquote {
+    font-family: "EB Garamond", Georgia, serif;
+    color: #024b7a;
+    border-left: 1px solid #FF6969; }
+  body hr {
+    border-top: 1px solid #FF6969;
+    margin: 30px 0; }
   body a.arrow {
     background: transparent url("/img/arrow-down.svg") no-repeat;
     height: 40px;
@@ -7084,15 +7091,8 @@ body {
       display: block; } }
 
 .about {
-  background: #d9dee1 url("/img/bg-about.jpg") no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed; }
-  @media (min-width: 0px) and (max-width: 519px) {
-    .about {
-      background-position: center 125px; } }
+  background-color: #f5d8d8;
+  /* fallback for old browsers */ }
   @media (min-width: 0px) and (max-width: 519px) {
     .about .navbar {
       height: 65px;
@@ -7102,7 +7102,7 @@ body {
       height: 65px;
       background-color: rgba(217, 222, 225, 0.95); } }
   .about .about-details {
-    margin: 75px 0; }
+    margin: 50px 0; }
     @media (min-width: 0px) and (max-width: 519px) {
       .about .about-details {
         margin: 75px 15px 15px; } }
@@ -7113,15 +7113,17 @@ body {
       .about .about-details {
         margin-bottom: 275px; } }
     .about .about-details h1 {
+      margin-left: -9999px; }
+    .about .about-details .intro {
       font-family: "EB Garamond", Georgia, serif;
       color: #001726;
-      font-size: 2.8125em;
-      /* 45px */
-      line-height: 0.6;
-      /* 27px */
+      font-size: 3.75em;
+      /* 60px */
+      line-height: 1.16667;
+      /* 70px */
       margin-bottom: 25px; }
       @media (min-width: 0px) and (max-width: 519px) {
-        .about .about-details h1 {
+        .about .about-details .intro {
           font-size: 1.875em;
           /* 30px */
           line-height: 1.1;
@@ -7129,41 +7131,45 @@ body {
           margin: 0;
           text-align: center; } }
       @media (min-width: 520px) and (max-width: 767px) {
-        .about .about-details h1 {
+        .about .about-details .intro {
           font-size: 1.875em;
           /* 30px */
           line-height: 1.1;
           /* 33px */
           text-align: center; } }
+    .about .about-details strong {
+      color: #f56565;
+      font-weight: normal; }
+    .about .about-details p {
+      font-size: 1.3125em;
+      /* 21px */
+      line-height: 1.28571;
+      /* 27px */
+      padding: 5px 0; }
     .about .about-details h2 {
       color: #FF6969;
       font-size: 1.125em;
       /* 18px */
       line-height: 1.16667;
       /* 21px */ }
-    .about .about-details p, .about .about-details ul {
+    .about .about-details ul {
       margin: 15px 0;
       font-size: 0.9375em;
       /* 15px */
       line-height: 1.4;
       /* 21px */ }
+      .about .about-details ul li {
+        list-style-type: none; }
       @media (min-width: 0px) and (max-width: 519px) {
-        .about .about-details p, .about .about-details ul {
+        .about .about-details ul {
           margin-top: 5px;
           font-size: 0.75em;
           /* 12px */
           line-height: 1.33333;
           /* 16px */ } }
-      .about .about-details p em, .about .about-details ul em {
-        color: #857000;
-        font-style: normal; }
-    .about .about-details blockquote {
-      font-family: "EB Garamond", Georgia, serif;
-      color: #024b7a;
-      border-left: 1px solid #FF6969; }
-    .about .about-details ul li {
-      list-style-type: circle;
-      margin-left: 15px; }
+    .about .about-details em {
+      color: #857000;
+      font-style: normal; }
     .about .about-details .more {
       color: #e8a7a7;
       padding: 15px;

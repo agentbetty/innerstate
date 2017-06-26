@@ -1,12 +1,5 @@
 .about {
-  background: #d9dee1 url('/img/bg-about.jpg') no-repeat center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment:fixed;
-
-  @include phone {background-position: center 125px;}
+  background-color: darken($babypink, 3%);  /* fallback for old browsers */
 
   .navbar {
     
@@ -21,7 +14,7 @@
   }
 
   .about-details {
-      margin: 75px 0;
+      margin: 50px 0;
 
       @include phone {
         margin:75px 15px 15px;
@@ -35,10 +28,12 @@
         margin-bottom: 275px;
       }
 
-      h1 {
+      h1 {margin-left:-9999px;}
+      
+      .intro {
         font-family: $gary;
         color:$night;
-        @include font-size(45px, 27px);
+        @include font-size(60px, 70px);
         margin-bottom: 25px;
 
         @include phone {
@@ -53,36 +48,38 @@
         }
       }
 
+      strong {
+        color:#f56565;
+        font-weight: normal;
+      }
+
+      p {
+        @include font-size(21px, 27px);
+        padding: 5px 0;
+      }
+
       h2 {
         color:$coral;
         @include font-size(18px, 21px);
       }
 
-      p, ul {
+      ul {
         margin:15px 0;
         @include font-size(15px, 21px);
+
+        li {
+          list-style-type: none;
+        }
 
         @include phone {
           margin-top:5px;
           @include font-size(12px, 16px);
         }
-
-        em {
-          color:darken($yellow, 15%);
-          font-style:normal;;
-        }
       }
-        blockquote {
-          font-family: $gary;
-          color:darken($salon, 7%);
-          border-left: 1px solid $coral;
-        }
 
-      ul {
-        li {
-          list-style-type: circle;
-          margin-left: 15px;
-        }
+      em {
+        color:darken($yellow, 15%);
+        font-style:normal;
       }
 
       .more {
