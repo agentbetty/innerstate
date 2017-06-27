@@ -1,5 +1,8 @@
 .about {
   background-color: darken($babypink, 3%);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, $babypink, darken($babypink, 7%));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, $babypink, darken($babypink, 7%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
   .navbar {
     
@@ -38,13 +41,20 @@
 
         @include phone {
           @include font-size(30px, 33px);
-          margin:0;
-          text-align: center;
+          margin-bottom: 5px;
         }
 
         @include tablet-p {
           @include font-size(30px, 33px);
-          text-align:center;
+          margin-bottom: 5px;
+        }
+
+        @include tablet-h {
+          @include font-size(45px, 55px);
+        }
+
+        @include desktop-s {
+          @include font-size(55px, 65px);
         }
       }
 
@@ -56,6 +66,18 @@
       p {
         @include font-size(21px, 27px);
         padding: 5px 0;
+
+        @include phone {
+          @include font-size(15px, 18px);
+        }
+
+        @include tablet-p {
+          @include font-size(15px, 21px);
+        }
+
+        @include tablet-h {
+          @include font-size(18px, 24px);
+        }
       }
 
       h2 {
@@ -102,19 +124,14 @@
           display: none;
         }
       }
-
-      img {
-        display:inline-block;
-        margin-top:50px;
-      }
     }
 
     footer {
         p {
-          color:$babypink;
+          color:$slate;
 
-          a {color:$yellow;}
-          span {color:$white;}
+          a {color:$night-light;}
+          span {color:$coral;}
 
         }
     }

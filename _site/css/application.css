@@ -7092,7 +7092,11 @@ body {
 
 .about {
   background-color: #f5d8d8;
-  /* fallback for old browsers */ }
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F8E4E4, #f1c8c8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F8E4E4, #f1c8c8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   @media (min-width: 0px) and (max-width: 519px) {
     .about .navbar {
       height: 65px;
@@ -7128,15 +7132,26 @@ body {
           /* 30px */
           line-height: 1.1;
           /* 33px */
-          margin: 0;
-          text-align: center; } }
+          margin-bottom: 5px; } }
       @media (min-width: 520px) and (max-width: 767px) {
         .about .about-details .intro {
           font-size: 1.875em;
           /* 30px */
           line-height: 1.1;
           /* 33px */
-          text-align: center; } }
+          margin-bottom: 5px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .about .about-details .intro {
+          font-size: 2.8125em;
+          /* 45px */
+          line-height: 1.22222;
+          /* 55px */ } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .about .about-details .intro {
+          font-size: 3.4375em;
+          /* 55px */
+          line-height: 1.18182;
+          /* 65px */ } }
     .about .about-details strong {
       color: #f56565;
       font-weight: normal; }
@@ -7146,6 +7161,24 @@ body {
       line-height: 1.28571;
       /* 27px */
       padding: 5px 0; }
+      @media (min-width: 0px) and (max-width: 519px) {
+        .about .about-details p {
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */ } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        .about .about-details p {
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.4;
+          /* 21px */ } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .about .about-details p {
+          font-size: 1.125em;
+          /* 18px */
+          line-height: 1.33333;
+          /* 24px */ } }
     .about .about-details h2 {
       color: #FF6969;
       font-size: 1.125em;
@@ -7185,14 +7218,11 @@ body {
       @media (min-width: 0px) and (max-width: 519px) {
         .about .about-details .more {
           display: none; } }
-    .about .about-details img {
-      display: inline-block;
-      margin-top: 50px; }
   .about footer p {
-    color: #F8E4E4; }
+    color: #5C7484; }
     .about footer p a {
-      color: #D1B100; }
+      color: #003659; }
     .about footer p span {
-      color: #fff; }
+      color: #FF6969; }
 
 /*# sourceMappingURL=application.css.map */

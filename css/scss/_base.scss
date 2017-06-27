@@ -6,18 +6,11 @@ body,
   min-height: 480px;
 }
 
-// elizabethm email signature update
 // object fit fix for ie + happy browser for object-fit (ie) and vh/vw (opera)
-// happy browser
-// gradient back for roles (w ie support)
 
 body {
   font-family: $worky;
   color:$night;
-
-  // @include phone {border-top:10px solid blue;}
-  // @include tablet-p {border-top:10px solid green;}
-  // @include tablet-h {border-top:10px solid yellow;}
 
   .happybrowser {
       background-color:$coral-light;
