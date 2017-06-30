@@ -7,6 +7,7 @@ body,
 }
 
 // object fit fix for ie + happy browser for object-fit (ie) and vh/vw (opera)
+// add "skip to content"
 
 body {
   font-family: $worky;
@@ -95,61 +96,32 @@ body {
               text-align: center;
               vertical-align: middle;
 
-                div.wrap {
-                  height:125px;
-                  margin:0 auto;
+              h1, h2 {
+                color:$white;
+                font-family: $gary;
+                @include font-size(55px, 55px);
+                width:200px; 
+                text-align: left;
+                margin:0 auto;
+
+                em {
+                  color:$coral;
+                  font-family: $worky;
+                  font-style: normal;
+                  font-weight: normal;
                   display: block;
+                  margin: 15px 0;
+                  font-size: 14px;
                 }
+              }
+              h2 {
+                font-family: $worky;
+                font-size: 18px;
 
-                h1 {
-                  color:$white;
-                  @include font-size(115px, 125px);
-                  font-family: $gary;
+                em {margin-top:75px;}
 
-                      @include phone {
-                          @include font-size(55px, 58px);
-                      }
-
-                      @include tablet-p {
-                          @include font-size(55px, 58px);
-                      }
-
-                      @include tablet-h {
-                          @include font-size(75px, 85px);
-                      }
-
-                      @include desktop-s {
-                          @include font-size(75px, 85px);
-                      }
-                }
-
-                h2.roles {
-                      display:none;
-                      @include font-size(27px, 30px);
-                      font-weight: 400;
-
-                          @include phone {
-                            @include font-size(21px, 24px);
-                          }
-
-                          @include tablet-p {
-                            @include font-size(21px, 24px);
-                          }
-
-                          @include tablet-h {
-                            @include font-size(21px, 24px);
-                          }
-
-                          @include desktop-s {
-                            @include font-size(21px, 24px);
-                          }
-
-                      span {
-                        display:inline-block;
-                        margin:0;
-                        color:$coral;
-                      }
-                }
+                li {margin-top:5px;}
+              }
             }
         }
 
@@ -220,16 +192,7 @@ body {
         aside {
           color:$coral;
           text-transform: uppercase; 
-
-          @include phone {
-            @include font-size(10px, 12px);
-          }
-          @include tablet-p {
-            @include font-size(12px, 15px);
-          }
-          @include tablet-h {
-            @include font-size(12px, 15px);
-          }
+          @incude font-size(10px, 15px);
         }
 
         h3, ul {
@@ -241,6 +204,8 @@ body {
           @include phone {@include font-size(12px, 15px);}
           @include tablet-p {@include font-size(12px, 15px);margin-bottom:10px;}
         }
+
+        ul {@include font-size(21px, 27px);}
         
         .intro {
           @include font-size(21px, 24px);
