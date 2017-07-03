@@ -99,6 +99,7 @@ background: linear-gradient(to right, $babypink, darken($babypink, 7%)); /* W3C,
         @include tablet-p {
           display: block;
           margin: 25px auto 0;
+          width: 75%;
         } 
 
         @include phone {

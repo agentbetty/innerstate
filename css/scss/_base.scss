@@ -120,7 +120,9 @@ body {
 
                 em {margin-top:75px;}
 
-                li {margin-top:5px;}
+                li {
+                  margin-top:5px;
+                }
               }
             }
         }
@@ -205,7 +207,11 @@ body {
           @include tablet-p {@include font-size(12px, 15px);margin-bottom:10px;}
         }
 
-        ul {@include font-size(21px, 27px);}
+        ul {
+          @include font-size(21px, 27px);
+
+          @include phone {@include font-size(12px, 18px);}
+        }
         
         .intro {
           @include font-size(21px, 24px);

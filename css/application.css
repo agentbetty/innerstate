@@ -6317,7 +6317,7 @@ template {
   top: 8px;
   font-weight: 400;
   background-color: #CE004F;
-  box-shadow: 0 10px 0 #EB0091, 0 20px 0 #FF7D0D; }
+  box-shadow: 0 10px 0 #dd0088, 0 20px 0 #FF7D0D; }
   @media (min-width: 0px) and (max-width: 519px) {
     #drawer-toggle-label:before {
       right: 20px; } }
@@ -6405,11 +6405,11 @@ template {
         color: #e80059; }
         #drawer ul li a:hover {
           border-bottom-width: 0;
-          color: #ff1fa9; }
+          color: #ff11a3; }
       #drawer ul li .hi {
         color: #F8E4E4; }
         #drawer ul li .hi:hover {
-          color: #ff1fa9; }
+          color: #ff11a3; }
 
 /* actual page content pane */
 #page-content {
@@ -6489,7 +6489,7 @@ body {
   font-family: "Work Sans", Helvetica, arial, sans-serif;
   color: #001726; }
   body .happybrowser {
-    background-color: #ffcfcf;
+    background-color: #f2a9a9;
     padding: 15px;
     position: relative;
     z-index: 1031;
@@ -6546,9 +6546,9 @@ body {
   body blockquote {
     font-family: "EB Garamond", Georgia, serif;
     color: #024b7a;
-    border-left: 1px solid #FF6969; }
+    border-left: 1px solid #e55050; }
   body hr {
-    border-top: 1px solid #FF6969;
+    border-top: 1px solid #e55050;
     margin: 30px 0; }
   body a.arrow {
     background: transparent url("/img/arrow-down.svg") no-repeat;
@@ -6592,7 +6592,7 @@ body {
           text-align: left;
           margin: 0 auto; }
           body.home section.identity .vertical-centering div h1 em, body.home section.identity .vertical-centering div h2 em, body.work section.identity .vertical-centering div h1 em, body.work section.identity .vertical-centering div h2 em, body.work-alt section.identity .vertical-centering div h1 em, body.work-alt section.identity .vertical-centering div h2 em {
-            color: #FF6969;
+            color: #e55050;
             font-family: "Work Sans", Helvetica, arial, sans-serif;
             font-style: normal;
             font-weight: normal;
@@ -6677,7 +6677,7 @@ body {
     body.home section.feature .project-bio aside, body.work section.feature .project-basics aside,
     body.work section.feature .project-bio aside, body.work-alt section.feature .project-basics aside,
     body.work-alt section.feature .project-bio aside {
-      color: #FF6969;
+      color: #e55050;
       text-transform: uppercase;
       @incude font-size(10px, 15px); }
     body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
@@ -6727,6 +6727,15 @@ body {
       /* 21px */
       line-height: 1.28571;
       /* 27px */ }
+      @media (min-width: 0px) and (max-width: 519px) {
+        body.home section.feature .project-basics ul,
+        body.home section.feature .project-bio ul, body.work section.feature .project-basics ul,
+        body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics ul,
+        body.work-alt section.feature .project-bio ul {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.5;
+          /* 18px */ } }
     body.home section.feature .project-basics .intro,
     body.home section.feature .project-bio .intro, body.work section.feature .project-basics .intro,
     body.work section.feature .project-bio .intro, body.work-alt section.feature .project-basics .intro,
@@ -6883,7 +6892,7 @@ body {
       bottom: 125px;
       padding: 15px;
       background-color: #fff;
-      border-bottom: 1px solid #FF6969; }
+      border-bottom: 1px solid #e55050; }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
           font-size: 0.75em;
@@ -7091,7 +7100,7 @@ body {
           line-height: 1.33333;
           /* 24px */ } }
     .about .about-details h2 {
-      color: #FF6969;
+      color: #e55050;
       font-size: 1.125em;
       /* 18px */
       line-height: 1.16667;
@@ -7103,7 +7112,8 @@ body {
       @media (min-width: 520px) and (max-width: 767px) {
         .about .about-details img {
           display: block;
-          margin: 25px auto 0; } }
+          margin: 25px auto 0;
+          width: 75%; } }
       @media (min-width: 0px) and (max-width: 519px) {
         .about .about-details img {
           display: block;
@@ -7146,6 +7156,6 @@ body {
     .about footer p a {
       color: #003659; }
     .about footer p span {
-      color: #FF6969; }
+      color: #e55050; }
 
 /*# sourceMappingURL=application.css.map */
