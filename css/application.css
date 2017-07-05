@@ -7137,20 +7137,13 @@ body {
       color: #857000;
       font-style: normal; }
     .about .about-details .more {
-      color: #e8a7a7;
-      padding: 15px;
-      border: 1px solid #F8E4E4;
+      padding: 10px;
+      border: 1px solid #e55050;
       display: inline-block;
       margin: 25px 10px 0 0; }
       .about .about-details .more:hover {
         color: #fff;
         border-color: #fff; }
-      @media (min-width: 520px) and (max-width: 767px) {
-        .about .about-details .more {
-          display: none; } }
-      @media (min-width: 0px) and (max-width: 519px) {
-        .about .about-details .more {
-          display: none; } }
   .about footer p {
     color: #5C7484; }
     .about footer p a {

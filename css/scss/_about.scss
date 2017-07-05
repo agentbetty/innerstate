@@ -128,23 +128,14 @@ background: linear-gradient(to right, $babypink, darken($babypink, 7%)); /* W3C,
       }
 
       .more {
-        color:darken($babypink, 15%);
-        padding:15px;
-        border:1px solid $babypink;
+        padding:10px;
+        border:1px solid $coral;
         display: inline-block;
         margin:25px 10px 0 0;
 
         &:hover {
           color:$white;
           border-color:$white;
-        }
-
-        @include tablet-p { 
-          display: none;
-        }
-
-        @include phone { 
-          display: none;
         }
       }
     }
