@@ -137,13 +137,30 @@ body {
         background-color:$babypink;
         background-image: url('/img/bg-404.jpg')!important;
 
-        h1 {@include font-size(145px, 148px);}
-        h3 {
-          @include font-size(18px, 21px);
-          font-weight: 400;
-          color:$white;
-          margin:15px;
+        .wrap {
+          margin:0 auto;
+          max-width: 300px;
+
+          h1 {
+            @include font-size(100px, 105px);
+            font-family: $gary;
+            color:$white;
+            padding-top:150px;
+          }
+
+          h3 {
+            @include font-size(18px, 21px);
+            font-family: $gary;
+            margin:15px;
+
+            a {color:$white;}
+            &:hover {
+              text-decoration:none;
+              border-bottom:1px solid $yellow;
+            }
+          }
         }
+
     }
 
     section.feature {
