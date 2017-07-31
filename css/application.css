@@ -6459,7 +6459,9 @@ nav.navbar .navbar-header a.navbar-brand {
     margin-left: -9999px; }
   nav.navbar .navbar-header a.navbar-brand img {
     width: 50%;
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px; }
 
 footer p {
   font-size: 0.625em;
@@ -6572,7 +6574,8 @@ body {
   body.home section.identity, body.work section.identity, body.work-alt section.identity {
     text-align: center;
     background-color: #001726;
-    background-image: url("/img/bg-home.jpg"); }
+    background-image: url("/img/bg-home.jpg");
+    border: 20px solid #fff; }
     body.home section.identity .vertical-centering, body.work section.identity .vertical-centering, body.work-alt section.identity .vertical-centering {
       display: table;
       width: 100%;

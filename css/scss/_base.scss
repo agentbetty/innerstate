@@ -78,13 +78,14 @@ body {
     @include tablet-h {display: none;}
   }
 
-  // – – – – – – – – – – home layout (+ featured project)
+  // – – – – – – – – – – home + about + work
 	&.home, &.work , &.work-alt {
 
 		section.identity {
   	    text-align:center;
         background-color:$night;
         background-image: url('/img/bg-home.jpg');
+        border:20px solid $white;
 
         .vertical-centering {
           display: table;
