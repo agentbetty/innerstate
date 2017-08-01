@@ -82,57 +82,59 @@ body {
 	&.home, &.work , &.work-alt {
 
 		section.identity {
-  	    text-align:center;
-        background-color:$night;
+        background-color:$espresso;
         background-image: url('/img/bg-home.jpg');
         border:20px solid $white;
 
-        .vertical-centering {
-          display: table;
-          width: 100%;
-          height: 100%;
+        .center { // vertical centering
+          position: relative;
+          height: 100vh;
 
-            div {
-              display: table-cell;
-              text-align: center;
-              vertical-align: middle;
+          div {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
 
-              h1, h2 {
-                color:$white;
+             @include phone {
+               position: relative;
+             }
+
+              p {
+                color:$espresso;
                 font-family: $gary;
-                @include font-size(55px, 55px);
-                width:200px; 
-                text-align: left;
-                margin:0 auto;
+                @include font-size(45px, 55px);
+                width:800px; 
+                margin:25px auto;
+
+                @include phone {@include font-size(25px, 35px);}
+                @include tablet-p {@include font-size(35px, 45px);} 
+                @include tablet-h {@include font-size(35px, 45px);}
+                @include desktop-s {@include font-size(40px, 50px);}
 
                 em {
                   color:$coral;
-                  font-family: $worky;
                   font-style: normal;
-                  font-weight: normal;
-                  display: block;
-                  margin: 15px 0;
-                  font-size: 14px;
-                }
-              }
-              h2 {
-                font-family: $worky;
-                font-size: 18px;
-
-                em {margin-top:75px;}
-
-                li {
-                  margin-top:5px;
                 }
               }
             }
         }
 
-      a.arrow { 
-        left:50%;
-        margin-left:-20px; 
-      }
+       .arrow { 
+         left:50%;
+         margin-left:-20px; 
+       }
 	  }
+
+    section.about {
+      background-color: darken($espresso, 3%);  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, $espresso, lighten($espresso, 7%));  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, $espresso, lighten($espresso, 7%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+    }
 
     section.fourohfour {
         background-color:$babypink;

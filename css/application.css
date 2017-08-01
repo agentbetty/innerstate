@@ -6572,46 +6572,66 @@ body {
       body a.arrow {
         display: none; } }
   body.home section.identity, body.work section.identity, body.work-alt section.identity {
-    text-align: center;
-    background-color: #001726;
+    background-color: #2e2711;
     background-image: url("/img/bg-home.jpg");
     border: 20px solid #fff; }
-    body.home section.identity .vertical-centering, body.work section.identity .vertical-centering, body.work-alt section.identity .vertical-centering {
-      display: table;
-      width: 100%;
-      height: 100%; }
-      body.home section.identity .vertical-centering div, body.work section.identity .vertical-centering div, body.work-alt section.identity .vertical-centering div {
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle; }
-        body.home section.identity .vertical-centering div h1, body.home section.identity .vertical-centering div h2, body.work section.identity .vertical-centering div h1, body.work section.identity .vertical-centering div h2, body.work-alt section.identity .vertical-centering div h1, body.work-alt section.identity .vertical-centering div h2 {
-          color: #fff;
+    body.home section.identity .center, body.work section.identity .center, body.work-alt section.identity .center {
+      position: relative;
+      height: 100vh; }
+      body.home section.identity .center div, body.work section.identity .center div, body.work-alt section.identity .center div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        @media (min-width: 0px) and (max-width: 519px) {
+          body.home section.identity .center div, body.work section.identity .center div, body.work-alt section.identity .center div {
+            position: relative; } }
+        body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
+          color: #2e2711;
           font-family: "EB Garamond", Georgia, serif;
-          font-size: 3.4375em;
+          font-size: 2.8125em;
+          /* 45px */
+          line-height: 1.22222;
           /* 55px */
-          line-height: 1;
-          /* 55px */
-          width: 200px;
-          text-align: left;
-          margin: 0 auto; }
-          body.home section.identity .vertical-centering div h1 em, body.home section.identity .vertical-centering div h2 em, body.work section.identity .vertical-centering div h1 em, body.work section.identity .vertical-centering div h2 em, body.work-alt section.identity .vertical-centering div h1 em, body.work-alt section.identity .vertical-centering div h2 em {
+          width: 800px;
+          margin: 25px auto; }
+          @media (min-width: 0px) and (max-width: 519px) {
+            body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
+              font-size: 1.5625em;
+              /* 25px */
+              line-height: 1.4;
+              /* 35px */ } }
+          @media (min-width: 520px) and (max-width: 767px) {
+            body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
+              font-size: 2.1875em;
+              /* 35px */
+              line-height: 1.28571;
+              /* 45px */ } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
+              font-size: 2.1875em;
+              /* 35px */
+              line-height: 1.28571;
+              /* 45px */ } }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
+              font-size: 2.5em;
+              /* 40px */
+              line-height: 1.25;
+              /* 50px */ } }
+          body.home section.identity .center div p em, body.work section.identity .center div p em, body.work-alt section.identity .center div p em {
             color: #e55050;
-            font-family: "Work Sans", Helvetica, arial, sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            display: block;
-            margin: 15px 0;
-            font-size: 14px; }
-        body.home section.identity .vertical-centering div h2, body.work section.identity .vertical-centering div h2, body.work-alt section.identity .vertical-centering div h2 {
-          font-family: "Work Sans", Helvetica, arial, sans-serif;
-          font-size: 18px; }
-          body.home section.identity .vertical-centering div h2 em, body.work section.identity .vertical-centering div h2 em, body.work-alt section.identity .vertical-centering div h2 em {
-            margin-top: 75px; }
-          body.home section.identity .vertical-centering div h2 li, body.work section.identity .vertical-centering div h2 li, body.work-alt section.identity .vertical-centering div h2 li {
-            margin-top: 5px; }
-    body.home section.identity a.arrow, body.work section.identity a.arrow, body.work-alt section.identity a.arrow {
+            font-style: normal; }
+    body.home section.identity .arrow, body.work section.identity .arrow, body.work-alt section.identity .arrow {
       left: 50%;
       margin-left: -20px; }
+  body.home section.about, body.work section.about, body.work-alt section.about {
+    background-color: #231e0d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2e2711, #483d1b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2e2711, #483d1b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
     background-color: #F8E4E4;
     background-image: url("/img/bg-404.jpg") !important; }
