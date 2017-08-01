@@ -6622,16 +6622,19 @@ body {
           body.home section.identity .center div p em, body.work section.identity .center div p em, body.work-alt section.identity .center div p em {
             color: #e55050;
             font-style: normal; }
-    body.home section.identity .arrow, body.work section.identity .arrow, body.work-alt section.identity .arrow {
-      left: 50%;
-      margin-left: -20px; }
   body.home section.about, body.work section.about, body.work-alt section.about {
     background-color: #231e0d;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2e2711, #483d1b);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2e2711, #483d1b);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 20px solid #fff; }
+    body.home section.about p, body.work section.about p, body.work-alt section.about p {
+      color: #d2cab4; }
+      body.home section.about p em, body.work section.about p em, body.work-alt section.about p em {
+        font-style: normal;
+        color: #fff; }
   body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
     background-color: #ffbbac;
     background-image: url("/img/bg-404.jpg") !important; }
