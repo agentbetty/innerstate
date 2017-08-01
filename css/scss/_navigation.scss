@@ -31,8 +31,8 @@ padding: 0;
   display: block; 
   position: fixed; 
   z-index: 1; 
-  top:15px;
-  right:20px;
+  top:35px;
+  right:40px;
   cursor: pointer;
 
   @include phone {right:0;}
@@ -49,7 +49,7 @@ padding: 0;
   top: 8px;
   font-weight:400;
   background-color:$hotpink;
-  box-shadow: 0 10px 0 $fuschia, 0 20px 0 $orange;
+  box-shadow: 0 10px 0 $macaroon, 0 20px 0 $babypink;
 
   @include phone {right:20px;}
 } 
