@@ -6316,14 +6316,14 @@ template {
   right: 5px;
   top: 8px;
   font-weight: 400;
-  background-color: #CE004F;
+  background-color: #ff1486;
   box-shadow: 0 10px 0 #dd0088, 0 20px 0 #FF7D0D; }
   @media (min-width: 0px) and (max-width: 519px) {
     #drawer-toggle-label:before {
       right: 20px; } }
 
 #drawer-toggle-label:hover:before {
-  color: #CE004F; }
+  color: #ff1486; }
 
 /* drawer menu pane - note the 0px width */
 #drawer {
@@ -6402,12 +6402,12 @@ template {
         #drawer ul li {
           margin: 10px 0; } }
       #drawer ul li a {
-        color: #e80059; }
+        color: #ff2e93; }
         #drawer ul li a:hover {
           border-bottom-width: 0;
           color: #ff11a3; }
       #drawer ul li .hi {
-        color: #F8E4E4; }
+        color: #ffbbac; }
         #drawer ul li .hi:hover {
           color: #ff11a3; }
 
@@ -6535,14 +6535,14 @@ body {
   body img {
     max-width: 100%; }
   body a:link {
-    color: #CE004F; }
+    color: #ff1486; }
   body a:visited {
-    color: #CE004F; }
+    color: #ff1486; }
   body a:hover {
     color: #D1B100;
     text-decoration: none; }
   body a:active {
-    color: #CE004F; }
+    color: #ff1486; }
   body a:focus {
     color: #D1B100; }
   body blockquote {
@@ -6633,7 +6633,7 @@ body {
     background: linear-gradient(to right, #2e2711, #483d1b);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
-    background-color: #F8E4E4;
+    background-color: #ffbbac;
     background-image: url("/img/bg-404.jpg") !important; }
     body.home section.fourohfour .wrap, body.work section.fourohfour .wrap, body.work-alt section.fourohfour .wrap {
       margin: 0 auto;
@@ -6968,14 +6968,14 @@ body {
       body.home section.feature #three .previous a, body.home section.feature #three .next a, body.work section.feature #three .previous a, body.work section.feature #three .next a, body.work-alt section.feature #three .previous a, body.work-alt section.feature #three .next a {
         color: #b89b00; }
         body.home section.feature #three .previous a:hover, body.home section.feature #three .next a:hover, body.work section.feature #three .previous a:hover, body.work section.feature #three .next a:hover, body.work-alt section.feature #three .previous a:hover, body.work-alt section.feature #three .next a:hover {
-          color: #CE004F; }
+          color: #ff1486; }
     body.home section.feature #three .previous, body.work section.feature #three .previous, body.work-alt section.feature #three .previous {
       left: 0;
       padding-left: 0;
       text-align: right; }
     body.home section.feature #three .pattern-wrap, body.work section.feature #three .pattern-wrap, body.work-alt section.feature #three .pattern-wrap {
       background: transparent url("/img/ghel/ghel-bg.jpg") repeat;
-      border-bottom: 1px solid #CE004F; }
+      border-bottom: 1px solid #ff1486; }
       body.home section.feature #three .pattern-wrap.asa24, body.work section.feature #three .pattern-wrap.asa24, body.work-alt section.feature #three .pattern-wrap.asa24 {
         background: transparent url("/img/asa24/asa24-bg.jpg") repeat; }
       body.home section.feature #three .pattern-wrap.blp, body.work section.feature #three .pattern-wrap.blp, body.work-alt section.feature #three .pattern-wrap.blp {
@@ -6998,9 +6998,9 @@ body {
         background: transparent url("/img/tlp/tlp-bg.jpg") repeat; }
 
 .work-alt section.feature #two {
-  background: linear-gradient(to right, #e7e5e1 0%, #fff 50%, #fff 50%, #F8E4E4 100%) !important; }
+  background: linear-gradient(to right, #e7e5e1 0%, #fff 50%, #fff 50%, #ffbbac 100%) !important; }
 .work-alt section.feature #three {
-  background: linear-gradient(to right, #f3d0d0 0%, #fff 50%, #fff 50%, #F2F1EF 100%); }
+  background: linear-gradient(to right, #ffa693 0%, #fff 50%, #fff 50%, #F2F1EF 100%); }
   .work-alt section.feature #three img {
     padding-top: 20%; }
 
@@ -7040,11 +7040,11 @@ body {
       display: block; } }
 
 .about {
-  background-color: #f5d8d8;
+  background-color: #ffae9d;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F8E4E4, #f1c8c8);
+  background: -webkit-linear-gradient(to right, #ffbbac, #ff9e88);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F8E4E4, #f1c8c8);
+  background: linear-gradient(to right, #ffbbac, #ff9e88);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   @media (min-width: 0px) and (max-width: 519px) {
     .about .navbar {
