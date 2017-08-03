@@ -11,7 +11,12 @@ body,
 
 body {
   font-family: $worky;
-  color:$night;
+  color:$espresso;
+
+      @include phone {border-top:10px solid purple;}
+      @include tablet-p {border-top:10px solid red;}
+      @include tablet-h {border-top:10px solid blue;}
+      @include desktop-s {border-top:10px solid green;}
 
   .happybrowser {
       background-color:$coral-light;
@@ -55,8 +60,11 @@ body {
   }
 
   hr {
-    border-top:1px solid $coral;
+    border-top:1px solid $yellow;
     margin:30px 0;
+
+    @include phone {margin:15px 0;}
+    @include tablet-h {margin:15px 0;}
   }
 
   // – – – – – – – – – – global
@@ -65,60 +73,77 @@ body {
     height:40px;
     width:40px;
     display: block;
-    position:absolute;
-    bottom:50px;
+    // position:absolute;
+    // bottom:50px;
 
     &:hover {
       background:transparent url('/img/arrow-down-on.svg') no-repeat;
       border-bottom-width:0;
     }
 
-    @include phone {display:none;}
-    @include tablet-p {display:none;} 
-    @include tablet-h {display: none;}
+    @include phone {margin-left:15px;}
+    @include desktop-s {
+      height:50px;
+      width:50px;
+    }
   }
 
   // – – – – – – – – – – home + about + work
 	&.home, &.work , &.work-alt {
 
 		section.identity {
-        background-color:$espresso;
-        background-image: url('/img/bg-home.jpg');
-        border:20px solid $white;
+      background-color:$espresso;
+      background-image: url('/img/bg-home.jpg');
+      border:20px solid $white;
 
-        .center { // vertical centering
-          position: relative;
-          height: 100vh;
+      .center { // vertical centering
+        position: relative;
+        height: 100vh;
 
-          div {
-             position: absolute;
-             top: 50%;
-             left: 50%;
-             transform: translate(-50%, -50%);
+        div {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
 
-             @include phone {
-               position: relative;
-             }
+         @include phone {
+           position: relative;
+         }
 
-              p {
-                color:$espresso;
-                font-family: $gary;
-                @include font-size(45px, 55px);
-                width:800px; 
-                margin:25px auto;
+          p {
+            color:$espresso;
+            font-family: $gary;
+            @include font-size(45px, 55px);
+            width:1000px; 
+            margin:25px auto;
 
-                @include phone {@include font-size(25px, 35px);}
-                @include tablet-p {@include font-size(35px, 45px);} 
-                @include tablet-h {@include font-size(35px, 45px);}
-                @include desktop-s {@include font-size(40px, 50px);}
-
-                em {
-                  color:$coral;
-                  font-style: normal;
-                }
-              }
+            @include phone {
+              @include font-size(27px, 37px);
+              max-width: 350px;
+              margin-top:10px;
             }
+            @include tablet-p {
+              @include font-size(25px, 35px);
+              max-width: 600px;
+            } 
+            @include tablet-h {
+              @include font-size(35px, 45px);
+              max-width: 600px;
+            }
+            @include desktop-s {
+              @include font-size(50px, 60px);
+              max-width: 800px;
+            }
+
+            em {
+              color:$coral;
+              font-style: normal;
+            }
+          }
+
+          .arrow {margin-top:7%;}
         }
+      }
 	  }
 
     section.about {
@@ -126,45 +151,85 @@ body {
       background: -webkit-linear-gradient(to right, $espresso, lighten($espresso, 7%));  /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(to right, $espresso, lighten($espresso, 7%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       border:20px solid $white;
+      padding-top:8%;
+
+      @include phone {
+        padding:15px;
+      }
+
+      h2 {
+        color:$white;
+        font-family: $gary;
+        @include font-size(21px, 24px);
+
+        @include phone {
+          @include font-size(15px, 18px);
+        }
+
+        @include tablet-h {
+          @include font-size(18px, 21px);
+        }
+      }
 
       p {
         color:$latte;
 
         em {
-          font-style: normal;
           color:$white;
+          font-style: normal;
         }
       }
+
+      ul, ol {
+        color:$latte;
+        margin-top:15px;
+      }
+
+      ol li {
+        list-style-type: decimal;
+        margin-left:15px;
+      }
+
+      p, ol, ul {
+        @include phone {
+          @include font-size(15px, 18px);
+        }
+
+        @include tablet-h {
+          @include font-size(15px, 18px);
+        }
+      }
+
+      .arrow {margin-top:50px;}
     }
 
     section.fourohfour {
-        background-color:$babypink;
-        background-image: url('/img/bg-404.jpg')!important;
+      background-color:$babypink;
+      background-image: url('/img/bg-404.jpg')!important;
 
-        .wrap {
-          margin:0 auto;
-          max-width: 300px;
+      .wrap {
+        margin:0 auto;
+        max-width: 300px;
 
-          h1 {
-            @include font-size(100px, 105px);
-            font-family: $gary;
-            color:$white;
-            padding-top:150px;
-          }
-
-          h3 {
-            @include font-size(18px, 21px);
-            font-family: $gary;
-            margin:15px;
-
-            a {color:$white;}
-            &:hover {
-              text-decoration:none;
-              border-bottom:1px solid $yellow;
-            }
-          }
+        h1 {
+          @include font-size(100px, 105px);
+          font-family: $gary;
+          color:$white;
+          padding-top:150px;
         }
 
+        h3 {
+          @include font-size(18px, 21px);
+          font-family: $gary;
+          margin:15px;
+
+          a {color:$white;}
+          &:hover {
+            text-decoration:none;
+            border-bottom:1px solid $yellow;
+          }
+        }
+      }
     }
 
     section.feature {
@@ -316,13 +381,13 @@ body {
         }
 
         img {
-            padding-top:90px;
+           // padding-top:0
             display: block; 
             margin:0 auto;
 
-            @include phone {padding-top:25px;}
-            @include tablet-p {padding-top:25px;}
-            @include tablet-h {padding-top:25px;}
+           // @include phone {padding-top:25px;}
+           // @include tablet-p {padding-top:25px;}
+           // @include tablet-h {padding-top:25px;}
         }
 
         .height {

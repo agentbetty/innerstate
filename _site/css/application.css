@@ -6216,8 +6216,9 @@ template {
 [hidden] {
   display: none; }
 
-.home .identity h1,
-.home .identity h2 {
+.home .identity h2,
+.home .about h2,
+.home p {
   animation: fadein ease-in 1s;
   -moz-animation: fadein ease-in 1s;
   -webkit-animation: fadein ease-in 1s;
@@ -6243,7 +6244,8 @@ template {
   -webkit-animation: fadein ease-in .5s;
   -o-animation: fadein ease-in .5s; }
 
-.about ul {
+.about ul,
+.about ol {
   animation: fadein ease-in 1.25s;
   -moz-animation: fadein ease-in 1.25s;
   -webkit-animation: fadein ease-in 1.25s;
@@ -6304,7 +6306,8 @@ template {
   cursor: pointer; }
   @media (min-width: 0px) and (max-width: 519px) {
     #drawer-toggle-label {
-      right: 0; } }
+      top: 30px;
+      right: 20px; } }
 
 /* adds our "hamburger" menu icon */
 #drawer-toggle-label:before {
@@ -6317,7 +6320,7 @@ template {
   top: 8px;
   font-weight: 400;
   background-color: #ff1486;
-  box-shadow: 0 10px 0 #fa8190, 0 20px 0 #ffbbac; }
+  box-shadow: 0 10px 0 #fa8190, 0 20px 0 #FF7D0D; }
   @media (min-width: 0px) and (max-width: 519px) {
     #drawer-toggle-label:before {
       right: 20px; } }
@@ -6489,7 +6492,19 @@ body,
 
 body {
   font-family: "Work Sans", Helvetica, arial, sans-serif;
-  color: #001726; }
+  color: #2e2711; }
+  @media (min-width: 0px) and (max-width: 519px) {
+    body {
+      border-top: 10px solid purple; } }
+  @media (min-width: 520px) and (max-width: 767px) {
+    body {
+      border-top: 10px solid red; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      border-top: 10px solid blue; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    body {
+      border-top: 10px solid green; } }
   body .happybrowser {
     background-color: #f2a9a9;
     padding: 15px;
@@ -6550,27 +6565,29 @@ body {
     color: #024b7a;
     border-left: 1px solid #e55050; }
   body hr {
-    border-top: 1px solid #e55050;
+    border-top: 1px solid #D1B100;
     margin: 30px 0; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      body hr {
+        margin: 15px 0; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body hr {
+        margin: 15px 0; } }
   body a.arrow {
     background: transparent url("/img/arrow-down.svg") no-repeat;
     height: 40px;
     width: 40px;
-    display: block;
-    position: absolute;
-    bottom: 50px; }
+    display: block; }
     body a.arrow:hover {
       background: transparent url("/img/arrow-down-on.svg") no-repeat;
       border-bottom-width: 0; }
     @media (min-width: 0px) and (max-width: 519px) {
       body a.arrow {
-        display: none; } }
-    @media (min-width: 520px) and (max-width: 767px) {
+        margin-left: 15px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
       body a.arrow {
-        display: none; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body a.arrow {
-        display: none; } }
+        height: 50px;
+        width: 50px; } }
   body.home section.identity, body.work section.identity, body.work-alt section.identity {
     background-color: #2e2711;
     background-image: url("/img/bg-home.jpg");
@@ -6593,35 +6610,42 @@ body {
           /* 45px */
           line-height: 1.22222;
           /* 55px */
-          width: 800px;
+          width: 1000px;
           margin: 25px auto; }
           @media (min-width: 0px) and (max-width: 519px) {
+            body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
+              font-size: 1.6875em;
+              /* 27px */
+              line-height: 1.37037;
+              /* 37px */
+              max-width: 350px;
+              margin-top: 10px; } }
+          @media (min-width: 520px) and (max-width: 767px) {
             body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
               font-size: 1.5625em;
               /* 25px */
               line-height: 1.4;
-              /* 35px */ } }
-          @media (min-width: 520px) and (max-width: 767px) {
-            body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
-              font-size: 2.1875em;
               /* 35px */
-              line-height: 1.28571;
-              /* 45px */ } }
+              max-width: 600px; } }
           @media (min-width: 768px) and (max-width: 991px) {
             body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
               font-size: 2.1875em;
               /* 35px */
               line-height: 1.28571;
-              /* 45px */ } }
+              /* 45px */
+              max-width: 600px; } }
           @media (min-width: 992px) and (max-width: 1199px) {
             body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
-              font-size: 2.5em;
-              /* 40px */
-              line-height: 1.25;
-              /* 50px */ } }
+              font-size: 3.125em;
+              /* 50px */
+              line-height: 1.2;
+              /* 60px */
+              max-width: 800px; } }
           body.home section.identity .center div p em, body.work section.identity .center div p em, body.work-alt section.identity .center div p em {
             color: #e55050;
             font-style: normal; }
+        body.home section.identity .center div .arrow, body.work section.identity .center div .arrow, body.work-alt section.identity .center div .arrow {
+          margin-top: 7%; }
   body.home section.about, body.work section.about, body.work-alt section.about {
     background-color: #231e0d;
     /* fallback for old browsers */
@@ -6629,12 +6653,55 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2e2711, #483d1b);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border: 20px solid #fff; }
+    border: 20px solid #fff;
+    padding-top: 8%; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      body.home section.about, body.work section.about, body.work-alt section.about {
+        padding: 15px; } }
+    body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
+      color: #fff;
+      font-family: "EB Garamond", Georgia, serif;
+      font-size: 1.3125em;
+      /* 21px */
+      line-height: 1.14286;
+      /* 24px */ }
+      @media (min-width: 0px) and (max-width: 519px) {
+        body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */ } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
+          font-size: 1.125em;
+          /* 18px */
+          line-height: 1.16667;
+          /* 21px */ } }
     body.home section.about p, body.work section.about p, body.work-alt section.about p {
       color: #d2cab4; }
       body.home section.about p em, body.work section.about p em, body.work-alt section.about p em {
-        font-style: normal;
-        color: #fff; }
+        color: #fff;
+        font-style: normal; }
+    body.home section.about ul, body.home section.about ol, body.work section.about ul, body.work section.about ol, body.work-alt section.about ul, body.work-alt section.about ol {
+      color: #d2cab4;
+      margin-top: 15px; }
+    body.home section.about ol li, body.work section.about ol li, body.work-alt section.about ol li {
+      list-style-type: decimal;
+      margin-left: 15px; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
+        font-size: 0.9375em;
+        /* 15px */
+        line-height: 1.2;
+        /* 18px */ } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
+        font-size: 0.9375em;
+        /* 15px */
+        line-height: 1.2;
+        /* 18px */ } }
+    body.home section.about .arrow, body.work section.about .arrow, body.work-alt section.about .arrow {
+      margin-top: 50px; }
   body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
     background-color: #ffbbac;
     background-image: url("/img/bg-404.jpg") !important; }
@@ -6877,18 +6944,8 @@ body {
       body.home section.feature #two, body.work section.feature #two, body.work-alt section.feature #two {
         background: linear-gradient(to right, #F2F1EF 0%, #F2F1EF 66.75%, #fff 66.75%, #fff 100%); } }
     body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
-      padding-top: 90px;
       display: block;
       margin: 0 auto; }
-      @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
-          padding-top: 25px; } }
-      @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
-          padding-top: 25px; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
-          padding-top: 25px; } }
     @media (min-width: 0px) and (max-width: 519px) {
       body.home section.feature #two .height, body.work section.feature #two .height, body.work-alt section.feature #two .height {
         height: auto; } }

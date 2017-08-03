@@ -1,6 +1,7 @@
 // gentle name fade in
-.home .identity h1,
-.home .identity h2 {
+.home .identity h2,
+.home .about h2,
+.home p {
     animation: fadein ease-in 1s;
     -moz-animation: fadein ease-in 1s; 
     -webkit-animation: fadein ease-in 1s; 
@@ -34,7 +35,8 @@
     -o-animation: fadein ease-in .5s;
 }
 
-.about ul {
+.about ul,
+.about ol {
     animation: fadein ease-in 1.25s;
     -moz-animation: fadein ease-in 1.25s; 
     -webkit-animation: fadein ease-in 1.25s; 

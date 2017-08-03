@@ -35,7 +35,7 @@ padding: 0;
   right:40px;
   cursor: pointer;
 
-  @include phone {right:0;}
+  @include phone {top:30px;right:20px;}
 } 
 
 /* adds our "hamburger" menu icon */ 
@@ -49,7 +49,7 @@ padding: 0;
   top: 8px;
   font-weight:400;
   background-color:$hotpink;
-  box-shadow: 0 10px 0 $macaroon, 0 20px 0 $babypink;
+  box-shadow: 0 10px 0 $macaroon, 0 20px 0 $orange;
 
   @include phone {right:20px;}
 } 
