@@ -69,22 +69,19 @@ body {
 
   // – – – – – – – – – – global
   a.arrow {
-    background:transparent url('/img/arrow-down.svg') no-repeat;
-    height:40px;
-    width:40px;
+    @include font-size(75px, 75px);
     display: block;
+    color:darken($hotpink, 10%);
     // position:absolute;
     // bottom:50px;
 
     &:hover {
-      background:transparent url('/img/arrow-down-on.svg') no-repeat;
-      border-bottom-width:0;
+      color:$yellow;
     }
 
     @include phone {margin-left:15px;}
     @include desktop-s {
-      height:50px;
-      width:50px;
+      @include font-size(50px, 50px);
     }
   }
 
@@ -95,6 +92,7 @@ body {
       background-color:$espresso;
       background-image: url('/img/bg-home.jpg');
       border:20px solid $white;
+      border-top-width: 0;
 
       .center { // vertical centering
         position: relative;
@@ -131,12 +129,12 @@ body {
               max-width: 600px;
             }
             @include desktop-s {
-              @include font-size(50px, 60px);
+              @include font-size(35px, 45px);
               max-width: 800px;
             }
 
             em {
-              color:$coral;
+              color:darken($hotpink, 5%);
               font-style: normal;
             }
           }
@@ -151,10 +149,15 @@ body {
       background: -webkit-linear-gradient(to right, $espresso, lighten($espresso, 7%));  /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(to right, $espresso, lighten($espresso, 7%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       border:20px solid $white;
+      border-top-width: 0;
       padding-top:8%;
 
       @include phone {
         padding:15px;
+      }
+
+      @include tablet-p {
+        padding-top:15%;
       }
 
       h2 {
@@ -381,13 +384,13 @@ body {
         }
 
         img {
-           // padding-top:0
+            padding-top:90px;
             display: block; 
             margin:0 auto;
 
-           // @include phone {padding-top:25px;}
-           // @include tablet-p {padding-top:25px;}
-           // @include tablet-h {padding-top:25px;}
+            @include phone {padding-top:25px;}
+            @include tablet-p {padding-top:25px;}
+            @include tablet-h {padding-top:25px;}
         }
 
         .height {

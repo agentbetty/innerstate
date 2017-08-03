@@ -1,7 +1,8 @@
 // gentle name fade in
 .home .identity h2,
 .home .about h2,
-.home p {
+.home p,
+.arrow {
     animation: fadein ease-in 1s;
     -moz-animation: fadein ease-in 1s; 
     -webkit-animation: fadein ease-in 1s; 

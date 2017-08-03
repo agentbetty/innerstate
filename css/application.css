@@ -6218,7 +6218,8 @@ template {
 
 .home .identity h2,
 .home .about h2,
-.home p {
+.home p,
+.arrow {
   animation: fadein ease-in 1s;
   -moz-animation: fadein ease-in 1s;
   -webkit-animation: fadein ease-in 1s;
@@ -6301,8 +6302,8 @@ template {
   display: block;
   position: fixed;
   z-index: 1;
-  top: 35px;
-  right: 40px;
+  top: 15px;
+  right: 20px;
   cursor: pointer; }
   @media (min-width: 0px) and (max-width: 519px) {
     #drawer-toggle-label {
@@ -6456,15 +6457,17 @@ template {
 
   #drawer-toggle:checked ~ #page-content {
     margin-left: calc(100% - 50px); } }
-nav.navbar .navbar-header a.navbar-brand {
-  padding: 0 0 0 15px; }
-  nav.navbar .navbar-header a.navbar-brand p.hidden {
-    margin-left: -9999px; }
-  nav.navbar .navbar-header a.navbar-brand img {
-    width: 50%;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 20px; }
+nav.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 85px; }
+  nav.navbar .navbar-header a.navbar-brand {
+    padding: 0 0 0 15px; }
+    nav.navbar .navbar-header a.navbar-brand p.hidden {
+      margin-left: -9999px; }
+    nav.navbar .navbar-header a.navbar-brand img {
+      width: 50%;
+      display: inline-block;
+      margin-left: 20px; }
 
 footer p {
   font-size: 0.625em;
@@ -6574,24 +6577,28 @@ body {
       body hr {
         margin: 15px 0; } }
   body a.arrow {
-    background: transparent url("/img/arrow-down.svg") no-repeat;
-    height: 40px;
-    width: 40px;
-    display: block; }
+    font-size: 4.6875em;
+    /* 75px */
+    line-height: 1;
+    /* 75px */
+    display: block;
+    color: #e0006d; }
     body a.arrow:hover {
-      background: transparent url("/img/arrow-down-on.svg") no-repeat;
-      border-bottom-width: 0; }
+      color: #D1B100; }
     @media (min-width: 0px) and (max-width: 519px) {
       body a.arrow {
         margin-left: 15px; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       body a.arrow {
-        height: 50px;
-        width: 50px; } }
+        font-size: 3.125em;
+        /* 50px */
+        line-height: 1;
+        /* 50px */ } }
   body.home section.identity, body.work section.identity, body.work-alt section.identity {
     background-color: #2e2711;
     background-image: url("/img/bg-home.jpg");
-    border: 20px solid #fff; }
+    border: 20px solid #fff;
+    border-top-width: 0; }
     body.home section.identity .center, body.work section.identity .center, body.work-alt section.identity .center {
       position: relative;
       height: 100vh; }
@@ -6636,13 +6643,13 @@ body {
               max-width: 600px; } }
           @media (min-width: 992px) and (max-width: 1199px) {
             body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
-              font-size: 3.125em;
-              /* 50px */
-              line-height: 1.2;
-              /* 60px */
+              font-size: 2.1875em;
+              /* 35px */
+              line-height: 1.28571;
+              /* 45px */
               max-width: 800px; } }
           body.home section.identity .center div p em, body.work section.identity .center div p em, body.work-alt section.identity .center div p em {
-            color: #e55050;
+            color: #fa0079;
             font-style: normal; }
         body.home section.identity .center div .arrow, body.work section.identity .center div .arrow, body.work-alt section.identity .center div .arrow {
           margin-top: 7%; }
@@ -6654,10 +6661,14 @@ body {
     background: linear-gradient(to right, #2e2711, #483d1b);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: 20px solid #fff;
+    border-top-width: 0;
     padding-top: 8%; }
     @media (min-width: 0px) and (max-width: 519px) {
       body.home section.about, body.work section.about, body.work-alt section.about {
         padding: 15px; } }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body.home section.about, body.work section.about, body.work-alt section.about {
+        padding-top: 15%; } }
     body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
       color: #fff;
       font-family: "EB Garamond", Georgia, serif;
@@ -6944,8 +6955,18 @@ body {
       body.home section.feature .second, body.work section.feature .second, body.work-alt section.feature .second {
         background: linear-gradient(to right, #F2F1EF 0%, #F2F1EF 66.75%, #fff 66.75%, #fff 100%); } }
     body.home section.feature .second img, body.work section.feature .second img, body.work-alt section.feature .second img {
+      padding-top: 90px;
       display: block;
       margin: 0 auto; }
+      @media (min-width: 0px) and (max-width: 519px) {
+        body.home section.feature .second img, body.work section.feature .second img, body.work-alt section.feature .second img {
+          padding-top: 25px; } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.feature .second img, body.work section.feature .second img, body.work-alt section.feature .second img {
+          padding-top: 25px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.feature .second img, body.work section.feature .second img, body.work-alt section.feature .second img {
+          padding-top: 25px; } }
     @media (min-width: 0px) and (max-width: 519px) {
       body.home section.feature .second .height, body.work section.feature .second .height, body.work-alt section.feature .second .height {
         height: auto; } }
