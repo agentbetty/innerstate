@@ -6938,42 +6938,42 @@ body {
       margin: 0 auto; } }
   body.home section.feature .arrow, body.work section.feature .arrow, body.work-alt section.feature .arrow {
     bottom: 25px; }
-  body.home section.feature #two, body.work section.feature #two, body.work-alt section.feature #two {
+  body.home section.feature .second, body.work section.feature .second, body.work-alt section.feature .second {
     background: linear-gradient(to right, #e7e5e1 0%, #e7e5e1 50%, #fff 50%, #fff 100%); }
     @media (min-width: 768px) and (max-width: 991px) {
-      body.home section.feature #two, body.work section.feature #two, body.work-alt section.feature #two {
+      body.home section.feature .second, body.work section.feature .second, body.work-alt section.feature .second {
         background: linear-gradient(to right, #F2F1EF 0%, #F2F1EF 66.75%, #fff 66.75%, #fff 100%); } }
-    body.home section.feature #two img, body.work section.feature #two img, body.work-alt section.feature #two img {
+    body.home section.feature .second img, body.work section.feature .second img, body.work-alt section.feature .second img {
       display: block;
       margin: 0 auto; }
     @media (min-width: 0px) and (max-width: 519px) {
-      body.home section.feature #two .height, body.work section.feature #two .height, body.work-alt section.feature #two .height {
+      body.home section.feature .second .height, body.work section.feature .second .height, body.work-alt section.feature .second .height {
         height: auto; } }
     @media (min-width: 520px) and (max-width: 767px) {
-      body.home section.feature #two .height, body.work section.feature #two .height, body.work-alt section.feature #two .height {
+      body.home section.feature .second .height, body.work section.feature .second .height, body.work-alt section.feature .second .height {
         height: auto; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      body.home section.feature #two .height, body.work section.feature #two .height, body.work-alt section.feature #two .height {
+      body.home section.feature .second .height, body.work section.feature .second .height, body.work-alt section.feature .second .height {
         height: auto; } }
-  body.home section.feature #three, body.work section.feature #three, body.work-alt section.feature #three {
+  body.home section.feature .third, body.work section.feature .third, body.work-alt section.feature .third {
     position: relative; }
-    body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+    body.home section.feature .third img, body.work section.feature .third img, body.work-alt section.feature .third img {
       display: block;
       margin: 0 auto;
       padding-top: 25px; }
       @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+        body.home section.feature .third img, body.work section.feature .third img, body.work-alt section.feature .third img {
           padding-top: 50px; } }
       @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+        body.home section.feature .third img, body.work section.feature .third img, body.work-alt section.feature .third img {
           padding-top: 100px; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+        body.home section.feature .third img, body.work section.feature .third img, body.work-alt section.feature .third img {
           padding-top: 100px; } }
       @media (min-width: 992px) and (max-width: 1199px) {
-        body.home section.feature #three img, body.work section.feature #three img, body.work-alt section.feature #three img {
+        body.home section.feature .third img, body.work section.feature .third img, body.work-alt section.feature .third img {
           padding-top: 145px; } }
-    body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
+    body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
       position: absolute;
       z-index: 10;
       right: 0;
@@ -6987,7 +6987,7 @@ body {
       background-color: #fff;
       border-bottom: 1px solid #e55050; }
       @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
+        body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
           font-size: 0.75em;
           /* 12px */
           line-height: 1.25;
@@ -6996,7 +6996,7 @@ body {
           width: 100px;
           bottom: 3%; } }
       @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
+        body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
           font-size: 0.75em;
           /* 12px */
           line-height: 1.25;
@@ -7005,56 +7005,56 @@ body {
           width: 100px;
           bottom: 25px; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
+        body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
           font-size: 0.9375em;
           /* 15px */
           line-height: 1.2;
           /* 18px */
           width: 125px; } }
       @media (min-width: 992px) and (max-width: 1199px) {
-        body.home section.feature #three .previous, body.home section.feature #three .next, body.work section.feature #three .previous, body.work section.feature #three .next, body.work-alt section.feature #three .previous, body.work-alt section.feature #three .next {
+        body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
           font-size: 0.9375em;
           /* 15px */
           line-height: 1.2;
           /* 18px */
           width: 135px; } }
-      body.home section.feature #three .previous div, body.home section.feature #three .next div, body.work section.feature #three .previous div, body.work section.feature #three .next div, body.work-alt section.feature #three .previous div, body.work-alt section.feature #three .next div {
+      body.home section.feature .third .previous div, body.home section.feature .third .next div, body.work section.feature .third .previous div, body.work section.feature .third .next div, body.work-alt section.feature .third .previous div, body.work-alt section.feature .third .next div {
         color: #5C7484;
         font-size: 0.75em;
         /* 12px */
         line-height: 1.25;
         /* 15px */
         text-transform: uppercase; }
-      body.home section.feature #three .previous a, body.home section.feature #three .next a, body.work section.feature #three .previous a, body.work section.feature #three .next a, body.work-alt section.feature #three .previous a, body.work-alt section.feature #three .next a {
+      body.home section.feature .third .previous a, body.home section.feature .third .next a, body.work section.feature .third .previous a, body.work section.feature .third .next a, body.work-alt section.feature .third .previous a, body.work-alt section.feature .third .next a {
         color: #b89b00; }
-        body.home section.feature #three .previous a:hover, body.home section.feature #three .next a:hover, body.work section.feature #three .previous a:hover, body.work section.feature #three .next a:hover, body.work-alt section.feature #three .previous a:hover, body.work-alt section.feature #three .next a:hover {
+        body.home section.feature .third .previous a:hover, body.home section.feature .third .next a:hover, body.work section.feature .third .previous a:hover, body.work section.feature .third .next a:hover, body.work-alt section.feature .third .previous a:hover, body.work-alt section.feature .third .next a:hover {
           color: #ff1486; }
-    body.home section.feature #three .previous, body.work section.feature #three .previous, body.work-alt section.feature #three .previous {
+    body.home section.feature .third .previous, body.work section.feature .third .previous, body.work-alt section.feature .third .previous {
       left: 0;
       padding-left: 0;
       text-align: right; }
-    body.home section.feature #three .pattern-wrap, body.work section.feature #three .pattern-wrap, body.work-alt section.feature #three .pattern-wrap {
+    body.home section.feature .third .pattern-wrap, body.work section.feature .third .pattern-wrap, body.work-alt section.feature .third .pattern-wrap {
       background: transparent url("/img/ghel/ghel-bg.jpg") repeat;
       border-bottom: 1px solid #ff1486; }
-      body.home section.feature #three .pattern-wrap.asa24, body.work section.feature #three .pattern-wrap.asa24, body.work-alt section.feature #three .pattern-wrap.asa24 {
+      body.home section.feature .third .pattern-wrap.asa24, body.work section.feature .third .pattern-wrap.asa24, body.work-alt section.feature .third .pattern-wrap.asa24 {
         background: transparent url("/img/asa24/asa24-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.blp, body.work section.feature #three .pattern-wrap.blp, body.work-alt section.feature #three .pattern-wrap.blp {
+      body.home section.feature .third .pattern-wrap.blp, body.work section.feature .third .pattern-wrap.blp, body.work-alt section.feature .third .pattern-wrap.blp {
         background: transparent url("/img/blp/blp-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.ep, body.work section.feature #three .pattern-wrap.ep, body.work-alt section.feature #three .pattern-wrap.ep {
+      body.home section.feature .third .pattern-wrap.ep, body.work section.feature .third .pattern-wrap.ep, body.work-alt section.feature .third .pattern-wrap.ep {
         background: transparent url("/img/ep/ep-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.hm, body.work section.feature #three .pattern-wrap.hm, body.work-alt section.feature #three .pattern-wrap.hm {
+      body.home section.feature .third .pattern-wrap.hm, body.work section.feature .third .pattern-wrap.hm, body.work-alt section.feature .third .pattern-wrap.hm {
         background: transparent url("/img/hm/hm-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.ghel, body.work section.feature #three .pattern-wrap.ghel, body.work-alt section.feature #three .pattern-wrap.ghel {
+      body.home section.feature .third .pattern-wrap.ghel, body.work section.feature .third .pattern-wrap.ghel, body.work-alt section.feature .third .pattern-wrap.ghel {
         background: transparent url("/img/ghel/ghel-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.nacha, body.work section.feature #three .pattern-wrap.nacha, body.work-alt section.feature #three .pattern-wrap.nacha {
+      body.home section.feature .third .pattern-wrap.nacha, body.work section.feature .third .pattern-wrap.nacha, body.work-alt section.feature .third .pattern-wrap.nacha {
         background: transparent url("/img/nacha/nacha-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.qcorp, body.work section.feature #three .pattern-wrap.qcorp, body.work-alt section.feature #three .pattern-wrap.qcorp {
+      body.home section.feature .third .pattern-wrap.qcorp, body.work section.feature .third .pattern-wrap.qcorp, body.work-alt section.feature .third .pattern-wrap.qcorp {
         background: transparent url("/img/qcorp/qcorp-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.s2f, body.work section.feature #three .pattern-wrap.s2f, body.work-alt section.feature #three .pattern-wrap.s2f {
+      body.home section.feature .third .pattern-wrap.s2f, body.work section.feature .third .pattern-wrap.s2f, body.work-alt section.feature .third .pattern-wrap.s2f {
         background: transparent url("/img/s2f/s2f-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.sqm, body.work section.feature #three .pattern-wrap.sqm, body.work-alt section.feature #three .pattern-wrap.sqm {
+      body.home section.feature .third .pattern-wrap.sqm, body.work section.feature .third .pattern-wrap.sqm, body.work-alt section.feature .third .pattern-wrap.sqm {
         background: transparent url("/img/sqm/sqm-bg.jpg") repeat; }
-      body.home section.feature #three .pattern-wrap.tlp, body.work section.feature #three .pattern-wrap.tlp, body.work-alt section.feature #three .pattern-wrap.tlp {
+      body.home section.feature .third .pattern-wrap.tlp, body.work section.feature .third .pattern-wrap.tlp, body.work-alt section.feature .third .pattern-wrap.tlp {
         background: transparent url("/img/tlp/tlp-bg.jpg") repeat; }
 
 .work-alt section.feature #two {
