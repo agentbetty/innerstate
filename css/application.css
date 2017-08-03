@@ -6582,7 +6582,11 @@ body {
     line-height: 1;
     /* 75px */
     display: block;
-    color: #e0006d; }
+    color: #e0006d;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center; }
     body a.arrow:hover {
       color: #D1B100; }
     @media (min-width: 0px) and (max-width: 519px) {
@@ -6651,8 +6655,6 @@ body {
           body.home section.identity .center div p em, body.work section.identity .center div p em, body.work-alt section.identity .center div p em {
             color: #fa0079;
             font-style: normal; }
-        body.home section.identity .center div .arrow, body.work section.identity .center div .arrow, body.work-alt section.identity .center div .arrow {
-          margin-top: 7%; }
   body.home section.about, body.work section.about, body.work-alt section.about {
     background-color: #231e0d;
     /* fallback for old browsers */
@@ -6711,8 +6713,6 @@ body {
         /* 15px */
         line-height: 1.2;
         /* 18px */ } }
-    body.home section.about .arrow, body.work section.about .arrow, body.work-alt section.about .arrow {
-      margin-top: 50px; }
   body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
     background-color: #ffbbac;
     background-image: url("/img/bg-404.jpg") !important; }
@@ -6947,8 +6947,6 @@ body {
       max-width: 500px;
       padding: 25px;
       margin: 0 auto; } }
-  body.home section.feature .arrow, body.work section.feature .arrow, body.work-alt section.feature .arrow {
-    bottom: 25px; }
   body.home section.feature .second, body.work section.feature .second, body.work-alt section.feature .second {
     background: linear-gradient(to right, #e7e5e1 0%, #e7e5e1 50%, #fff 50%, #fff 100%); }
     @media (min-width: 768px) and (max-width: 991px) {

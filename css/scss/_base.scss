@@ -72,8 +72,10 @@ body {
     @include font-size(75px, 75px);
     display: block;
     color:darken($hotpink, 10%);
-    // position:absolute;
-    // bottom:50px;
+    position:absolute;
+    bottom:100px;
+    width:100%;
+    text-align: center;
 
     &:hover {
       color:$yellow;
@@ -138,8 +140,6 @@ body {
               font-style: normal;
             }
           }
-
-          .arrow {margin-top:7%;}
         }
       }
 	  }
@@ -202,8 +202,6 @@ body {
           @include font-size(15px, 18px);
         }
       }
-
-      .arrow {margin-top:50px;}
     }
 
     section.fourohfour {
@@ -361,8 +359,6 @@ body {
             margin:0 auto;
           }
         }
-
-      .arrow {bottom:25px;}  
 
       .second{
           background: linear-gradient(
