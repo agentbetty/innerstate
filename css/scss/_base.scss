@@ -28,16 +28,32 @@ body {
   }
 
   // – – – – – – – – – – general styles
-  h1, h2, h3, p { margin:0 0 2px 0;}
+  h1, h2, h3, h4, p { margin:0 0 2px 0;}
+
+  p, li {font-weight:300;}
+
+  h1 {
+    font-family: $gary;
+    @include font-size(33px, 36px);
+  }
 
   h2 {
-    @include font-size(27px, 30px);
+    @include font-size(24px, 27px);
     font-weight: 400;
+    font-family: $gary;
+    color:$peach;
+  }
 
-      @include phone {@include font-size(15px, 18px);}
-      @include tablet-p {@include font-size(18px, 21px);}
-      @include tablet-h {@include font-size(18px, 21px);}
-      @include desktop-s {@include font-size(24px, 27px);}
+  h3 {
+    @include font-size(18px, 21px);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    @include font-size(15px, 18px);
+    font-weight: 600;
+    color:$peach;
   }
 
   li {
@@ -45,13 +61,18 @@ body {
     padding:2px 0;
   }
 
+  ol li {
+    list-style-type: decimal;
+    margin-left:15px;
+  }
+
   img {max-width:100%;}
 
   a:link {color: $hotpink;}
   a:visited {color: $hotpink;}
-  a:hover {color: $yellow;text-decoration:none;}
+  a:hover {color: $yellow;text-decoration:none;border-bottom:1px solid $hotpink;}
   a:active {color: $hotpink;} 
-  a:focus {color: $yellow;}
+  a:focus {color: $yellow-dark;}
 
   blockquote {
     font-family: $gary;
@@ -94,7 +115,7 @@ body {
       background-color:$espresso;
       background-image: url('/img/bg-home.jpg');
       border:20px solid $white;
-      border-top-width: 0;
+      border-top-width:0;
 
       .center { // vertical centering
         position: relative;
@@ -113,9 +134,9 @@ body {
           p {
             color:$espresso;
             font-family: $gary;
-            @include font-size(45px, 55px);
+            @include font-size(40px, 50px);
             width:1000px; 
-            margin:25px auto;
+            margin: 0 auto 25px ;
 
             @include phone {
               @include font-size(27px, 37px);
@@ -136,9 +157,11 @@ body {
             }
 
             em {
-              color:darken($hotpink, 5%);
+              color:$peach;
               font-style: normal;
             }
+
+            a:hover {color:$yellow-dark;}
           }
         }
       }
@@ -149,48 +172,21 @@ body {
       background: -webkit-linear-gradient(to right, $espresso, lighten($espresso, 7%));  /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(to right, $espresso, lighten($espresso, 7%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       border:20px solid $white;
-      border-top-width: 0;
-      padding-top:8%;
+      border-top-width:0;
+      padding-top:115px;
 
-      @include phone {
-        padding:15px;
-      }
-
-      @include tablet-p {
-        padding-top:15%;
-      }
-
-      h2 {
-        color:$white;
-        font-family: $gary;
-        @include font-size(21px, 24px);
-
-        @include phone {
-          @include font-size(15px, 18px);
-        }
-
-        @include tablet-h {
-          @include font-size(18px, 21px);
-        }
-      }
+      h2 { color:$white;}
 
       p {
         color:$latte;
+        @include font-size(21px, 27px);
 
-        em {
-          color:$white;
-          font-style: normal;
-        }
+        em {color:$white;font-style:normal;}
       }
 
       ul, ol {
         color:$latte;
         margin-top:15px;
-      }
-
-      ol li {
-        list-style-type: decimal;
-        margin-left:15px;
       }
 
       p, ol, ul {
@@ -202,6 +198,8 @@ body {
           @include font-size(15px, 18px);
         }
       }
+
+      ol + ul {@include font-size(12px, 15px);}
     }
 
     section.fourohfour {
@@ -227,7 +225,94 @@ body {
           a {color:$white;}
           &:hover {
             text-decoration:none;
-            border-bottom:1px solid $yellow;
+            border-bottom:1px solid $hotpink;
+          }
+        }
+      }
+    }
+
+    section.case {
+      background-color: lighten($latte, 15%);
+      border:20px solid $white;
+      border-top-width:0;
+      padding-top:115px;
+
+      h2 {
+        text-align: center;
+        
+        em {
+          color:$yellow-dark;
+          font-style: normal;
+        }
+      }
+
+      .case-study-teaser {
+        background-color:$peach;
+        height:250px;
+        width:100%;
+        padding-top: 100px;
+        margin-bottom:30px;
+
+        &:hover {
+
+          div h3,
+          div h4 {
+             color:$hotpink; 
+          }
+        }
+
+        div {
+          background-color:$white;
+          padding:15px;
+          width:75%;
+          margin:0 auto;
+          height: 75px;
+        
+          h3 {
+            font-family:$worky;
+            font-weight: 300;
+            color:$espresso;
+            @inlclude font-size(35px, 45px);
+          }
+
+          h4 {
+            @include font-size(12px, 15px);
+            font-weight: 300;
+            color:$espresso;
+          }
+        }
+       &.reportcard {background: url('/img/reportcard/reportcard-teaser.jpg') no-repeat;}
+       &.cancertrials {background: url('/img/cancertrials/cancertrials-teaser.jpg') no-repeat;}
+       &.hm {background: url('/img/hm/hm-teaser.jpg') no-repeat;}
+       &.asa24 {background: url('/img/asa24/asa24-teaser.jpg') no-repeat;}
+      }
+
+    }
+
+    section.fourohfour {
+      background-color:$babypink;
+      background-image: url('/img/bg-404.jpg')!important;
+
+      .wrap {
+        margin:0 auto;
+        max-width: 300px;
+
+        h1 {
+          @include font-size(100px, 105px);
+          font-family: $gary;
+          color:$white;
+          padding-top:150px;
+        }
+
+        h3 {
+          @include font-size(18px, 21px);
+          font-family: $gary;
+          margin:15px;
+
+          a {color:$white;}
+          &:hover {
+            text-decoration:none;
+            border-bottom:1px solid $hotpink;
           }
         }
       }

@@ -10,18 +10,20 @@ keyword: home
 			<div class="col-xs-12">
 				<div class="center">
 					<div>
-						<p><em>Hello.</em><br>I’m Elizabeth Miller and I’m an art director, senior ux designer, and front-end developer working in lovely, sunny Portland, Oregon.</p>
+						<p class="first"><em>Hello.</em><br>I’m Elizabeth Miller and I’m an art director, senior UX designer, and front-end developer working in lovely, sunny Portland, Oregon.</p>
 
-						<p>I maintain a strong, formal design sensibility alongside a love for how things are built, how we manage that process, and how we keep it <em>all centered on the user.</em></p>
+						<p class="second">I maintain a strong, formal design sensibility alongside a love for how things are built, how we manage that process, and how we keep it <em>all centered on the user.</em></p>
+
+						<p class="third">
+							<a href="#one">about me</a> or <a href="#two">view work</a></p>
 					</div>
 				</div>
-				<a class="arrow" href="#one">&darr;</a>
+				<!-- <a class="arrow" href="#one">&darr;</a> -->
 			</div>
 		</div>
 	</section>
 
 	<section class="cd-fixed-bg about" id="one" style="position: relative;">
-
 			<div class="row">
 				<div class="col-sm-1"></div>
 				<div class="col-sm-10">
@@ -51,22 +53,24 @@ keyword: home
 								<li>Build</li>
 								<li>Test</li>
 							</ol>
-							<p><em>*Iterate through steps 5-8 as needed.</em></p>
+							<ul>
+								<li>&#42;Iterate through steps 5-8 as needed.</li>
+							</ul>
 						</div>
 						<div class="col-sm-3">
 							<h2>Tools</h2>
 							<ul>
 								<li>adobe</li>
-								<li>sketch / ux pin / balsamiq</li>
+								<li>sketch/ux pin/balsamiq</li>
 								<li>sublime</li>
 								<li>bootstrap</li>
 								<li>jekyll</li>
 								<li>git</li>
-								<li>sass / less</li>
-								<li>gitlab / <a href="https://github.com/agentbetty">github</a></li>
-								<li>drupal / wordpress</li>
-								<li>angular / react</li>
-								<li>gulp / grunt / rake</li>
+								<li>sass/less</li>
+								<li>gitlab/<a href="https://github.com/agentbetty">github</a></li>
+								<li>drupal/wordpress</li>
+								<li>angular/react</li>
+								<li>gulp/grunt/rake</li>
 								<li>kanban</li>
 							</ul>
 						</div>
@@ -76,16 +80,15 @@ keyword: home
 									<li><a href="http://www.designkit.org/" target="_blank">human-centered design</a></li>
 									<li>agile software development</li>
 									<li>multivariate testing</li>
-									<li>task analysis / 
-										<a href="http://www.goodreads.com/book/show/6658783-rocket-surgery-made-easy" target="_blank">user interviews</a>
+									<li>task analysis/<a href="http://www.goodreads.com/book/show/6658783-rocket-surgery-made-easy" target="_blank">user interviews</a>
 									</li>
 									<li><a href="https://abookapart.com/products/design-for-real-life" target="_blank">users in real life</a></li>
-									<li>WCAG 2.0 + 508 compliancies</li>
+									<li>WCAG 2.0 + 508 compliancy</li>
 									<li><a href="https://abookapart.com/products/color-accessibility-workflows" target="_blank">color accessibility</a></li>
 								</ul>
 						</div>
 						<div class="col-sm-3">
-							<h2>More...</h2>
+							<h2>More&hellip;</h2>
 							<ul>
 								<li>
 									<a href="/docs/Elizabeth-Miller-Resume.pdf" target="_blank" class="more">Resume &darr;</a>	
@@ -96,85 +99,78 @@ keyword: home
 								<li>
 									<a href="mailto:elizabethm@innerstate.org" class="more">Contact</a>
 								</li>
+								<li>
+									<a href="#two">Case Studies</a>
+								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-1"></div>
-
 			</div>
-
-<a class="arrow" href="#two">&darr;</a>
+	<!-- <a class="arrow" href="#two">&darr;</a> -->
 	</section>
 
-	{% for feature in site.data.feature %}
-	<section class="cd-scrolling-bg feature">
-		<div class="container-fluid">
-			<div class="row" id="two">
-				<div class="col-xs-6 col-sm-8 n no-pad">
-					<img class="logo" src="{{feature.logo}}" alt="{{feature.logo-alt}}">
-					<img class="cover" src="{{feature.hero}}" alt="{{feature.hero-alt}}">
-				</div>
-				<div class="col-xs-6 col-sm-4 height">
-						<div class="project-basics">
-							<aside>Client</aside>
-							<h2>{{feature.title}}</h2>
-
-							<aside>Funding</aside>
-							<h3>{{feature.funding}}</h3>
-							
-							<aside>Year</aside>
-							<h3>{{feature.year}}</h3>
-
-							<aside>Site</aside>
-							<h3>
-								<a href="{{feature.link}}" target="_blank">{{feature.link-print}}</a>
-							</h3>
-
-							<aside>My Role</aside>
-							<ul>
-								<li>{{feature.role-1}}</li>
-								<li>{{feature.role-2}}</li>
-								<li>{{feature.role-3}}</li>
-						</div>
-					<a href="#three" class="arrow">&darr;</a>
-				</div>
-			</div>
-
-			<div class="row second" id="three">
-				<div class="col-xs-12 col-md-4">
-					<img src="{{feature.two-1}}" alt="{{feature.two-1-alt}}">
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<img src="{{feature.two-2}}" alt="{{feature.two-2-alt}}">
-				</div>
-
-				<div class="col-xs-12 col-md-4 height">
-					<div class="project-bio">
-						<aside>Client</aside>
-						<h2>{{feature.title}}</h2>
-
-						<p class="intro">{{feature.bio-1}}</p>
-						<p class="more">{{feature.bio-2}}</p>
-						<p class="more">{{feature.bio-3}}</p>
+	<section class="case" id="two" style="position: relative;">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div class="row">
+					<div class="col-sm-12">
+						<h2>Selected Case Studies, <em>2013-2017</em></h2>
 					</div>
-					<a href="#four" class="arrow">&darr;</a>
+					<div class="row">
+						<div class="col-xs-12">
+							<hr>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4">
+						<a href="/">
+							<div class="case-study-teaser reportcard">
+									<div>
+										<h3>National Report Card</h3>
+										<h4>UX audit, UI recommendations, and content strategy</h4>
+									</div>
+							</div>
+						</a>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<a href="/">
+								<div class="case-study-teaser cancertrials">
+										<div>
+											<h3>Cancer Trials</h3>
+											<h4>React App</h4>
+										</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<a href="/">
+								<div class="case-study-teaser hm">
+										<div>
+											<h3>HealthMAP</h3>
+											<h4>Android App</h4>
+										</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<a href="/">
+								<div class="case-study-teaser asa24">
+										<div>
+											<h3>ASA24 Dietary Recall</h3>
+											<h4>Angular Web App</h4>
+										</div>
+								</div>
+							</a>
+						</div>
+					</div>
 				</div>
+				<div class="col-sm-1"></div>
 			</div>
-
-			<div class="row third" id="four">
-				<div class="next">
-					<a href="/project/asa24">next project <span>&rarr;</span></a>
-				</div>
-
-				<div class="col-xs-12 pattern-wrap height">
-					<a href="{{feature.link}}" target="_blank">
-						<img src="{{feature.three}}" alt="{{feature.three-alt}}">
-					</a>
-				</div>
-			</div>
-		</div>
+	<!-- <a class="arrow" href="#two">&darr;</a> -->
 	</section>
-	{% endfor %}
+
 </div>	
 

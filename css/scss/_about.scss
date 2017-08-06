@@ -1,154 +1,42 @@
 .about {
-  background-color: darken($babypink, 3%);  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, $babypink, darken($babypink, 7%));  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, $babypink, darken($babypink, 7%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: lighten($latte, 15%);
+  border:20px solid $white;
+  padding-top:115px;
+  height:auto;
 
+  hr {margin:50px 0;}
 
-  .navbar {
-    
-    @include phone {
-      height:65px;
-      background-color: rgba(248, 228, 228, 0.95);
-    }
-    @include tablet-p {
-      height:65px;
-      background-color: rgba(248, 228, 228, 0.95);
-    }
-    @include tablet-h {
-      height:65px;
-      background-color: rgba(248, 228, 228, 0.95);
-    }
+  h1 {
+    text-align: center;
   }
 
-  .about-details {
-      margin: 50px 0;
+  h2 {
+     margin-bottom:10px;
+  }
 
-      @include phone {
-        margin:75px 15px 15px;
-      }
+  h3 {color:$peach;}
 
-      @include tablet-p {
-        margin:75px 15px 15px;
-      }
+  img {
+    display: block;
+    margin: 25px 0;
+  }
 
-      @include desktop {
-        margin-bottom: 275px;
-      }
+  .intro,
+  ol {
+    font-family: $gary;
+    @include font-size(24px, 27px);
+    margin-top:15px;
 
-      h1 {margin-left:-9999px;}
-      
-      .intro {
-        font-family: $gary;
-        color:$night;
-        @include font-size(60px, 70px);
-        margin-bottom: 25px;
+    b {font-weight:600;}
+  }
 
-        @include phone {
-          @include font-size(30px, 33px);
-          margin-bottom: 5px;
-        }
+  .intro {max-width: 800px;}
+  .dos {margin-top:37px;}
 
-        @include tablet-p {
-          @include font-size(30px, 33px);
-          margin-bottom: 5px;
-        }
-
-        @include tablet-h {
-          @include font-size(45px, 55px);
-        }
-
-        @include desktop-s {
-          @include font-size(55px, 65px);
-        }
-      }
-
-      strong {
-        color:#f56565;
-        font-weight: normal;
-      }
-
-      p {
-        @include font-size(21px, 27px);
-        padding: 5px 0;
-
-        @include phone {
-          @include font-size(15px, 18px);
-        }
-
-        @include tablet-p {
-          @include font-size(15px, 21px);
-        }
-
-        @include tablet-h {
-          @include font-size(18px, 24px);
-        }
-      }
-
-      h2 {
-        color:$coral;
-        @include font-size(18px, 21px);
-      }
-
-      h2 + img {
-        margin-top:0;
-      }
-
-      img  {
-        margin-top:25px;
-
-        @include tablet-p {
-          display: block;
-          margin: 25px auto 0;
-          width: 75%;
-        } 
-
-        @include phone {
-          display: block;
-          margin: 25px auto 0;
-        } 
-      }
-
-      ul {
-        margin:15px 0;
-        @include font-size(15px, 21px);
-
-        li {
-          list-style-type: none;
-        }
-
-        @include phone {
-          margin-top:5px;
-          @include font-size(12px, 16px);
-        }
-      }
-
-      em {
-        color:darken($yellow, 15%);
-        font-style:normal;
-      }
-
-      .more {
-        padding:10px;
-        border:1px solid $coral;
-        display: inline-block;
-        margin:25px 10px 0 0;
-
-        &:hover {
-          color:$white;
-          border-color:$white;
-        }
-      }
-    }
-
-    footer {
-        p {
-          color:$slate;
-
-          a {color:$night-light;}
-          span {color:$coral;}
-
-        }
-    }
+  .svg {
+    max-width: 850px;
+    margin-bottom: 50px;
+  }
 }
 
 

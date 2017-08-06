@@ -1,8 +1,6 @@
 // gentle name fade in
 .home .identity h2,
-.home .about h2,
-.home p,
-.arrow {
+.home .identity p.first {
     animation: fadein ease-in 1s;
     -moz-animation: fadein ease-in 1s; 
     -webkit-animation: fadein ease-in 1s; 
@@ -20,24 +18,22 @@
 
 // gentle project logo fade in
 .work .logo,
-.work-alt .logo {
+.work-alt .logo,
+.home .identity p.second {
     animation: fadein ease-in 1.5s;
     -moz-animation: fadein ease-in 1.5s; 
     -webkit-animation: fadein ease-in 1.5s; 
     -o-animation: fadein ease-in 1.5s;
 }
 
-
-// gentle project hero fade in
-.about-details {
-    animation: fadein ease-in .5s;
-    -moz-animation: fadein ease-in .5s; 
-    -webkit-animation: fadein ease-in .5s; 
-    -o-animation: fadein ease-in .5s;
+.home .identity p.third {
+    animation: fadein ease-in 2s;
+    -moz-animation: fadein ease-in 2s; 
+    -webkit-animation: fadein ease-in 2s; 
+    -o-animation: fadein ease-in 2s;
 }
 
-.about ul,
-.about ol {
+.about {
     animation: fadein ease-in 1.25s;
     -moz-animation: fadein ease-in 1.25s; 
     -webkit-animation: fadein ease-in 1.25s; 
