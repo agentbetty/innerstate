@@ -13,11 +13,6 @@ body {
   font-family: $worky;
   color:$espresso;
 
-      @include phone {border-top:10px solid purple;}
-      @include tablet-p {border-top:10px solid red;}
-      @include tablet-h {border-top:10px solid blue;}
-      @include desktop-s {border-top:10px solid green;}
-
   .happybrowser {
       background-color:$coral-light;
       padding:15px;
@@ -30,7 +25,7 @@ body {
   // – – – – – – – – – – general styles
   h1, h2, h3, h4, p { margin:0 0 2px 0;}
 
-  p, li {font-weight:300;}
+  p, ul {font-weight:300;}
 
   h1 {
     font-family: $gary;
@@ -42,12 +37,15 @@ body {
     font-weight: 400;
     font-family: $gary;
     color:$peach;
+
+    @include desktop-s {@include font-size(21px, 24px);}
   }
 
   h3 {
     @include font-size(18px, 21px);
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    @include desktop-s{ @include font-size(15px, 18px); }
   }
 
   h4 {
@@ -57,8 +55,8 @@ body {
   }
 
   li {
-    list-style-type: none;
     padding:2px 0;
+    list-style-type: none;
   }
 
   ol li {
@@ -104,6 +102,7 @@ body {
 
     &:hover {
       color:$yellow;
+      border-bottom:none;
     }
 
     @include phone {margin-left:15px;}
@@ -165,7 +164,7 @@ body {
               font-style: normal;
             }
 
-            a:hover {color:$yellow-dark;}
+            a {color:darken($babypink, 10%);}
           }
         }
       }
@@ -179,11 +178,21 @@ body {
       border-top-width:0;
       padding-top:115px;
 
-      h2 { color:$white;}
+      h2 { 
+        color:$white;
+
+        @include desktop-s {
+          @include font-size(18px, 21px);
+        }
+      }
 
       p {
         color:$latte;
         @include font-size(21px, 27px);
+
+        @include desktop-s {
+          @include font-size(18px, 25px);
+        }
 
         em {color:$white;font-style:normal;}
       }
@@ -204,6 +213,7 @@ body {
       }
 
       ol + ul {@include font-size(12px, 15px);}
+      ul li {list-style-type: none;margin-left:0;}
     }
 
     section.fourohfour {
@@ -235,7 +245,7 @@ body {
       }
     }
 
-    section.case {
+    section.case-teaser {
       background-color: lighten($latte, 15%);
       border:20px solid $white;
       border-top-width:0;
@@ -245,7 +255,7 @@ body {
         text-align: center;
         
         em {
-          color:$yellow-dark;
+          color:$yellow;
           font-style: normal;
         }
       }
@@ -271,6 +281,11 @@ body {
           width:75%;
           margin:0 auto;
           height: 75px;
+
+          @include desktop-s {
+            height:50px;
+            padding:10px;
+          }
         
           h3 {
             font-family:$worky;
@@ -358,19 +373,20 @@ body {
       .project-bio {
         margin-top:150px; 
         font-weight:400;
-        color:$peach;
+        color:$espresso;
 
         @include phone {margin-top:75px;}
         @include tablet-h {margin-top:60px;}
+        @include desktop-s {margin-top:100px;margin-right:25px;}
 
         h2 {
           margin-bottom:25px;
+          color:$espresso;
         }
 
         aside {
-          color:$coral;
-          text-transform: uppercase; 
-          @incude font-size(10px, 15px);
+          color:$peach;
+          @incude font-size(9px, 12px);
         }
 
         h3, ul {
@@ -387,11 +403,14 @@ body {
           @include font-size(21px, 27px);
 
           @include phone {@include font-size(12px, 18px);}
+          @include tablet-h {@include font-size(12px, 15px);}
+          @include desktop-s {@include font-size(15px, 18px);} 
         }
         
         .intro {
           @include font-size(21px, 24px);
           margin-bottom: 15px;
+          font-weight:400;
 
             @include phone {
                 @include font-size(12px, 15px);
@@ -406,7 +425,7 @@ body {
               }
             
             @include desktop-s {
-              @include font-size(18px, 21px);
+              @include font-size(15px, 18px);
             }
         }
 
@@ -499,57 +518,6 @@ body {
             @include desktop-s {padding-top:145px;}
         }
 
-        .previous, .next {
-            position:absolute;
-            z-index: 10;
-            right:0;
-            width:160px;
-            @include font-size(18px, 21px);
-            bottom:125px;
-            padding:15px;
-            background-color: $white;
-            border-bottom:1px solid $coral;  
-
-                @include phone {
-                    @include font-size(12px, 15px);
-                    padding:10px;
-                    width:100px;
-                    bottom:3%;
-                  }
-                @include tablet-p {
-                    @include font-size(12px, 15px);
-                    padding:10px;
-                    width:100px;
-                    bottom: 25px;
-                  }
-                @include tablet-h {
-                    @include font-size(15px, 18px);
-                    width:125px;
-                  }
-                @include desktop-s {
-                    @include font-size(15px, 18px);
-                    width:135px;
-                  }
-
-            div {
-                color: $hotpink;
-                @include font-size(12px, 15px);
-                text-transform: uppercase;
-            }
-
-            a {
-                color:darken($yellow, 5%);
-
-                &:hover {color:$hotpink;}
-            }
-        }
-
-        .previous {
-          left:0;
-          padding-left:0;
-          text-align: right;
-        }
-
         .pattern-wrap {
           background: transparent url('/img/ghel/ghel-bg.jpg') repeat; // feature by default
           border-bottom:1px solid $hotpink;
@@ -571,6 +539,57 @@ body {
   }
 }
 
+.previous, .next {
+    position:absolute;
+    z-index: 10;
+    right:0;
+    width:160px;
+    @include font-size(18px, 21px);
+    bottom:125px;
+    padding:15px;
+    background-color: $white;
+    border-bottom:1px solid $coral;  
+
+        @include phone {
+            @include font-size(12px, 15px);
+            padding:10px;
+            width:100px;
+            bottom:3%;
+          }
+        @include tablet-p {
+            @include font-size(12px, 15px);
+            padding:10px;
+            width:100px;
+            bottom: 25px;
+          }
+        @include tablet-h {
+            @include font-size(15px, 18px);
+            width:125px;
+          }
+        @include desktop-s {
+            @include font-size(15px, 18px);
+            width:135px;
+          }
+
+    div {
+        color: $hotpink;
+        @include font-size(12px, 15px);
+        text-transform: uppercase;
+    }
+
+    a {
+        color:darken($yellow, 5%);
+
+        &:hover {color:$hotpink;}
+    }
+}
+
+.previous {
+  left:0;
+  padding-left:0;
+  text-align: right;
+}
+
 // WORK ALT
 .work-alt {
  section.feature {
@@ -581,14 +600,14 @@ body {
         darken($khaki, 5%) 0%, 
         $white 50%, 
         $white 50%, 
-        $babypink 100%
+        lighten($latte, 15%) 100%
       )!important;
     }
 
     #three {
       background: linear-gradient(
         to right, 
-        darken($babypink, 5%) 0%, 
+        darken($latte, 5%) 0%, 
         $white 50%, 
         $white 50%, 
         $khaki 100%

@@ -6459,6 +6459,18 @@ template {
 nav.navbar {
   background-color: white;
   height: 85px; }
+  @media (min-width: 0px) and (max-width: 519px) {
+    nav.navbar {
+      border-top: 10px solid purple; } }
+  @media (min-width: 520px) and (max-width: 767px) {
+    nav.navbar {
+      border-top: 10px solid red; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    nav.navbar {
+      border-top: 10px solid blue; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    nav.navbar {
+      border-top: 10px solid green; } }
   nav.navbar .navbar-header a.navbar-brand {
     padding: 0 0 0 15px;
     border-bottom-width: 0; }
@@ -6496,18 +6508,6 @@ body,
 body {
   font-family: "Work Sans", Helvetica, arial, sans-serif;
   color: #2e2711; }
-  @media (min-width: 0px) and (max-width: 519px) {
-    body {
-      border-top: 10px solid purple; } }
-  @media (min-width: 520px) and (max-width: 767px) {
-    body {
-      border-top: 10px solid red; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    body {
-      border-top: 10px solid blue; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    body {
-      border-top: 10px solid green; } }
   body .happybrowser {
     background-color: #f2a9a9;
     padding: 15px;
@@ -6517,7 +6517,7 @@ body {
     margin: 0; }
   body h1, body h2, body h3, body h4, body p {
     margin: 0 0 2px 0; }
-  body p, body li {
+  body p, body ul {
     font-weight: 300; }
   body h1 {
     font-family: "EB Garamond", Georgia, serif;
@@ -6533,13 +6533,24 @@ body {
     font-weight: 400;
     font-family: "EB Garamond", Georgia, serif;
     color: #d5715a; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      body h2 {
+        font-size: 1.3125em;
+        /* 21px */
+        line-height: 1.14286;
+        /* 24px */ } }
   body h3 {
     font-size: 1.125em;
     /* 18px */
     line-height: 1.16667;
     /* 21px */
-    margin-bottom: 10px;
-    text-transform: uppercase; }
+    margin-bottom: 5px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      body h3 {
+        font-size: 0.9375em;
+        /* 15px */
+        line-height: 1.2;
+        /* 18px */ } }
   body h4 {
     font-size: 0.9375em;
     /* 15px */
@@ -6548,8 +6559,8 @@ body {
     font-weight: 600;
     color: #d5715a; }
   body li {
-    list-style-type: none;
-    padding: 2px 0; }
+    padding: 2px 0;
+    list-style-type: none; }
   body ol li {
     list-style-type: decimal;
     margin-left: 15px; }
@@ -6596,7 +6607,8 @@ body {
     width: 100%;
     text-align: center; }
     body a.arrow:hover {
-      color: #D1B100; }
+      color: #D1B100;
+      border-bottom: none; }
     @media (min-width: 0px) and (max-width: 519px) {
       body a.arrow {
         margin-left: 15px; } }
@@ -6663,8 +6675,8 @@ body {
           body.home section.identity .center div p em, body.work section.identity .center div p em, body.work-alt section.identity .center div p em {
             color: #d5715a;
             font-style: normal; }
-          body.home section.identity .center div p a:hover, body.work section.identity .center div p a:hover, body.work-alt section.identity .center div p a:hover {
-            color: #524500; }
+          body.home section.identity .center div p a, body.work section.identity .center div p a, body.work-alt section.identity .center div p a {
+            color: #ff9179; }
   body.home section.about, body.work section.about, body.work-alt section.about {
     background-color: #231e0d;
     /* fallback for old browsers */
@@ -6677,12 +6689,24 @@ body {
     padding-top: 115px; }
     body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
       color: #fff; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
+          font-size: 1.125em;
+          /* 18px */
+          line-height: 1.16667;
+          /* 21px */ } }
     body.home section.about p, body.work section.about p, body.work-alt section.about p {
       color: #d2cab4;
       font-size: 1.3125em;
       /* 21px */
       line-height: 1.28571;
       /* 27px */ }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body.home section.about p, body.work section.about p, body.work-alt section.about p {
+          font-size: 1.125em;
+          /* 18px */
+          line-height: 1.38889;
+          /* 25px */ } }
       body.home section.about p em, body.work section.about p em, body.work-alt section.about p em {
         color: #fff;
         font-style: normal; }
@@ -6706,6 +6730,9 @@ body {
       /* 12px */
       line-height: 1.25;
       /* 15px */ }
+    body.home section.about ul li, body.work section.about ul li, body.work-alt section.about ul li {
+      list-style-type: none;
+      margin-left: 0; }
   body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
     background-color: #ffbbac;
     background-image: url("/img/bg-404.jpg") !important; }
@@ -6732,52 +6759,56 @@ body {
         body.home section.fourohfour .wrap h3:hover, body.work section.fourohfour .wrap h3:hover, body.work-alt section.fourohfour .wrap h3:hover {
           text-decoration: none;
           border-bottom: 1px solid #ff1486; }
-  body.home section.case, body.work section.case, body.work-alt section.case {
+  body.home section.case-teaser, body.work section.case-teaser, body.work-alt section.case-teaser {
     background-color: #efece4;
     border: 20px solid #fff;
     border-top-width: 0;
     padding-top: 115px; }
-    body.home section.case h2, body.work section.case h2, body.work-alt section.case h2 {
+    body.home section.case-teaser h2, body.work section.case-teaser h2, body.work-alt section.case-teaser h2 {
       text-align: center; }
-      body.home section.case h2 em, body.work section.case h2 em, body.work-alt section.case h2 em {
-        color: #524500;
+      body.home section.case-teaser h2 em, body.work section.case-teaser h2 em, body.work-alt section.case-teaser h2 em {
+        color: #D1B100;
         font-style: normal; }
-    body.home section.case .case-study-teaser, body.work section.case .case-study-teaser, body.work-alt section.case .case-study-teaser {
+    body.home section.case-teaser .case-study-teaser, body.work section.case-teaser .case-study-teaser, body.work-alt section.case-teaser .case-study-teaser {
       background-color: #d5715a;
       height: 250px;
       width: 100%;
       padding-top: 100px;
       margin-bottom: 30px; }
-      body.home section.case .case-study-teaser:hover div h3,
-      body.home section.case .case-study-teaser:hover div h4, body.work section.case .case-study-teaser:hover div h3,
-      body.work section.case .case-study-teaser:hover div h4, body.work-alt section.case .case-study-teaser:hover div h3,
-      body.work-alt section.case .case-study-teaser:hover div h4 {
+      body.home section.case-teaser .case-study-teaser:hover div h3,
+      body.home section.case-teaser .case-study-teaser:hover div h4, body.work section.case-teaser .case-study-teaser:hover div h3,
+      body.work section.case-teaser .case-study-teaser:hover div h4, body.work-alt section.case-teaser .case-study-teaser:hover div h3,
+      body.work-alt section.case-teaser .case-study-teaser:hover div h4 {
         color: #ff1486; }
-      body.home section.case .case-study-teaser div, body.work section.case .case-study-teaser div, body.work-alt section.case .case-study-teaser div {
+      body.home section.case-teaser .case-study-teaser div, body.work section.case-teaser .case-study-teaser div, body.work-alt section.case-teaser .case-study-teaser div {
         background-color: #fff;
         padding: 15px;
         width: 75%;
         margin: 0 auto;
         height: 75px; }
-        body.home section.case .case-study-teaser div h3, body.work section.case .case-study-teaser div h3, body.work-alt section.case .case-study-teaser div h3 {
+        @media (min-width: 992px) and (max-width: 1199px) {
+          body.home section.case-teaser .case-study-teaser div, body.work section.case-teaser .case-study-teaser div, body.work-alt section.case-teaser .case-study-teaser div {
+            height: 50px;
+            padding: 10px; } }
+        body.home section.case-teaser .case-study-teaser div h3, body.work section.case-teaser .case-study-teaser div h3, body.work-alt section.case-teaser .case-study-teaser div h3 {
           font-family: "Work Sans", Helvetica, arial, sans-serif;
           font-weight: 300;
           color: #2e2711;
           @inlclude font-size(35px, 45px); }
-        body.home section.case .case-study-teaser div h4, body.work section.case .case-study-teaser div h4, body.work-alt section.case .case-study-teaser div h4 {
+        body.home section.case-teaser .case-study-teaser div h4, body.work section.case-teaser .case-study-teaser div h4, body.work-alt section.case-teaser .case-study-teaser div h4 {
           font-size: 0.75em;
           /* 12px */
           line-height: 1.25;
           /* 15px */
           font-weight: 300;
           color: #2e2711; }
-      body.home section.case .case-study-teaser.reportcard, body.work section.case .case-study-teaser.reportcard, body.work-alt section.case .case-study-teaser.reportcard {
+      body.home section.case-teaser .case-study-teaser.reportcard, body.work section.case-teaser .case-study-teaser.reportcard, body.work-alt section.case-teaser .case-study-teaser.reportcard {
         background: url("/img/reportcard/reportcard-teaser.jpg") no-repeat; }
-      body.home section.case .case-study-teaser.cancertrials, body.work section.case .case-study-teaser.cancertrials, body.work-alt section.case .case-study-teaser.cancertrials {
+      body.home section.case-teaser .case-study-teaser.cancertrials, body.work section.case-teaser .case-study-teaser.cancertrials, body.work-alt section.case-teaser .case-study-teaser.cancertrials {
         background: url("/img/cancertrials/cancertrials-teaser.jpg") no-repeat; }
-      body.home section.case .case-study-teaser.hm, body.work section.case .case-study-teaser.hm, body.work-alt section.case .case-study-teaser.hm {
+      body.home section.case-teaser .case-study-teaser.hm, body.work section.case-teaser .case-study-teaser.hm, body.work-alt section.case-teaser .case-study-teaser.hm {
         background: url("/img/hm/hm-teaser.jpg") no-repeat; }
-      body.home section.case .case-study-teaser.asa24, body.work section.case .case-study-teaser.asa24, body.work-alt section.case .case-study-teaser.asa24 {
+      body.home section.case-teaser .case-study-teaser.asa24, body.work section.case-teaser .case-study-teaser.asa24, body.work-alt section.case-teaser .case-study-teaser.asa24 {
         background: url("/img/asa24/asa24-teaser.jpg") no-repeat; }
   body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
     background-color: #ffbbac;
@@ -6835,7 +6866,7 @@ body {
   body.work-alt section.feature .project-bio {
     margin-top: 150px;
     font-weight: 400;
-    color: #d5715a; }
+    color: #2e2711; }
     @media (min-width: 0px) and (max-width: 519px) {
       body.home section.feature .project-basics,
       body.home section.feature .project-bio, body.work section.feature .project-basics,
@@ -6848,18 +6879,25 @@ body {
       body.work section.feature .project-bio, body.work-alt section.feature .project-basics,
       body.work-alt section.feature .project-bio {
         margin-top: 60px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      body.home section.feature .project-basics,
+      body.home section.feature .project-bio, body.work section.feature .project-basics,
+      body.work section.feature .project-bio, body.work-alt section.feature .project-basics,
+      body.work-alt section.feature .project-bio {
+        margin-top: 100px;
+        margin-right: 25px; } }
     body.home section.feature .project-basics h2,
     body.home section.feature .project-bio h2, body.work section.feature .project-basics h2,
     body.work section.feature .project-bio h2, body.work-alt section.feature .project-basics h2,
     body.work-alt section.feature .project-bio h2 {
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      color: #2e2711; }
     body.home section.feature .project-basics aside,
     body.home section.feature .project-bio aside, body.work section.feature .project-basics aside,
     body.work section.feature .project-bio aside, body.work-alt section.feature .project-basics aside,
     body.work-alt section.feature .project-bio aside {
-      color: #e55050;
-      text-transform: uppercase;
-      @incude font-size(10px, 15px); }
+      color: #d5715a;
+      @incude font-size(9px, 12px); }
     body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
     body.home section.feature .project-bio h3,
     body.home section.feature .project-bio ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
@@ -6916,6 +6954,24 @@ body {
           /* 12px */
           line-height: 1.5;
           /* 18px */ } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.feature .project-basics ul,
+        body.home section.feature .project-bio ul, body.work section.feature .project-basics ul,
+        body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics ul,
+        body.work-alt section.feature .project-bio ul {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */ } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body.home section.feature .project-basics ul,
+        body.home section.feature .project-bio ul, body.work section.feature .project-basics ul,
+        body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics ul,
+        body.work-alt section.feature .project-bio ul {
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */ } }
     body.home section.feature .project-basics .intro,
     body.home section.feature .project-bio .intro, body.work section.feature .project-basics .intro,
     body.work section.feature .project-bio .intro, body.work-alt section.feature .project-basics .intro,
@@ -6924,7 +6980,8 @@ body {
       /* 21px */
       line-height: 1.14286;
       /* 24px */
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      font-weight: 400; }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature .project-basics .intro,
         body.home section.feature .project-bio .intro, body.work section.feature .project-basics .intro,
@@ -6957,10 +7014,10 @@ body {
         body.home section.feature .project-bio .intro, body.work section.feature .project-basics .intro,
         body.work section.feature .project-bio .intro, body.work-alt section.feature .project-basics .intro,
         body.work-alt section.feature .project-bio .intro {
-          font-size: 1.125em;
-          /* 18px */
-          line-height: 1.16667;
-          /* 21px */ } }
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */ } }
     body.home section.feature .project-basics .more,
     body.home section.feature .project-bio .more, body.work section.feature .project-basics .more,
     body.work section.feature .project-bio .more, body.work-alt section.feature .project-basics .more,
@@ -7058,66 +7115,6 @@ body {
       @media (min-width: 992px) and (max-width: 1199px) {
         body.home section.feature .third img, body.work section.feature .third img, body.work-alt section.feature .third img {
           padding-top: 145px; } }
-    body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
-      position: absolute;
-      z-index: 10;
-      right: 0;
-      width: 160px;
-      font-size: 1.125em;
-      /* 18px */
-      line-height: 1.16667;
-      /* 21px */
-      bottom: 125px;
-      padding: 15px;
-      background-color: #fff;
-      border-bottom: 1px solid #e55050; }
-      @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
-          font-size: 0.75em;
-          /* 12px */
-          line-height: 1.25;
-          /* 15px */
-          padding: 10px;
-          width: 100px;
-          bottom: 3%; } }
-      @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
-          font-size: 0.75em;
-          /* 12px */
-          line-height: 1.25;
-          /* 15px */
-          padding: 10px;
-          width: 100px;
-          bottom: 25px; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
-          font-size: 0.9375em;
-          /* 15px */
-          line-height: 1.2;
-          /* 18px */
-          width: 125px; } }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body.home section.feature .third .previous, body.home section.feature .third .next, body.work section.feature .third .previous, body.work section.feature .third .next, body.work-alt section.feature .third .previous, body.work-alt section.feature .third .next {
-          font-size: 0.9375em;
-          /* 15px */
-          line-height: 1.2;
-          /* 18px */
-          width: 135px; } }
-      body.home section.feature .third .previous div, body.home section.feature .third .next div, body.work section.feature .third .previous div, body.work section.feature .third .next div, body.work-alt section.feature .third .previous div, body.work-alt section.feature .third .next div {
-        color: #ff1486;
-        font-size: 0.75em;
-        /* 12px */
-        line-height: 1.25;
-        /* 15px */
-        text-transform: uppercase; }
-      body.home section.feature .third .previous a, body.home section.feature .third .next a, body.work section.feature .third .previous a, body.work section.feature .third .next a, body.work-alt section.feature .third .previous a, body.work-alt section.feature .third .next a {
-        color: #b89b00; }
-        body.home section.feature .third .previous a:hover, body.home section.feature .third .next a:hover, body.work section.feature .third .previous a:hover, body.work section.feature .third .next a:hover, body.work-alt section.feature .third .previous a:hover, body.work-alt section.feature .third .next a:hover {
-          color: #ff1486; }
-    body.home section.feature .third .previous, body.work section.feature .third .previous, body.work-alt section.feature .third .previous {
-      left: 0;
-      padding-left: 0;
-      text-align: right; }
     body.home section.feature .third .pattern-wrap, body.work section.feature .third .pattern-wrap, body.work-alt section.feature .third .pattern-wrap {
       background: transparent url("/img/ghel/ghel-bg.jpg") repeat;
       border-bottom: 1px solid #ff1486; }
@@ -7142,10 +7139,72 @@ body {
       body.home section.feature .third .pattern-wrap.tlp, body.work section.feature .third .pattern-wrap.tlp, body.work-alt section.feature .third .pattern-wrap.tlp {
         background: transparent url("/img/tlp/tlp-bg.jpg") repeat; }
 
+.previous, .next {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  width: 160px;
+  font-size: 1.125em;
+  /* 18px */
+  line-height: 1.16667;
+  /* 21px */
+  bottom: 125px;
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #e55050; }
+  @media (min-width: 0px) and (max-width: 519px) {
+    .previous, .next {
+      font-size: 0.75em;
+      /* 12px */
+      line-height: 1.25;
+      /* 15px */
+      padding: 10px;
+      width: 100px;
+      bottom: 3%; } }
+  @media (min-width: 520px) and (max-width: 767px) {
+    .previous, .next {
+      font-size: 0.75em;
+      /* 12px */
+      line-height: 1.25;
+      /* 15px */
+      padding: 10px;
+      width: 100px;
+      bottom: 25px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .previous, .next {
+      font-size: 0.9375em;
+      /* 15px */
+      line-height: 1.2;
+      /* 18px */
+      width: 125px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .previous, .next {
+      font-size: 0.9375em;
+      /* 15px */
+      line-height: 1.2;
+      /* 18px */
+      width: 135px; } }
+  .previous div, .next div {
+    color: #ff1486;
+    font-size: 0.75em;
+    /* 12px */
+    line-height: 1.25;
+    /* 15px */
+    text-transform: uppercase; }
+  .previous a, .next a {
+    color: #b89b00; }
+    .previous a:hover, .next a:hover {
+      color: #ff1486; }
+
+.previous {
+  left: 0;
+  padding-left: 0;
+  text-align: right; }
+
 .work-alt section.feature #two {
-  background: linear-gradient(to right, #e7e5e1 0%, #fff 50%, #fff 50%, #ffbbac 100%) !important; }
+  background: linear-gradient(to right, #e7e5e1 0%, #fff 50%, #fff 50%, #efece4 100%) !important; }
 .work-alt section.feature #three {
-  background: linear-gradient(to right, #ffa693 0%, #fff 50%, #fff 50%, #F2F1EF 100%); }
+  background: linear-gradient(to right, #c8bfa4 0%, #fff 50%, #fff 50%, #F2F1EF 100%); }
   .work-alt section.feature #three img {
     padding-top: 20%; }
 
@@ -7196,7 +7255,14 @@ body {
   .case h2 {
     margin-bottom: 10px; }
   .case h3 {
-    color: #d5715a; }
+    color: #d5715a;
+    margin-top: 25px; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .case p {
+      font-size: 0.75em;
+      /* 12px */
+      line-height: 1.25;
+      /* 15px */ } }
   .case img {
     display: block;
     margin: 10px 0; }
@@ -7213,16 +7279,17 @@ body {
     .case .intro b,
     .case ol b {
       font-weight: 600; }
+  .case li {
+    margin-left: 15px;
+    list-style-type: circle; }
   .case .intro {
     max-width: 800px; }
   .case .dos {
     margin-top: 37px; }
-  .case .svg {
-    max-width: 850px; }
   .case blockquote {
     background-color: #fff;
     padding: 50px;
-    margin: 75px auto;
+    margin: 100px auto;
     border: none;
     font-size: 1.5em;
     /* 24px */

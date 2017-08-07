@@ -1,8 +1,8 @@
 ---
 layout: case
-permalink: /case-study/report-card
+permalink: /case-study/cancer-trials
 keyword: case
-title: National Report Card
+title: Cancer Trials
 section1-title: The Challenge
 section1-para1: A national agency created-program to evaluate the education progress of elementary, middle, and high school students across the nation in key learning areas. This site is essentially a web application where users are asked to report data on students and their performance at different intervals over an academic year.
 section1-para2: Why and where are users struggling with the tasks on this site?
@@ -44,13 +44,5 @@ section5-img3: /img/reportcard/reportcard-rec-3.gif
 section5-img3-alt: UX Audit &amp; Recommendations, task wayfinding, areas to consider
 section5-para1: Tech insecurity. Users, already experiencing insecurity around technology, were frustrated and confused. Tech insecurity. Users, already experiencing insecurity around technology, were frustrated and confused. Tech insecurity.
 section5-para2: Users, already experiencing insecurity around technology, were frustrated and confused. Tech insecurity. Users, already experiencing insecurity around technology, were frustrated and confused.
-next: /project/cancer-trials 
-
-
-
-
-
-
-
 
 ---

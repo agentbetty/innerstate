@@ -14,7 +14,14 @@
      margin-bottom:10px;
   }
 
-  h3 {color:$peach;}
+  h3 {
+    color:$peach;
+    margin-top:25px;
+  }
+
+  p {
+    @include desktop-s {@include font-size(12px, 15px);}
+  }
 
   img {
     display: block;
@@ -34,17 +41,18 @@
     b {font-weight:600;}
   }
 
+  li {
+     margin-left:15px;
+     list-style-type: circle;
+  }
+  
   .intro {max-width: 800px;}
   .dos {margin-top:37px;}
-
-  .svg {
-    max-width: 850px;
-  }
 
   blockquote {
     background-color: $white;
     padding: 50px;
-    margin: 75px auto;
+    margin: 100px auto;
     border:none;
     @include font-size(24px, 29px);
   }
