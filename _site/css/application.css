@@ -7200,6 +7200,8 @@ body {
   .case img {
     display: block;
     margin: 10px 0; }
+  .case a.navbar-brand img {
+    margin: 0; }
   .case .intro,
   .case ol {
     font-family: "EB Garamond", Georgia, serif;
