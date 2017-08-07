@@ -4,7 +4,7 @@ permalink: /case-study/reportcard
 keyword: case
 title: National Report Card
 section1-title: The Challenge
-section1-para1: A national agency created this program to evaluate the education progress of elementary, middle, and high school students across the nation in key learning areas. This site is essentially a web application where users are asked to report data on students and their performance over an academic year.
+section1-para1: A national agency created-program to evaluate the education progress of elementary, middle, and high school students across the nation in key learning areas. This site is essentially a web application where users are asked to report data on students and their performance at different intervals over an academic year.
 section1-para2: Why and where are users struggling with the tasks on this site?
 section1-para3: How do we help them be successful?
 section2-title: My Process
@@ -36,6 +36,16 @@ section4-img7-alt: Wireframe for Representative Workflow
 section4-para: zingThese are a selection of the final annotated wireframes we delivered. Talk about for wires talk about annotation, workflows, color strategy, and content strategy. Weave in the solutions forTom the final d To address the main concerns for the users, name them, then talk about the deliverables inside the documetaiton, how do you introduce the actual cs and color strategy in the wires? and ighlight the annotations?
 blockquote: what was intersting about this project? hat was intersting about this project? hat was intersting about this project? hat was intersting about this project?hat was intersting about this project? hat was intersting about this project?
 section5-title: Recommendations &amp; Final Documentation
+section5-img1: /img/reportcard/reportcard-rec-1.gif
+section5-img1-alt: UX Audit &amp; Recommendations, table of contents
+section5-img2: /img/reportcard/reportcard-rec-2.gif
+section5-img2-alt: UX Audit &amp; Recommendations, task wayfinding, implementation
+section5-img3: /img/reportcard/reportcard-rec-3.gif
+section5-img3-alt: UX Audit &amp; Recommendations, task wayfinding, areas to consider
+section5-para1: Tech insecurity. Users, already experiencing insecurity around technology, were frustrated and confused. Tech insecurity. Users, already experiencing insecurity around technology, were frustrated and confused. Tech insecurity.
+section5-para2: Users, already experiencing insecurity around technology, were frustrated and confused. Tech insecurity. Users, already experiencing insecurity around technology, were frustrated and confused. 
+
+
 
 
 
