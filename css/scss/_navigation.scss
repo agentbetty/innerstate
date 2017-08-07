@@ -184,8 +184,6 @@ nav.navbar {
   height:85px;
         @include phone {border-top:10px solid purple;}
       @include tablet-p {border-top:10px solid red;}
-      @include tablet-h {border-top:10px solid blue;}
-      @include desktop-s {border-top:10px solid green;}
 
   .navbar-header {
 

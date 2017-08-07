@@ -4,7 +4,11 @@
   padding-top:115px;
   height:auto;
 
-  hr {margin:50px 0;}
+  hr {
+    margin:50px 0;
+
+    @include tablet-h {margin:30px 0;}
+  }
 
   h1 {
     text-align: center;
@@ -19,8 +23,15 @@
     margin-top:25px;
   }
 
-  p {
-    @include desktop-s {@include font-size(12px, 15px);}
+  p, ul, ol {
+    @include tablet-h {
+      @include font-size(14px, 18px);
+      max-width: 600px;
+    }
+    @include desktop-s {
+      @include font-size(14px, 18px);
+      max-width: 600px;
+    }
   }
 
   img {
@@ -33,21 +44,24 @@
   }
 
   .intro,
-  ol {
+  ol.top {
     font-family: $gary;
     @include font-size(24px, 27px);
     margin-top:15px;
 
     b {font-weight:600;}
+
+    @include tablet-h {@include font-size(18px, 22px);}
+    @include desktop-s {@include font-size(21px, 25px);}
   }
 
-  li {
+  ul li {
      margin-left:15px;
      list-style-type: circle;
   }
-  
+
   .intro {max-width: 800px;}
-  .dos {margin-top:37px;}
+  .dos {margin-top:30px;}
 
   blockquote {
     background-color: $white;

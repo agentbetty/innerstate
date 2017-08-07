@@ -30,6 +30,10 @@ body {
   h1 {
     font-family: $gary;
     @include font-size(33px, 36px);
+
+    @include tablet-h{
+      @include font-size(27px, 30px);
+    }
   }
 
   h2 {
@@ -38,6 +42,7 @@ body {
     font-family: $gary;
     color:$peach;
 
+    @include tablet-h {@include font-size(18px, 21px);}
     @include desktop-s {@include font-size(21px, 24px);}
   }
 
@@ -45,6 +50,7 @@ body {
     @include font-size(18px, 21px);
     margin-bottom: 5px;
 
+    @include tablet-h {@include font-size(15px, 18px);}
     @include desktop-s{ @include font-size(15px, 18px); }
   }
 
@@ -56,6 +62,9 @@ body {
 
   li {
     padding:2px 0;
+  }
+
+  ul {
     list-style-type: none;
   }
 
@@ -151,8 +160,8 @@ body {
               max-width: 600px;
             } 
             @include tablet-h {
-              @include font-size(35px, 45px);
-              max-width: 600px;
+              @include font-size(25px, 35px);
+              max-width: 650px;
             }
             @include desktop-s {
               @include font-size(35px, 45px);
@@ -180,6 +189,10 @@ body {
 
       h2 { 
         color:$white;
+
+        @include tablet-h {
+          @include font-size(18px, 21px);
+        }
 
         @include desktop-s {
           @include font-size(18px, 21px);
