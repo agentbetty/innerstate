@@ -23,7 +23,7 @@ body {
       padding:15px;
       position:relative;
       z-index: 1031;
-      color:$night;
+      color:darken($espresso, 5%);
       margin:0;
   }
 
@@ -76,8 +76,12 @@ body {
 
   blockquote {
     font-family: $gary;
-    color:darken($salon, 7%);
-    border-left: 1px solid $coral;
+    color:$peach;
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
+    max-width: 800px;
+    width: 80%;
+    margin: 50px auto;
   }
 
   hr {
@@ -354,7 +358,7 @@ body {
       .project-bio {
         margin-top:150px; 
         font-weight:400;
-        color:$slate;
+        color:$peach;
 
         @include phone {margin-top:75px;}
         @include tablet-h {margin-top:60px;}
@@ -373,7 +377,7 @@ body {
           @include font-size(15px, 18px);
           margin:0 0 25px 0;
           font-weight:400;
-          color:$slate;
+          color:$espresso;
 
           @include phone {@include font-size(12px, 15px);}
           @include tablet-p {@include font-size(12px, 15px);margin-bottom:10px;}
@@ -528,7 +532,7 @@ body {
                   }
 
             div {
-                color: $slate;
+                color: $hotpink;
                 @include font-size(12px, 15px);
                 text-transform: uppercase;
             }

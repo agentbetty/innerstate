@@ -1,32 +1,27 @@
-// color
+// a:link
 $hotpink:		#ff1486;
-$fuschia:		#dd0088;
+
+// neutrals
 $white: 		#fff;
 $black:			#000;
-$slate:			#5C7484;
-$salon:			#03619D;
-$light-grey:	#eaeaea;
 $khaki:			#F2F1EF;
-$orange:		#FF7D0D;
-$babypink:		#ffbbac;
-$babyslate: 	lighten($slate, 10%);
-$espresso:		#2e2711;
-$macaroon:		#fa8190;
 $latte:			#d2cab4;
 $skinnylatte:	lighten(#d2cab4, 7%);
-$peach: 		#d5715a;
 
 // yellows
 $yellow:		#D1B100;
-$yellow-light:	lighten($yellow, 25%);
 $yellow-dark: 	darken($yellow, 25%);
-// coral pinks
+
+// pinks
 $coral:			#e55050;
 $coral-light:	lighten($coral, 20%);
+$fuschia:		#dd0088;
+$babypink:		#ffbbac;
+$macaroon:		#fa8190;
+$peach: 		#d5715a;
 
-// dark blues
-$night:			#001726;
-$night-light:	lighten($night, 10%);
+// dark hues
+$espresso:		#2e2711;
 
 // fonts
 $worky: 		'Work Sans', Helvetica, arial, sans-serif;
