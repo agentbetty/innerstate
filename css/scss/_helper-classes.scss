@@ -6,6 +6,10 @@
       background-repeat: no-repeat;
       background-position: center center;
       height:100vh;
+
+      @include tablet-p {
+        height:100%;
+      }
     }
 
   .cd-scrolling-bg {

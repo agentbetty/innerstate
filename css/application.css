@@ -6307,6 +6307,10 @@ template {
     #drawer-toggle-label {
       top: 30px;
       right: 20px; } }
+  @media (min-width: 520px) and (max-width: 767px) {
+    #drawer-toggle-label {
+      top: 10px;
+      right: 15px; } }
 
 /* adds our "hamburger" menu icon */
 #drawer-toggle-label:before {
@@ -6461,10 +6465,11 @@ nav.navbar {
   height: 85px; }
   @media (min-width: 0px) and (max-width: 519px) {
     nav.navbar {
-      border-top: 10px solid purple; } }
+      border-top: 10px solid purple;
+      height: 60px; } }
   @media (min-width: 520px) and (max-width: 767px) {
     nav.navbar {
-      border-top: 10px solid red; } }
+      height: 60px; } }
   nav.navbar .navbar-header a.navbar-brand {
     padding: 0 0 0 15px;
     border-bottom-width: 0; }
@@ -6474,6 +6479,9 @@ nav.navbar {
       width: 50%;
       display: inline-block;
       margin-left: 20px; }
+      @media (min-width: 520px) and (max-width: 767px) {
+        nav.navbar .navbar-header a.navbar-brand img {
+          width: 35%; } }
 
 footer p {
   font-size: 0.625em;
@@ -6509,6 +6517,14 @@ body {
     z-index: 1031;
     color: #1b170a;
     margin: 0; }
+  body section {
+    padding: 0; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      body section section {
+        padding: 0 15px; } }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body section section {
+        padding: 0 15px; } }
   body h1, body h2, body h3, body h4, body p {
     margin: 0 0 2px 0; }
   body p, body ul {
@@ -6519,6 +6535,12 @@ body {
     /* 33px */
     line-height: 1.09091;
     /* 36px */ }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body h1 {
+        font-size: 1.5em;
+        /* 24px */
+        line-height: 1.125;
+        /* 27px */ } }
     @media (min-width: 768px) and (max-width: 991px) {
       body h1 {
         font-size: 1.6875em;
@@ -6533,6 +6555,12 @@ body {
     font-weight: 400;
     font-family: "EB Garamond", Georgia, serif;
     color: #d5715a; }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body h2 {
+        font-size: 1.125em;
+        /* 18px */
+        line-height: 1.16667;
+        /* 21px */ } }
     @media (min-width: 768px) and (max-width: 991px) {
       body h2 {
         font-size: 1.125em;
@@ -6551,6 +6579,12 @@ body {
     line-height: 1.16667;
     /* 21px */
     margin-bottom: 5px; }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body h3 {
+        font-size: 0.9375em;
+        /* 15px */
+        line-height: 1.2;
+        /* 18px */ } }
     @media (min-width: 768px) and (max-width: 991px) {
       body h3 {
         font-size: 0.9375em;
@@ -6572,6 +6606,9 @@ body {
     color: #d5715a; }
   body li {
     padding: 2px 0; }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body li {
+        padding: 0; } }
   body ul {
     list-style-type: none; }
   body ol li {
@@ -6605,6 +6642,9 @@ body {
     @media (min-width: 0px) and (max-width: 519px) {
       body hr {
         margin: 15px 0; } }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body hr {
+        margin: 5px 0; } }
     @media (min-width: 768px) and (max-width: 991px) {
       body hr {
         margin: 15px 0; } }
@@ -6647,6 +6687,9 @@ body {
         @media (min-width: 0px) and (max-width: 519px) {
           body.home section.identity .center div, body.work section.identity .center div, body.work-alt section.identity .center div {
             position: relative; } }
+        @media (min-width: 520px) and (max-width: 767px) {
+          body.home section.identity .center div, body.work section.identity .center div, body.work-alt section.identity .center div {
+            position: relative; } }
         body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
           color: #2e2711;
           font-family: "EB Garamond", Georgia, serif;
@@ -6662,15 +6705,14 @@ body {
               /* 27px */
               line-height: 1.37037;
               /* 37px */
-              max-width: 350px;
               margin-top: 10px; } }
           @media (min-width: 520px) and (max-width: 767px) {
             body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
-              font-size: 1.5625em;
-              /* 25px */
-              line-height: 1.4;
-              /* 35px */
-              max-width: 600px; } }
+              font-size: 1.3125em;
+              /* 21px */
+              line-height: 1.33333;
+              /* 28px */
+              width: auto; } }
           @media (min-width: 768px) and (max-width: 991px) {
             body.home section.identity .center div p, body.work section.identity .center div p, body.work-alt section.identity .center div p {
               font-size: 1.5625em;
@@ -6700,50 +6742,71 @@ body {
     border: 20px solid #fff;
     border-top-width: 0;
     padding-top: 115px; }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body.home section.about, body.work section.about, body.work-alt section.about {
+        padding-top: 70px; } }
     body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
       color: #fff; }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */
+          margin-top: 5px; } }
       @media (min-width: 768px) and (max-width: 991px) {
         body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
-          font-size: 1.125em;
-          /* 18px */
-          line-height: 1.16667;
-          /* 21px */ } }
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */ } }
       @media (min-width: 992px) and (max-width: 1199px) {
         body.home section.about h2, body.work section.about h2, body.work-alt section.about h2 {
           font-size: 1.125em;
           /* 18px */
           line-height: 1.16667;
           /* 21px */ } }
-    body.home section.about p, body.work section.about p, body.work-alt section.about p {
+    body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
       color: #d2cab4;
       font-size: 1.3125em;
       /* 21px */
       line-height: 1.28571;
       /* 27px */ }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        body.home section.about p, body.work section.about p, body.work-alt section.about p {
+      @media (min-width: 0px) and (max-width: 519px) {
+        body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
+          font-size: 0.9375em;
+          /* 15px */
+          line-height: 1.2;
+          /* 18px */ } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */
+          margin: 5px 0; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
           font-size: 1.125em;
           /* 18px */
           line-height: 1.38889;
           /* 25px */ } }
-      body.home section.about p em, body.work section.about p em, body.work-alt section.about p em {
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
+          font-size: 1.125em;
+          /* 18px */
+          line-height: 1.38889;
+          /* 25px */ } }
+      body.home section.about p em, body.home section.about ol em, body.home section.about ul em, body.work section.about p em, body.work section.about ol em, body.work section.about ul em, body.work-alt section.about p em, body.work-alt section.about ol em, body.work-alt section.about ul em {
         color: #fff;
         font-style: normal; }
     body.home section.about ul, body.home section.about ol, body.work section.about ul, body.work section.about ol, body.work-alt section.about ul, body.work-alt section.about ol {
       color: #d2cab4;
       margin-top: 15px; }
-    @media (min-width: 0px) and (max-width: 519px) {
-      body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
-        font-size: 0.9375em;
-        /* 15px */
-        line-height: 1.2;
-        /* 18px */ } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
-        font-size: 0.9375em;
-        /* 15px */
-        line-height: 1.2;
-        /* 18px */ } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.about ul, body.home section.about ol, body.work section.about ul, body.work section.about ol, body.work-alt section.about ul, body.work-alt section.about ol {
+          margin-top: 0;
+          margin-bottom: 15px; } }
     body.home section.about ol + ul, body.work section.about ol + ul, body.work-alt section.about ol + ul {
       font-size: 0.75em;
       /* 12px */
@@ -6783,6 +6846,9 @@ body {
     border: 20px solid #fff;
     border-top-width: 0;
     padding-top: 115px; }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body.home section.case-teaser, body.work section.case-teaser, body.work-alt section.case-teaser {
+        padding-top: 70px; } }
     body.home section.case-teaser h2, body.work section.case-teaser h2, body.work-alt section.case-teaser h2 {
       text-align: center; }
       body.home section.case-teaser h2 em, body.work section.case-teaser h2 em, body.work-alt section.case-teaser h2 em {
@@ -6794,6 +6860,11 @@ body {
       width: 100%;
       padding-top: 100px;
       margin-bottom: 30px; }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.case-teaser .case-study-teaser, body.work section.case-teaser .case-study-teaser, body.work-alt section.case-teaser .case-study-teaser {
+          margin: 25px auto;
+          width: 80%;
+          border: 5px solid #fff; } }
       body.home section.case-teaser .case-study-teaser:hover div h3,
       body.home section.case-teaser .case-study-teaser:hover div h4, body.work section.case-teaser .case-study-teaser:hover div h3,
       body.work section.case-teaser .case-study-teaser:hover div h4, body.work-alt section.case-teaser .case-study-teaser:hover div h3,
@@ -7238,6 +7309,9 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh; }
+  @media (min-width: 520px) and (max-width: 767px) {
+    .cd-fixed-bg {
+      height: 100%; } }
 
 .cd-scrolling-bg {
   min-height: 100%;
@@ -7267,8 +7341,14 @@ body {
   border: 20px solid #fff;
   padding-top: 115px;
   height: auto; }
+  @media (min-width: 520px) and (max-width: 767px) {
+    .case {
+      padding: 70px 15px 15px; } }
   .case hr {
     margin: 50px 0; }
+    @media (min-width: 520px) and (max-width: 767px) {
+      .case hr {
+        margin: 30px 0; } }
     @media (min-width: 768px) and (max-width: 991px) {
       .case hr {
         margin: 30px 0; } }
@@ -7279,6 +7359,13 @@ body {
   .case h3 {
     color: #d5715a;
     margin-top: 25px; }
+  @media (min-width: 520px) and (max-width: 767px) {
+    .case p, .case ul, .case ol {
+      font-size: 0.875em;
+      /* 14px */
+      line-height: 1.28571;
+      /* 18px */
+      max-width: 600px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .case p, .case ul, .case ol {
       font-size: 0.875em;
@@ -7309,6 +7396,13 @@ body {
     .case .intro b,
     .case ol.top b {
       font-weight: 600; }
+    @media (min-width: 520px) and (max-width: 767px) {
+      .case .intro,
+      .case ol.top {
+        font-size: 1.125em;
+        /* 18px */
+        line-height: 1.22222;
+        /* 22px */ } }
     @media (min-width: 768px) and (max-width: 991px) {
       .case .intro,
       .case ol.top {
@@ -7342,5 +7436,11 @@ body {
   .case .wire img {
     border: 5px solid #fff;
     background-color: #fff; }
+  @media (min-width: 520px) and (max-width: 767px) {
+    .case .wire img,
+    .case .rec img {
+      display: block;
+      max-width: 50%;
+      margin: 25px auto; } }
 
 /*# sourceMappingURL=application.css.map */

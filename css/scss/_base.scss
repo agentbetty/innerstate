@@ -22,6 +22,15 @@ body {
       margin:0;
   }
 
+  section { //the white border eats up the row padding for col-xs-12
+    padding:0;
+
+    section {
+      @include phone {padding:0 15px;}
+      @include tablet-p {padding:0 15px;}
+    }
+  }
+
   // – – – – – – – – – – general styles
   h1, h2, h3, h4, p { margin:0 0 2px 0;}
 
@@ -30,6 +39,10 @@ body {
   h1 {
     font-family: $gary;
     @include font-size(33px, 36px);
+
+    @include tablet-p{
+      @include font-size(24px, 27px);
+    }
 
     @include tablet-h{
       @include font-size(27px, 30px);
@@ -42,6 +55,7 @@ body {
     font-family: $gary;
     color:$peach;
 
+    @include tablet-p {@include font-size(18px, 21px);}
     @include tablet-h {@include font-size(18px, 21px);}
     @include desktop-s {@include font-size(21px, 24px);}
   }
@@ -50,6 +64,7 @@ body {
     @include font-size(18px, 21px);
     margin-bottom: 5px;
 
+    @include tablet-p {@include font-size(15px, 18px);}
     @include tablet-h {@include font-size(15px, 18px);}
     @include desktop-s{ @include font-size(15px, 18px); }
   }
@@ -62,6 +77,8 @@ body {
 
   li {
     padding:2px 0;
+
+    @include tablet-p {padding:0;}
   }
 
   ul {
@@ -96,6 +113,7 @@ body {
     margin:30px 0;
 
     @include phone {margin:15px 0;}
+    @include tablet-p {margin:5px 0;}
     @include tablet-h {margin:15px 0;}
   }
 
@@ -142,6 +160,9 @@ body {
          @include phone {
            position: relative;
          }
+         @include tablet-p {
+           position: relative;
+         }
 
           p {
             color:$espresso;
@@ -152,12 +173,11 @@ body {
 
             @include phone {
               @include font-size(27px, 37px);
-              max-width: 350px;
               margin-top:10px;
             }
             @include tablet-p {
-              @include font-size(25px, 35px);
-              max-width: 600px;
+              @include font-size(21px, 28px);
+              width:auto;
             } 
             @include tablet-h {
               @include font-size(25px, 35px);
@@ -187,11 +207,18 @@ body {
       border-top-width:0;
       padding-top:115px;
 
+      @include tablet-p {padding-top:70px;}
+
       h2 { 
         color:$white;
 
+        @include tablet-p {
+          @include font-size(15px, 18px);
+          margin-top:5px;
+        }
+
         @include tablet-h {
-          @include font-size(18px, 21px);
+          @include font-size(15px, 18px);
         }
 
         @include desktop-s {
@@ -199,13 +226,20 @@ body {
         }
       }
 
-      p {
+      p, ol, ul {
         color:$latte;
         @include font-size(21px, 27px);
 
-        @include desktop-s {
-          @include font-size(18px, 25px);
-        }
+        @include phone { @include font-size(15px, 18px);}
+
+        @include tablet-p {
+          @include font-size(12px, 15px);
+          margin:5px 0;
+        } 
+
+        @include tablet-h {@include font-size(18px, 25px);}
+
+        @include desktop-s {@include font-size(18px, 25px);}
 
         em {color:$white;font-style:normal;}
       }
@@ -213,16 +247,8 @@ body {
       ul, ol {
         color:$latte;
         margin-top:15px;
-      }
 
-      p, ol, ul {
-        @include phone {
-          @include font-size(15px, 18px);
-        }
-
-        @include tablet-h {
-          @include font-size(15px, 18px);
-        }
+        @include tablet-p {margin-top:0;margin-bottom:15px;}
       }
 
       ol + ul {@include font-size(12px, 15px);}
@@ -264,6 +290,8 @@ body {
       border-top-width:0;
       padding-top:115px;
 
+      @include tablet-p {padding-top:70px;}
+
       h2 {
         text-align: center;
         
@@ -279,6 +307,12 @@ body {
         width:100%;
         padding-top: 100px;
         margin-bottom:30px;
+
+        @include tablet-p {
+          margin:25px auto;
+          width: 80%;
+          border:5px solid $white;
+        }
 
         &:hover {
 

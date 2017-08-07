@@ -4,9 +4,12 @@
   padding-top:115px;
   height:auto;
 
+  @include tablet-p {padding:70px 15px 15px;}
+
   hr {
     margin:50px 0;
 
+    @include tablet-p {margin:30px 0;}
     @include tablet-h {margin:30px 0;}
   }
 
@@ -24,6 +27,11 @@
   }
 
   p, ul, ol {
+
+    @include tablet-p {
+      @include font-size(14px, 18px);
+      max-width: 600px;
+    } 
     @include tablet-h {
       @include font-size(14px, 18px);
       max-width: 600px;
@@ -51,6 +59,7 @@
 
     b {font-weight:600;}
 
+    @include tablet-p {@include font-size(18px, 22px);}
     @include tablet-h {@include font-size(18px, 22px);}
     @include desktop-s {@include font-size(21px, 25px);}
   }
@@ -76,6 +85,17 @@
     img {
       border:5px solid $white;
       background-color: $white;
+    }
+  }
+
+  .wire,
+  .rec {
+    img {
+      @include tablet-p {
+        display: block;
+        max-width: 50%;
+        margin:25px auto;
+      }
     }
   }
 }

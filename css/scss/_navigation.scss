@@ -36,6 +36,7 @@ padding: 0;
   cursor: pointer;
 
   @include phone {top:30px;right:20px;}
+  @include tablet-p {top:10px;right:15px;}
 } 
 
 /* adds our "hamburger" menu icon */ 
@@ -182,8 +183,8 @@ padding: 0;
 nav.navbar {
   background-color: rgba(255, 255, 255, 1.0);
   height:85px;
-        @include phone {border-top:10px solid purple;}
-      @include tablet-p {border-top:10px solid red;}
+      @include phone {border-top:10px solid purple;height:60px;}
+      @include tablet-p { height:60px;}
 
   .navbar-header {
 
@@ -199,6 +200,8 @@ nav.navbar {
         width: 50%;
         display: inline-block;
         margin-left:20px;
+
+        @include tablet-p {width:35%;}
       }
     }
   }
