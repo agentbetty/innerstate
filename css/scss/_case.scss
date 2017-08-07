@@ -4,11 +4,13 @@
   padding-top:115px;
   height:auto;
 
+  @include phone {padding:70px 15px 15px;}
   @include tablet-p {padding:70px 15px 15px;}
 
   hr {
     margin:50px 0;
 
+    @include phone {margin:30px 0;}
     @include tablet-p {margin:30px 0;}
     @include tablet-h {margin:30px 0;}
   }
@@ -27,6 +29,11 @@
   }
 
   p, ul, ol {
+
+    @include phone {
+      @include font-size(12px, 16px);
+      max-width: 600px;
+    } 
 
     @include tablet-p {
       @include font-size(14px, 18px);
@@ -59,6 +66,7 @@
 
     b {font-weight:600;}
 
+    @include phone {@include font-size(15px, 18px);}
     @include tablet-p {@include font-size(18px, 22px);}
     @include tablet-h {@include font-size(18px, 22px);}
     @include desktop-s {@include font-size(21px, 25px);}
@@ -78,6 +86,17 @@
     margin: 100px auto;
     border:none;
     @include font-size(24px, 29px);
+
+    @include phone {
+      margin:35px auto;
+      @include font-size(15px, 19px);
+      padding:25px;
+    }
+    @include tablet-p {
+      margin:35px auto;
+      @include font-size(18px, 22px);
+      padding:25px;
+    }
   }
 
   .wire {
@@ -91,6 +110,12 @@
   .wire,
   .rec {
     img {
+      @include phone {
+        display: block;
+        max-width: 50%;
+        margin:15px auto;
+      }
+
       @include tablet-p {
         display: block;
         max-width: 50%;
