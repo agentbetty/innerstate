@@ -6635,7 +6635,8 @@ body {
     list-style-type: none; }
   body ol li {
     list-style-type: decimal;
-    margin-left: 15px; }
+    margin-left: 15px;
+    font-weight: 300; }
   body img {
     max-width: 100%; }
   body a:link {
@@ -6671,28 +6672,22 @@ body {
       body hr {
         margin: 15px 0; } }
   body a.arrow {
-    font-size: 4.6875em;
+    font-size: 3.125em;
+    /* 50px */
+    line-height: 1.5;
     /* 75px */
-    line-height: 1;
-    /* 75px */
-    display: block;
-    color: #e0006d;
+    color: #D1B100;
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    display: none; }
     body a.arrow:hover {
-      color: #D1B100;
+      color: #d5715a;
       border-bottom: none; }
-    @media (min-width: 0px) and (max-width: 519px) {
+    @media (min-width: 1200px) {
       body a.arrow {
-        margin-left: 15px; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      body a.arrow {
-        font-size: 3.125em;
-        /* 50px */
-        line-height: 1;
-        /* 50px */ } }
+        display: block; } }
   body.home section.identity, body.work section.identity, body.work-alt section.identity {
     background-color: #2e2711;
     background-image: url("/img/bg-home.jpg");
@@ -6800,10 +6795,10 @@ body {
           /* 21px */ } }
     body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
       color: #d2cab4;
-      font-size: 1.3125em;
-      /* 21px */
-      line-height: 1.28571;
-      /* 27px */ }
+      font-size: 1.125em;
+      /* 18px */
+      line-height: 1.33333;
+      /* 24px */ }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
           font-size: 0.75em;

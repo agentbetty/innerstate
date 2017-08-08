@@ -97,6 +97,7 @@ body {
   ol li {
     list-style-type: decimal;
     margin-left:15px;
+    font-weight: 300;
   }
 
   img {max-width:100%;}
@@ -128,23 +129,20 @@ body {
 
   // – – – – – – – – – – global
   a.arrow {
-    @include font-size(75px, 75px);
-    display: block;
-    color:darken($hotpink, 10%);
+    @include font-size(50px, 75px);
+    color:$yellow;
     position:absolute;
-    bottom:100px;
+    bottom:50px;
     width:100%;
     text-align: center;
+    display: none;
 
     &:hover {
-      color:$yellow;
+      color:$peach;
       border-bottom:none;
     }
 
-    @include phone {margin-left:15px;}
-    @include desktop-s {
-    @include font-size(50px, 50px);
-    }
+    @include desktop {display:block;}
   }
 
   // – – – – – – – – – – home + about + work
@@ -243,7 +241,7 @@ body {
 
       p, ol, ul {
         color:$latte;
-        @include font-size(21px, 27px);
+        @include font-size(18px, 24px);
 
         @include phone { @include font-size(12px, 15px);}
 
