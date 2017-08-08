@@ -6528,6 +6528,8 @@ body {
     margin: 0 0 2px 0; }
   body p, body ul {
     font-weight: 300; }
+  body b {
+    font-weight: 600; }
   body h1 {
     font-family: "EB Garamond", Georgia, serif;
     font-size: 2.0625em;
@@ -6944,6 +6946,8 @@ body {
         background: url("/img/hm/hm-teaser.jpg") no-repeat; }
       body.home section.case-teaser .case-study-teaser.asa24, body.work section.case-teaser .case-study-teaser.asa24, body.work-alt section.case-teaser .case-study-teaser.asa24 {
         background: url("/img/asa24/asa24-teaser.jpg") no-repeat; }
+      body.home section.case-teaser .case-study-teaser.epay, body.work section.case-teaser .case-study-teaser.epay, body.work-alt section.case-teaser .case-study-teaser.epay {
+        background: url("/img/ep/ep-teaser.jpg") no-repeat; }
   body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
     background-color: #ffbbac;
     background-image: url("/img/bg-404.jpg") !important; }
@@ -7031,14 +7035,14 @@ body {
     body.work section.feature .project-bio aside, body.work-alt section.feature .project-basics aside,
     body.work-alt section.feature .project-bio aside {
       color: #d5715a;
-      @incude font-size(9px, 12px); }
-    body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
-    body.home section.feature .project-bio h3,
-    body.home section.feature .project-bio ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
-    body.work section.feature .project-bio h3,
-    body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
-    body.work-alt section.feature .project-bio h3,
-    body.work-alt section.feature .project-bio ul {
+      font-size: 0.75em;
+      /* 12px */
+      line-height: 1.25;
+      /* 15px */ }
+    body.home section.feature .project-basics h3,
+    body.home section.feature .project-bio h3, body.work section.feature .project-basics h3,
+    body.work section.feature .project-bio h3, body.work-alt section.feature .project-basics h3,
+    body.work-alt section.feature .project-bio h3 {
       font-size: 0.9375em;
       /* 15px */
       line-height: 1.2;
@@ -7047,25 +7051,19 @@ body {
       font-weight: 400;
       color: #2e2711; }
       @media (min-width: 0px) and (max-width: 519px) {
-        body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
-        body.home section.feature .project-bio h3,
-        body.home section.feature .project-bio ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
-        body.work section.feature .project-bio h3,
-        body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
-        body.work-alt section.feature .project-bio h3,
-        body.work-alt section.feature .project-bio ul {
+        body.home section.feature .project-basics h3,
+        body.home section.feature .project-bio h3, body.work section.feature .project-basics h3,
+        body.work section.feature .project-bio h3, body.work-alt section.feature .project-basics h3,
+        body.work-alt section.feature .project-bio h3 {
           font-size: 0.75em;
           /* 12px */
           line-height: 1.25;
           /* 15px */ } }
       @media (min-width: 520px) and (max-width: 767px) {
-        body.home section.feature .project-basics h3, body.home section.feature .project-basics ul,
-        body.home section.feature .project-bio h3,
-        body.home section.feature .project-bio ul, body.work section.feature .project-basics h3, body.work section.feature .project-basics ul,
-        body.work section.feature .project-bio h3,
-        body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics h3, body.work-alt section.feature .project-basics ul,
-        body.work-alt section.feature .project-bio h3,
-        body.work-alt section.feature .project-bio ul {
+        body.home section.feature .project-basics h3,
+        body.home section.feature .project-bio h3, body.work section.feature .project-basics h3,
+        body.work section.feature .project-bio h3, body.work-alt section.feature .project-basics h3,
+        body.work-alt section.feature .project-bio h3 {
           font-size: 0.75em;
           /* 12px */
           line-height: 1.25;
@@ -7075,10 +7073,7 @@ body {
     body.home section.feature .project-bio ul, body.work section.feature .project-basics ul,
     body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics ul,
     body.work-alt section.feature .project-bio ul {
-      font-size: 1.3125em;
-      /* 21px */
-      line-height: 1.28571;
-      /* 27px */ }
+      font-weight: 400; }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.feature .project-basics ul,
         body.home section.feature .project-bio ul, body.work section.feature .project-basics ul,
@@ -7088,6 +7083,15 @@ body {
           /* 12px */
           line-height: 1.5;
           /* 18px */ } }
+      @media (min-width: 520px) and (max-width: 767px) {
+        body.home section.feature .project-basics ul,
+        body.home section.feature .project-bio ul, body.work section.feature .project-basics ul,
+        body.work section.feature .project-bio ul, body.work-alt section.feature .project-basics ul,
+        body.work-alt section.feature .project-bio ul {
+          font-size: 0.75em;
+          /* 12px */
+          line-height: 1.25;
+          /* 15px */ } }
       @media (min-width: 768px) and (max-width: 991px) {
         body.home section.feature .project-basics ul,
         body.home section.feature .project-bio ul, body.work section.feature .project-basics ul,
@@ -7521,12 +7525,14 @@ body {
     background-color: #fff; }
   @media (min-width: 0px) and (max-width: 519px) {
     .case .wire img,
+    .case .wi img,
     .case .rec img {
       display: block;
       max-width: 50%;
       margin: 15px auto; } }
   @media (min-width: 520px) and (max-width: 767px) {
     .case .wire img,
+    .case .wi img,
     .case .rec img {
       display: block;
       max-width: 50%;
