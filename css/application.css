@@ -6761,7 +6761,7 @@ body {
     padding-top: 115px; }
     @media (min-width: 0px) and (max-width: 519px) {
       body.home section.about, body.work section.about, body.work-alt section.about {
-        padding-top: 70px; } }
+        padding-top: 25px; } }
     @media (min-width: 520px) and (max-width: 767px) {
       body.home section.about, body.work section.about, body.work-alt section.about {
         padding-top: 70px; } }
@@ -6801,10 +6801,11 @@ body {
       /* 24px */ }
       @media (min-width: 0px) and (max-width: 519px) {
         body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
-          font-size: 0.75em;
-          /* 12px */
-          line-height: 1.25;
-          /* 15px */ } }
+          font-size: 0.6875em;
+          /* 11px */
+          line-height: 1.18182;
+          /* 13px */
+          margin-bottom: 25px; } }
       @media (min-width: 520px) and (max-width: 767px) {
         body.home section.about p, body.home section.about ol, body.home section.about ul, body.work section.about p, body.work section.about ol, body.work section.about ul, body.work-alt section.about p, body.work-alt section.about ol, body.work-alt section.about ul {
           font-size: 0.75em;
@@ -6846,31 +6847,38 @@ body {
       list-style-type: none;
       margin-left: 0; }
   body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
-    background-color: #ffbbac;
-    background-image: url("/img/bg-404.jpg") !important; }
-    body.home section.fourohfour .wrap, body.work section.fourohfour .wrap, body.work-alt section.fourohfour .wrap {
-      margin: 0 auto;
-      max-width: 300px; }
-      body.home section.fourohfour .wrap h1, body.work section.fourohfour .wrap h1, body.work-alt section.fourohfour .wrap h1 {
-        font-size: 6.25em;
-        /* 100px */
-        line-height: 1.05;
-        /* 105px */
-        font-family: "EB Garamond", Georgia, serif;
-        color: #fff;
-        padding-top: 150px; }
-      body.home section.fourohfour .wrap h3, body.work section.fourohfour .wrap h3, body.work-alt section.fourohfour .wrap h3 {
-        font-size: 1.125em;
-        /* 18px */
-        line-height: 1.16667;
-        /* 21px */
-        font-family: "EB Garamond", Georgia, serif;
-        margin: 15px; }
-        body.home section.fourohfour .wrap h3 a, body.work section.fourohfour .wrap h3 a, body.work-alt section.fourohfour .wrap h3 a {
-          color: #fff; }
-        body.home section.fourohfour .wrap h3:hover, body.work section.fourohfour .wrap h3:hover, body.work-alt section.fourohfour .wrap h3:hover {
-          text-decoration: none;
-          border-bottom: 1px solid #ff1486; }
+    background-image: url("/img/bg-404.jpg") !important;
+    padding-top: 115px; }
+    @media (min-width: 0px) and (max-width: 519px) {
+      body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
+        height: 100vh; } }
+    @media (min-width: 520px) and (max-width: 767px) {
+      body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
+        height: 100vh; } }
+    body.home section.fourohfour h1, body.work section.fourohfour h1, body.work-alt section.fourohfour h1 {
+      font-size: 5.9375em;
+      /* 95px */
+      line-height: 1.10526;
+      /* 105px */
+      color: #fff;
+      margin: 25px 0; }
+    body.home section.fourohfour h2, body.work section.fourohfour h2, body.work-alt section.fourohfour h2 {
+      font-size: 1.875em;
+      /* 30px */
+      line-height: 1.16667;
+      /* 35px */
+      font-family: "EB Garamond", Georgia, serif;
+      color: #fff; }
+    body.home section.fourohfour p, body.work section.fourohfour p, body.work-alt section.fourohfour p {
+      margin: 25px 0;
+      color: #fff; }
+      body.home section.fourohfour p a, body.work section.fourohfour p a, body.work-alt section.fourohfour p a {
+        color: #ffbbac; }
+        body.home section.fourohfour p a:hover, body.work section.fourohfour p a:hover, body.work-alt section.fourohfour p a:hover {
+          border-bottom: none;
+          color: #D1B100; }
+      body.home section.fourohfour p a.last, body.work section.fourohfour p a.last, body.work-alt section.fourohfour p a.last {
+        color: #D1B100; }
   body.home section.case-teaser, body.work section.case-teaser, body.work-alt section.case-teaser {
     background-color: #efece4;
     border: 20px solid #fff;
@@ -6943,32 +6951,6 @@ body {
         background: url("/img/asa24/asa24-teaser.jpg") no-repeat; }
       body.home section.case-teaser .case-study-teaser.epay, body.work section.case-teaser .case-study-teaser.epay, body.work-alt section.case-teaser .case-study-teaser.epay {
         background: url("/img/ep/ep-teaser.jpg") no-repeat; }
-  body.home section.fourohfour, body.work section.fourohfour, body.work-alt section.fourohfour {
-    background-color: #ffbbac;
-    background-image: url("/img/bg-404.jpg") !important; }
-    body.home section.fourohfour .wrap, body.work section.fourohfour .wrap, body.work-alt section.fourohfour .wrap {
-      margin: 0 auto;
-      max-width: 300px; }
-      body.home section.fourohfour .wrap h1, body.work section.fourohfour .wrap h1, body.work-alt section.fourohfour .wrap h1 {
-        font-size: 6.25em;
-        /* 100px */
-        line-height: 1.05;
-        /* 105px */
-        font-family: "EB Garamond", Georgia, serif;
-        color: #fff;
-        padding-top: 150px; }
-      body.home section.fourohfour .wrap h3, body.work section.fourohfour .wrap h3, body.work-alt section.fourohfour .wrap h3 {
-        font-size: 1.125em;
-        /* 18px */
-        line-height: 1.16667;
-        /* 21px */
-        font-family: "EB Garamond", Georgia, serif;
-        margin: 15px; }
-        body.home section.fourohfour .wrap h3 a, body.work section.fourohfour .wrap h3 a, body.work-alt section.fourohfour .wrap h3 a {
-          color: #fff; }
-        body.home section.fourohfour .wrap h3:hover, body.work section.fourohfour .wrap h3:hover, body.work-alt section.fourohfour .wrap h3:hover {
-          text-decoration: none;
-          border-bottom: 1px solid #ff1486; }
   body.home section.feature img.logo, body.work section.feature img.logo, body.work-alt section.feature img.logo {
     position: absolute;
     top: 50%;

@@ -214,7 +214,7 @@ body {
       border-top-width:0;
       padding-top:115px;
 
-      @include phone {padding-top:70px;}
+      @include phone {padding-top:25px;}
       @include tablet-p {padding-top:70px;}
 
       h2 { 
@@ -243,7 +243,10 @@ body {
         color:$latte;
         @include font-size(18px, 24px);
 
-        @include phone { @include font-size(12px, 15px);}
+        @include phone { 
+          @include font-size(11px, 13px);
+          margin-bottom: 25px;
+        }
 
         @include tablet-p {
           @include font-size(12px, 15px);
@@ -270,31 +273,38 @@ body {
     }
 
     section.fourohfour {
-      background-color:$babypink;
       background-image: url('/img/bg-404.jpg')!important;
+      padding-top:115px;
 
-      .wrap {
-        margin:0 auto;
-        max-width: 300px;
+      @include phone {height:100vh;}
+      @include tablet-p {height:100vh;}
 
-        h1 {
-          @include font-size(100px, 105px);
-          font-family: $gary;
-          color:$white;
-          padding-top:150px;
-        }
+      h1 {
+        @include font-size(95px, 105px);
+        color:$white;
+        margin:25px 0;
+      }
 
-        h3 {
-          @include font-size(18px, 21px);
-          font-family: $gary;
-          margin:15px;
+      h2 {
+        @include font-size(30px, 35px);
+        font-family: $gary;
+        color:$white;
+      }
 
-          a {color:$white;}
+      p {
+        margin:25px 0;
+        color:$white;
+
+        a {
+          color:$babypink;
+
           &:hover {
-            text-decoration:none;
-            border-bottom:1px solid $hotpink;
+            border-bottom: none;
+            color:$yellow;
           }
         }
+
+        a.last {color:$yellow;}
       }
     }
 
@@ -379,35 +389,6 @@ body {
        &.epay {background: url('/img/ep/ep-teaser.jpg') no-repeat;}
       }
 
-    }
-
-    section.fourohfour {
-      background-color:$babypink;
-      background-image: url('/img/bg-404.jpg')!important;
-
-      .wrap {
-        margin:0 auto;
-        max-width: 300px;
-
-        h1 {
-          @include font-size(100px, 105px);
-          font-family: $gary;
-          color:$white;
-          padding-top:150px;
-        }
-
-        h3 {
-          @include font-size(18px, 21px);
-          font-family: $gary;
-          margin:15px;
-
-          a {color:$white;}
-          &:hover {
-            text-decoration:none;
-            border-bottom:1px solid $hotpink;
-          }
-        }
-      }
     }
 
     section.feature {
