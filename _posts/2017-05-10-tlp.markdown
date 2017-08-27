@@ -21,7 +21,7 @@ two-2: /img/tlp/tlp-ipad-2.png
 two-2-alt: Teacher and Leadership Programs Grant profile on iPad
 bio-1: The Department of Education's Teacher and Leadership Programs comprise of 5 cohorts of grant recipient schools and districts.
 bio-2: We first created a brand family and style guide for each of the programs and extended the existing parent style guide to reflect the updated look (and make it 508 compliant.) 
-bio-3: We then applied this strategy to update a rather complicated Drupal user experience (many types of authenticated and non-authenticated user stories) and large set of education materials to support the grantees and the great work they do in our education system.
+bio-3: We then applied this strategy to update a rather complicated Drupal user experience (many types of authenticated and non-authenticated user stories) and a large set of educational materials to support the grantees and the great work they do in our education system.
 three: /img/tlp/tlp-desktop.jpg
 three-alt: Teacher and Leadership Programs home page on a desktop
 colorClass: tlp

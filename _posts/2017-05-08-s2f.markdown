@@ -20,7 +20,7 @@ two-1-alt: Start2farm on iPad
 two-2: /img/s2f/s2f-ipad-2.png
 two-2-alt: Start2farm on iPad
 bio-1: In 2011 we began working with the USDA to design and develop Start2Farm.gov&#58; an online database connecting beginning farmers and ranchers with available programs and resources.
-bio-2: Our Drupal site managed complicated taxomonies and faceted search (using <a href="http://lucene.apache.org/solr/">Solr</a>) in order to provide a smart and easy-to-access aggregation of farming and ranching resources.
+bio-2: Our Drupal site managed complicated taxonomies and faceted search (using <a href="http://lucene.apache.org/solr/">Solr</a>) in order to provide a smart and easy-to-access aggregation of farming and ranching resources.
 bio-3: In 2015, the site content was merged into the USDA's newfarmers.usda.gov.
 three: /img/s2f/s2f-desktop.png
 three-alt: Start2farm home page on a desktop
