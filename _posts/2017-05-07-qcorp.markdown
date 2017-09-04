@@ -20,7 +20,7 @@ role-3: UX Designer
 two-1: /img/qcorp/qcorp-desktop-2.png
 two-1-alt: Q Corp home page on a desktop
 bio-1: I was brought onto the Q Corp project in 2011 to help freshen up their brand and strengthen the brand relationships between&#58; Q Corp, PCPCI, and the Partner for Quality Care initiatives.
-bio-2: In addition to developing a brand strategy to support all three brand&mdash;Q Corp, P4QC, and PCPCI&mdash;we extended this strategy to new Drupal sites and both online and print collateral. 
+bio-2: In addition to developing a brand strategy to support all three brand&mdash;Q Corp, P4QC, and PCPCI&mdash;I extended this strategy to new Drupal sites and both online and print collateral. 
 three: /img/qcorp/qcorp-desktop.png
 three-alt: Q Corp home page on a desktop
 colorClass: qcorp

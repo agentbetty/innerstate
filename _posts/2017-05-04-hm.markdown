@@ -20,7 +20,7 @@ two-1-alt: HealthMAP Android application
 two-2: /img/hm/hm-app-2.png
 two-2-alt: HealthMAP application
 bio-1: The Center for Behavioral Health Policy Studies at Emory University wanted to research study participants’ activity levels and assist with nutrition education, so we built an Android app they could distribute to participants.
-bio-2: We designed an app with an easy-to-use interface for novice users in order to track participant activity and weight loss, provide healthy eating tips, and facilitate interaction with a health coach. 
+bio-2: I designed an app with an easy-to-use interface for novice users in order to track participant activity and weight loss, provide healthy eating tips, and facilitate interaction with a health coach. 
 bio-3: The app features include a pedometer, calorie and diet monitors, daily milestones, congratulatory notifications, and food choice education.
 three: /img/hm/hm-desktop.png
 three-alt: Multiple screenshots for the HealthMAP android app&#58;  welcome screen, alert modal, dash diet tips screen, my daily weight screen.

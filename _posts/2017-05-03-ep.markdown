@@ -21,8 +21,8 @@ two-1: /img/ep/ep-ipad-2.png
 two-1-alt: Electronic Payments on iPad
 two-2: /img/ep/ep-ipad-1.png
 two-2-alt: Electronic Payments on iPad
-bio-1: We helped NACHA define a strong brand for its electronic payment products Direct Deposit and Direct Payment. 
-bio-2: Then we extended this brand strategy into targeted online messaging for specific audiences, marketing collateral for banks and businesses, and a set of resources for Financial Institutions of any size.
+bio-1: I helped NACHA define a strong brand for its electronic payment products Direct Deposit and Direct Payment. 
+bio-2: Then I extended this brand strategy into targeted online messaging for specific audiences, marketing collateral for banks and businesses, and a set of resources for Financial Institutions of any size.
 bio-3: Our 5-year engagement with NACHA allowed us to design and develop several iterations of their Drupal site, brand strategies, marketing campaigns, a collection of printed pieces, an overhauled eStore, and a strong content strategy to educate each of the 6 user verticals&#58; consumer, small business, non-profit, religious institutions, business, and financial institutions.
 three: /img/ep/ep-desktop.png
 three-alt: Electronic Payments home page on a desktop

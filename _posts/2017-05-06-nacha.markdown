@@ -20,8 +20,8 @@ two-1-alt: NACHA Membership Widget on iPad
 two-2: /img/nacha/nacha-ipad-2.png
 two-2-alt: NACHA Education and Events on iPad
 bio-1: Over our 3-year engagement with NACHA, I worked with teams internal to NACHA and our own set of developers, designers, and content strategist to evolve the online presence of the Association.
-bio-2: I redesigned and themed their main Drupal site&mdash;alongside our Content Strategist&mdash; we developed a Communication Strategy that incorporated their new online brand strategy with guidelines for fresh tone and content.
-bio-3: We continued to support NACHA with visual updates to the site, a continued evolution of their messaging in both print and online media, as well as help them maintain a strong, trusted voice in the financial payments community.
+bio-2: I redesigned and themed their main Drupal site&mdash;alongside our Content Strategist&mdash; I developed a Communication Strategy that incorporated their new online brand strategy with guidelines for fresh tone and content.
+bio-3: I continued to support NACHA with visual updates to the site, a continued evolution of their messaging in both print and online media, as well as help them maintain a strong, trusted voice in the financial payments community.
 three: /img/nacha/nacha-desktop.png
 three-alt: NACHA home page on a desktop
 colorClass: nacha
